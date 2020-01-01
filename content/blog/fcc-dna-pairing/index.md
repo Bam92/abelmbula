@@ -49,7 +49,7 @@ function pairElement(str) {
 
   // Step 2. Create the FOR loop with initializer less then str.length
   for (let i = 0; i < str.length; i += 1) {
-    // Step 3. Use if stattement to evaluate baise pair and push it to arrDNA
+    // Step 3. Use if statement to evaluate baise pair and push it to arrDNA
     if (str[i] === 'A') arrDNA.push([str[i], 'T']);
     if (str[i] === 'T') arrDNA.push([str[i], 'A']);
     if (str[i] === 'C') arrDNA.push([str[i], 'G']);
@@ -84,6 +84,66 @@ function pairElement(str) {
     if (str[i] === 'T') arrDNA.push([str[i], 'A']);
     if (str[i] === 'C') arrDNA.push([str[i], 'G']);
     if (str[i] === 'G') arrDNA.push([str[i], 'C']);
+
+  }
+
+  return arrDNA;
+}
+
+pairElement("GCG");
+```
+
+## 2. Using For Loop, CharAt(), and If Statement
+
+In this solution we will make use of the loop and if statements once mores in combination with the String object's charAt() method. 
+* **String.prototype.charAt()** method returns the character at the specified index in a string.
+
+```javascript
+function pairElement(str) {
+  // Step 1. Create an empty array that will encapsulate other paired arrays
+  const arrDNA = [];
+
+  // Step 2. Iterate through the str with a FOR loop 
+  for (let i = 0; i < str.length; i += 1) {
+    // Step 3. Use if statement to evaluate baise pair and push it to arrDNA
+    
+    // If the current str character is X create an array of current str with its corresponding pair and push the array to arrDNA
+    
+    if (str.chartAt(i) === 'A') // if A
+      arrDNA.push([str[i], 'T']); // ...push [A - T]
+    else if (chartAt(i) === 'T') // if T 
+      arrDNA.push([str[i], 'A']); //...push [T - A]
+    else if (chartAt(i) === 'C') // if C
+      arrDNA.push([str[i], 'G']); // ...push [C - G]
+    else if (chartAt(i) === 'G') // if G
+      arrDNA.push([str[i], 'C']); // ...push [G - C]
+
+  }
+
+  // Step 4. Return the 2D array
+  return arrDNA;
+}
+
+pairElement("GCG");
+```
+
+### Without Comments:
+
+```javascript
+function pairElement(str) {
+  const arrDNA = [];
+
+  for (let i = 0; i < str.length; i += 1) {
+    
+    if (str.chartAt(i) === 'A') 
+      arrDNA.push([str[i], 'T']); 
+    else if (chartAt(i) === 'T') 
+      arrDNA.push([str[i], 'A']); 
+    else if (chartAt(i) === 'C') 
+      arrDNA.push([str[i], 'G']); 
+    else if (chartAt(i) === 'G') 
+      arrDNA.push([str[i], 'C']); 
+
   }
 
   return arrDNA;
