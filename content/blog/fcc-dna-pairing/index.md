@@ -4,7 +4,7 @@ date: "2019-12-30T22:23:03.284Z"
 description: "Computer Science is awesome and amazing, trust me!"
 ---
 
-Computer Science is awesome and amazing, trust me! There are always more than one way to come to a solution to a given problem in most cases.
+Computer Science is awesome and amazing, trust me! There is always more than one way to come to a solution to a given problem in most cases.
 
 In this tutorial we will learn how to solve the [Free Code Camp **DNA Pairing Challenge**](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/dna-pairing) in five different ways.
 
@@ -39,7 +39,7 @@ In biology class we learned about DNA baise pairs (need a refresher? [Wikipedia]
 * **C** string we return an array ['C', 'G']
 * **G** string we return an array ['G', 'C']
 
-## 1. Using For Loop and If Statement
+## 1. Using For Loop, and If Statement
 
 For this solution we will loop over the parametor passed to the function and use if statement to return the correct pair.
 ```javascript
@@ -95,8 +95,7 @@ pairElement("GCG");
 
 ## 2. Using For Loop, CharAt(), and If Statement
 
-In this solution we will make use of the loop and if statements once mores in combination with the String object's charAt() method. 
-* **String.prototype.charAt()** method returns the character at the specified index in a string.
+In this solution we will make use of the traditional for loop and if statements once more in combination with the String object's charAt() method. This method (**String.prototype.charAt()**) returns the character at the specified index in a string.
 
 ```javascript
 function pairElement(str) {
@@ -149,5 +148,193 @@ function pairElement(str) {
   return arrDNA;
 }
 
+pairElement("GCG");
+```
+
+## 3. Using For...of 
+
+The ```for...of``` creates a loop iterating over iterable objects (built-in String, Array, Array-like objects).
+
+```javascript
+function pairElement(str) {
+  // Step 1. Create an empty array that will encapsulate other paired arrays
+  const arrDNA = [];
+
+  // Step 2. Create an object of baise pair
+  const baisePair = {
+    'A': 'T',
+    'T': 'A',
+    'C': 'G',
+    'G': 'C'
+  }
+
+  // Step 3. Iterate through the str with a for of loop 
+  for (const letter of str) {
+    // Step 4. Create an array of letter with its corresponding pair and  push to arrDNA
+    arrDNA.push([letter, baisePair[letter]]);    
+  }
+  
+  // Step 5. Return the 2D array
+  return arrDNA;
+}
+
+pairElement("GCG");
+```
+
+### Without Comments:
+
+```javascript
+function pairElement(str) {
+  const arrDNA = [];
+
+  const basePair = {
+    'A': 'T',
+    'T': 'A',
+    'C': 'G',
+    'G': 'C'
+  }
+
+  for (const letter of str) {
+    arrDNA.push([letter, basePair[letter]]);    
+  }
+  
+  return arrDNA;
+}
+
+pairElement("GCG");
+```
+
+## 4. Using Split and Map
+
+Let try to resolve using ```String.prototype.split()``` and ```Array.prototype.map()```. The first method (```split()```) is used to convert a string into an array. The ```map()``` method creates a new array with the results of calling a function for every array element.
+
+```javascript
+function pairElement(str) {
+  // Step 1. Create an object of baise pair
+  const baisePair = {
+    'A': 'T',
+    'T': 'A',
+    'C': 'G',
+    'G': 'C'
+  }
+   // Step 2. convert the str into an array with split and store the result into arrStr variable
+  const arrStr = str.split('');
+
+  /* Step 3. Map through the arrStr and return an array of current value and it baise
+  Keep the result of mapping under arrDNA variable
+  */
+  const arrDNA = arrStr.map(letter => [letter, baisePair[letter]])
+  
+  // Step 4. Return the 2D array
+  return arrDNA;
+}
+
+pairElement("GCG");
+```
+### Without Comments:
+
+```javascript
+function pairElement(str) {
+  const baisePair = {
+    'A': 'T',
+    'T': 'A',
+    'C': 'G',
+    'G': 'C'
+  }
+  const arrStr = str.split('');
+
+  const arrDNA = arrStr.map(letter => [letter, baisePair[letter]])
+  
+  return arrDNA;
+}
+
+pairElement("GCG");
+```
+
+or even better use ```split()``` ```map()``` in one line
+
+```javascript
+function pairElement(str) {
+  const baisePair = {
+    'A': 'T',
+    'T': 'A',
+    'C': 'G',
+    'G': 'C'
+  }
+
+  return str.split('').map(letter => [letter, baisePair[letter]]);
+}
+
+pairElement("GCG");
+```
+
+## 5. Using Split, ForEach and Switch
+
+In this solution will take help of ```split()```, ```forEach()```, and ```switch```. we have already discussed about ```split()``` in an other solution above. Let talk a bit about the remaining two:
+
+ * ```array.forEach()```: this method executes a provided function once for each array element
+ * ```switch```: is similar to ```if```, it gives a more descriptive way to compare a value with multiple variants.
+
+ ```javascript 
+ function pairElement(str) { 
+  // Step 1. Create an empty array that will encapsulate other paired arrays
+   const arrDNA = []; 
+
+   // Step 2. convert the str into an array with split and store the result into arrStr variable
+  const arrStr = str.split('');
+
+  // Step 3. Loop through arrStr using forEach
+   arrStr.forEach(x => {
+     /* Step 4. Use switch statement to test x and push the corresponding array to arrDNA */
+    switch (x) {
+      case "G": // in case x = G
+       arrDNA.push(["G","C"]); // ...push ["G","C"] to arrDNA
+       break // break tells the script to run from the case where the criterion is met      
+      case "C":   
+       arrDNA.push(["C","G"]);
+       break;        
+      case "T":
+       arrDNA.push(["T","A"]);
+       break;       
+      case "A":
+       arrDNA.push(["A","T"]);
+       break;       
+    }    
+  });
+
+// Step 5. Return the 2D array
+  return arrDNA;
+}
+pairElement("GCG");
+```
+
+### Without Comments:
+
+```javascript 
+ function pairElement(str) { 
+   const arrDNA = []; 
+
+  const arrStr = str.split('');
+
+   arrStr.forEach(x => {
+
+    switch (x) {
+      case "G": 
+       arrDNA.push(["G","C"]);
+       break       
+      case "C":   
+       arrDNA.push(["C","G"]);
+       break;        
+      case "T":
+       arrDNA.push(["T","A"]);
+       break;       
+      case "A":
+       arrDNA.push(["A","T"]);
+       break;       
+    }    
+  });
+
+  return arrDNA;
+}
 pairElement("GCG");
 ```
