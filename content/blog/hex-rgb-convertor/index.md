@@ -8,7 +8,7 @@ With just a little knowledge of HTML, CSS, and JavaScript (JS), you can create s
 
 ## What are we building?
 
-As you may have read in the title, the app you'll build at the end of this lesson takes a hex (short for hexadecimal) color (e.g **#457a7a**) as input and returns an rgb equivalent as output (**rgb(69,122,122)**). Let call it **RGBizer**. Also, we will use the submitted color as a background on the right side of the page, and as the color for the RGB text. You can see the finished app https://codepen.io/bam92/full/QWwOMYR.
+As you may have read in the title, the app you'll build at the end of this lesson takes a hex (short for hexadecimal) color (e.g **#457a7a**) as input and returns an rgb equivalent as output (**rgb(69,122,122)**). Let call it **RGBizer**. Also, we will use the submitted color as a background on the right side of the page, and as the color for the RGB text. You can see the finished app https://codepen.io/bam92/pen/QWwOMYR.
 
 We will be building our app in two parts. This is the first one, and it is focusing on HTML and CSS.
 
@@ -115,7 +115,7 @@ Nothing tricky here. We have modified a bit our markup to add ```.output``` clas
 
 ## Conclusion
 
-In this first part of our tutorial, we have defined the markup of our app (do you rember it name? **RGBizer**). To style it we used CSS flexbox. In the second and last part of this tutorial, you will learn how to make it functional with JavaScript. You can see this state of our app here https://codepen.io/bam92/full/BayrRZV.
+In this first part of our tutorial, we have defined the markup of our app (do you rember it name? **RGBizer**). To style it we used CSS flexbox. In the second and last part of this tutorial, you will learn how to make it functional with JavaScript. You can see this state of our app here https://codepen.io/bam92/pen/BayrRZV.
 
 Before you go, thank you for reading. If you found this intersting don't hesitate to share with friends.
 

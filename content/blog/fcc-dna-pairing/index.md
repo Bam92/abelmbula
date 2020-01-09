@@ -6,7 +6,7 @@ description: "Step by step guide on how to solve the FCC DNA Pairing Challenge i
 
 Computer Science is awesome and amazing, trust me! There is always more than one way to come to a solution to a given problem in most cases.
 
-In this tutorial we will learn how to solve the [Free Code Camp **DNA Pairing Challenge**](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/dna-pairing) in five different ways.
+In this tutorial, we will learn how to solve the [Free Code Camp **DNA Pairing Challenge**](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/dna-pairing) in five different ways.
 
 ## Algorithm Challenge 
 
@@ -33,7 +33,7 @@ pairElement("GCG");
 ## Understanding the Problem
 
 As you may have read in the challenge description above, the goal of this exercice is to return the missing trand into a 2d array.
-In biology class we learned about DNA baise pairs (need a refresher? [Wikipedia](https://en.wikipedia.org/wiki/Base_pair) is your friend). They are A - T and C - G, and they go both way. So everytime we have:
+In biology class, we learned about DNA base pairs (need a refresher? [Wikipedia](https://en.wikipedia.org/wiki/Base_pair) is your friend). They are A - T and C - G, and they go both ways. So every time we have:
 * **A** string we return an array ['A', 'T']
 * **T** string we return an array ['T', 'A']
 * **C** string we return an array ['C', 'G']
@@ -41,7 +41,7 @@ In biology class we learned about DNA baise pairs (need a refresher? [Wikipedia]
 
 ## 1. Using For Loop, and If Statement
 
-For this solution we will loop over the parametor passed to the function and use if statement to return the correct pair.
+For this solution, we will loop over the parameter passed to the function and use if statement to return the correct pair.
 ```javascript
 function pairElement(str) {
   // Step 1. Declare the variable of type array that will encapsulate other paired arrays
@@ -95,7 +95,7 @@ pairElement("GCG");
 
 ## 2. Using For Loop, CharAt(), and If Statement
 
-In this solution we will make use of the traditional for loop and if statements once more in combination with the String object's charAt() method. This method (**String.prototype.charAt()**) returns the character at the specified index in a string.
+In this solution, we will make use of the traditional for loop and if statements once more in combination with the String object's charAt() method. This method (**String.prototype.charAt()**) returns the character at the specified index in a string.
 
 ```javascript
 function pairElement(str) {
@@ -104,7 +104,7 @@ function pairElement(str) {
 
   // Step 2. Iterate through the str with a FOR loop 
   for (let i = 0; i < str.length; i += 1) {
-    // Step 3. Use if statement to evaluate baise pair and push it to arrDNA
+    // Step 3. Use if statement to evaluate base pair and push it to arrDNA
     
     // If the current str character is X create an array of current str with its corresponding pair and push the array to arrDNA
     
@@ -160,7 +160,7 @@ function pairElement(str) {
   // Step 1. Create an empty array that will encapsulate other paired arrays
   const arrDNA = [];
 
-  // Step 2. Create an object of baise pair
+  // Step 2. Create an object of base pair
   const basePair = {
     'A': 'T',
     'T': 'A',
@@ -210,7 +210,7 @@ Let try to resolve using ```String.prototype.split()``` and ```Array.prototype.m
 
 ```javascript
 function pairElement(str) {
-  // Step 1. Create an object of baise pair
+  // Step 1. Create an object of base pair
   const basePair = {
     'A': 'T',
     'T': 'A',
@@ -270,7 +270,7 @@ pairElement("GCG");
 
 ## 5. Using Split, ForEach and Switch
 
-In this solution will take help of ```split()```, ```forEach()```, and ```switch```. we have already discussed about ```split()``` in an other solution above. Let talk a bit about the remaining two:
+In this solution will take help of ```split()```, ```forEach()```, and ```switch```. we have already discussed ```split()``` in another solution above. Let talk a bit about the remaining two:
 
  * ```array.forEach()```: this method executes a provided function once for each array element
  * ```switch```: is similar to ```if```, it gives a more descriptive way to compare a value with multiple variants.
