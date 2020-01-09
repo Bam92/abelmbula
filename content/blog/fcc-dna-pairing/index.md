@@ -1,7 +1,7 @@
 ---
 title: Five Ways to Solve the DNA Pairing Challenge in JavaScript
 date: "2019-12-30T22:23:03.284Z"
-description: "Computer Science is awesome and amazing, trust me!"
+description: "Step by step guide on how to solve the FCC DNA Pairing Challenge in five different ways"
 ---
 
 Computer Science is awesome and amazing, trust me! There is always more than one way to come to a solution to a given problem in most cases.
@@ -161,7 +161,7 @@ function pairElement(str) {
   const arrDNA = [];
 
   // Step 2. Create an object of baise pair
-  const baisePair = {
+  const basePair = {
     'A': 'T',
     'T': 'A',
     'C': 'G',
@@ -171,7 +171,7 @@ function pairElement(str) {
   // Step 3. Iterate through the str with a for of loop 
   for (const letter of str) {
     // Step 4. Create an array of letter with its corresponding pair and  push to arrDNA
-    arrDNA.push([letter, baisePair[letter]]);    
+    arrDNA.push([letter, basePair[letter]]);    
   }
   
   // Step 5. Return the 2D array
@@ -211,7 +211,7 @@ Let try to resolve using ```String.prototype.split()``` and ```Array.prototype.m
 ```javascript
 function pairElement(str) {
   // Step 1. Create an object of baise pair
-  const baisePair = {
+  const basePair = {
     'A': 'T',
     'T': 'A',
     'C': 'G',
@@ -223,7 +223,7 @@ function pairElement(str) {
   /* Step 3. Map through the arrStr and return an array of current value and it baise
   Keep the result of mapping under arrDNA variable
   */
-  const arrDNA = arrStr.map(letter => [letter, baisePair[letter]])
+  const arrDNA = arrStr.map(letter => [letter, basePair[letter]])
   
   // Step 4. Return the 2D array
   return arrDNA;
@@ -235,7 +235,7 @@ pairElement("GCG");
 
 ```javascript
 function pairElement(str) {
-  const baisePair = {
+  const basePair = {
     'A': 'T',
     'T': 'A',
     'C': 'G',
@@ -243,7 +243,7 @@ function pairElement(str) {
   }
   const arrStr = str.split('');
 
-  const arrDNA = arrStr.map(letter => [letter, baisePair[letter]])
+  const arrDNA = arrStr.map(letter => [letter, basePair[letter]])
   
   return arrDNA;
 }
@@ -255,14 +255,14 @@ or even better use ```split()``` ```map()``` in one line
 
 ```javascript
 function pairElement(str) {
-  const baisePair = {
+  const basePair = {
     'A': 'T',
     'T': 'A',
     'C': 'G',
     'G': 'C'
   }
 
-  return str.split('').map(letter => [letter, baisePair[letter]]);
+  return str.split('').map(letter => [letter, basePair[letter]]);
 }
 
 pairElement("GCG");
