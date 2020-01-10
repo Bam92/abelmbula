@@ -268,7 +268,7 @@ function pairElement(str) {
 pairElement("GCG");
 ```
 
-## 5. Using Split, ForEach and Switch
+## 5. Using Split, ForEach, and Switch
 
 In this solution will take help of ```split()```, ```forEach()```, and ```switch```. we have already discussed ```split()``` in another solution above. Let talk a bit about the remaining two:
 
