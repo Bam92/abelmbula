@@ -34,6 +34,7 @@ pairElement("GCG");
 
 As you may have read in the challenge description above, the goal of this exercice is to return the missing trand into a 2d array.
 In biology class, we learned about DNA base pairs (need a refresher? [Wikipedia](https://en.wikipedia.org/wiki/Base_pair) is your friend). They are A - T and C - G, and they go both ways. So every time we have:
+
 * **A** string we return an array ['A', 'T']
 * **T** string we return an array ['T', 'A']
 * **C** string we return an array ['C', 'G']
@@ -42,6 +43,7 @@ In biology class, we learned about DNA base pairs (need a refresher? [Wikipedia]
 ## 1. Using For Loop, and If Statement
 
 For this solution, we will loop over the parameter passed to the function and use if statement to return the correct pair.
+
 ```javascript
 function pairElement(str) {
   // Step 1. Declare the variable of type array that will encapsulate other paired arrays
