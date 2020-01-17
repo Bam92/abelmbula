@@ -4,7 +4,7 @@ date: "2020-01-02T22:23:03.284Z"
 description: "What are == and === in JavaScript?"
 ---
 
-We often need to compare values when we are programming. To check for equality in JavaScript, there are more then one way of doing it. You can use either a double equals operator, == , aka "soft equality" or the triple equals operator, === , aka "hard equality".
+We often need to compare values when we are programming. To check for equality in JavaScript, there are more than one way of doing it. You can use either a double equals operator, == , aka "soft equality" or the triple equals operator, === , aka "hard equality".
 
 ## The Soft Equality
 
@@ -23,7 +23,7 @@ This works fine, but there are some slight problems with double equals operator.
 
 ![a==3](a=="3".png 'a=="3"')
 
-As you can see here, the returned output is ```true``` when in reality it sould be ```false``` because ```a``` is not a ```string``` but a ```number```. So what happened so that we get  ```true```? When soft equality is used, JavaScript will attempt
+As you can see here, the returned output is ```true``` when in reality it should be ```false``` because ```a``` is not a ```string``` but a ```number```. So what happened so that we get  ```true```? When soft equality is used, JavaScript will attempt
 to coerce the two values to the same type when doing the comparison. This "bad behavior" of JavaScript can lead to some very strange results. Let's see some more examples:
 
 ```js
@@ -48,12 +48,12 @@ false == "0";
 null == undefined;
 << true
 ```
-The snipeshot above shows that values that are not actually equal have a tendency to be reported
+The snippet above shows that values that are not actually equal have a tendency to be reported
 as being equal to each other.
 
 ## The Hard Equality
 
-Unlike the soft equality, this equality operator checks for both the **value** and the **type**. It is also called a stricter equality test and returns **true** only if the two element are the same. Here is what you will have as result using this operator with the same example as above
+Unlike the soft equality, this equality operator checks for both the **value** and the **type**. It is also called a stricter equality test and returns **true** only if the two elements are the same. Here is what you will have as result using this operator with the same example as above
 
 ```js
 a === 3;
