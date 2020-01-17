@@ -11,7 +11,6 @@ We often need to compare values when we are programming. To check for equality i
 It only checks for equality in value, not in type.
 
 For example if we assign the number 3 to a variable like this:
-
 ```js
 const a = 3;
 ```
@@ -23,7 +22,7 @@ This works fine, but there are some slight problems with double equals operator.
 
 ![a==3](a=="3".png 'a=="3"')
 
-As you can see here, the returned output is ```true``` when in reality it should be ```false``` because ```a``` is not a ```string``` but a ```number```. So what happened so that we get  ```true```? When soft equality is used, JavaScript will attempt
+As you can see here, the returned output is `true` when in reality it should be ```false``` because ```a``` is not a ```string``` but a ```number```. So what happened so that we get  ```true```? When soft equality is used, JavaScript will attempt
 to coerce the two values to the same type when doing the comparison. This "bad behavior" of JavaScript can lead to some very strange results. Let's see some more examples:
 
 ```js

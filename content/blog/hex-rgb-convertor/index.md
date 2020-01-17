@@ -65,7 +65,7 @@ main {
 
 ...so that we have two flex items placed in the horizontal axis (row).
 
-In order to let us easilly center content horizontally and vertically, we make our two flex items flex containers:
+In order to let us easily center content horizontally and vertically, we make our two flex items flex containers:
 
 ```css
 .main-child {
@@ -78,7 +78,7 @@ In order to let us easilly center content horizontally and vertically, we make o
 }
 ```
 
-The content is aligned in the column (```flex-direction: column```) and occuppy all available space in ```height``` and half of it in ```width```. To center horizontally we use ```justify-content: center``` and ```align-items: center``` is used to center vertically. We can add ```background: green``` to the second bloc just to distinguish our two blocs, and have in mind that we will be applying background color there everytime the user submit a color.
+The content is aligned in the column (```flex-direction: column```) and occupy all available space in ```height``` and half of it in ```width```. To center horizontally we use ```justify-content: center``` and ```align-items: center``` is used to center vertically. We can add ```background: green``` to the second bloc just to distinguish our two blocs, and have in mind that we will be applying background color there every time the user submit a color.
 
 ```css
 .main-child:last-child {
@@ -110,13 +110,13 @@ To finish, let add some style to the ```:first-child``` of ```.main-child``` cla
 }
 ```
 
-Nothing tricky here. We have modified a bit our markup to add ```.output``` class to the ```div``` element so that we hide it.
+Nothing tricky here. We have modified a bit our markup to add ```.output``` class to the `div` element so that we hide it.
 
 
 ## Conclusion
 
-In this first part of our tutorial, we have defined the markup of our app (do you rember it name? **RGBizer**). To style it we used CSS flexbox. In the second and last part of this tutorial, you will learn how to make it functional with JavaScript. You can see this state of our app here https://codepen.io/bam92/pen/BayrRZV.
+In this first part of our tutorial, we have defined the markup of our app (do you remember it name? **RGBizer**). To style it we used CSS flexbox. In the second and last part of this tutorial, you will learn how to make it functional with JavaScript. You can see this state of our app here https://codepen.io/bam92/pen/BayrRZV.
 
-Before you go, thank you for reading. If you found this intersting don't hesitate to share with friends.
+Before you go, thank you for reading. If you found this interesting don't hesitate to share with friends.
 
 Happy hacking!
