@@ -32,7 +32,7 @@ pairElement("GCG");
 
 ## Understanding the Problem
 
-As you may have read in the challenge description above, the goal of this exercice is to return the missing trand into a 2d array.
+As you may have read in the challenge description above, the goal of this exercise is to return the missing trand into a 2d array.
 In biology class, we learned about DNA base pairs (need a refresher? [Wikipedia](https://en.wikipedia.org/wiki/Base_pair) is your friend). They are A - T and C - G, and they go both ways. So every time we have:
 
 * **A** string we return an array ['A', 'T']
