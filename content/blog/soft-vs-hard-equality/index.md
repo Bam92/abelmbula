@@ -1,5 +1,5 @@
 ---
-title: "Understanding JS: soft (==) vs hard equality (===)"
+title: "Understanding JS: Soft (==) vs Hard Equality (===)"
 date: "2020-01-02T22:23:03.284Z"
 description: "What are == and === in JavaScript?"
 ---
