@@ -1,10 +1,10 @@
 ---
 title: "Understanding JavaScript: Null vs Undefined"
 date: "2020-01-03T22:23:03.284Z"
-description: "Do you think they are the same? Follow me to in this tutorial and you'll see that they different"
+description: "Do you think they are the same? Follow me in this tutorial and you'll see that they are different"
 ---
 
-When you come across `null` and `undefined` you might be tempeted to think that they are just synonym. In this tutorial you'll discover that they are not. Let's go.
+When you come across `null` and `undefined` you might be tempted to think that they are just synonym. In this tutorial you'll discover that they are not. Let's go.
 
 ## Null
 
@@ -16,9 +16,9 @@ const myVar = null; // assign null to myVar
 console.log(myVar) // shows null
 ```
 
-In the example above, our variable (`myVar`) as been set to `null` and shows `null` in the console.  
+In the example above, our variable (`myVar`) has been set to `null` and shows `null` in the console.  
 
-The `typeof` `null` is  `object` (though this is an implementation error since the very begining of JavaScript)
+The `typeof` `null` is  `object` (though this is an implementation error since the very beginning of JavaScript)
 
 ```js
 console.log(typeof myVar) // shows object
@@ -50,7 +50,7 @@ const myObj = {
     age: 0
 };
 
-console.log(myVar.gender) // shows undefined
+console.log(myObj.gender) // shows undefined
 ```
 
 Same if you don't have an explicit return in a function
