@@ -339,4 +339,4 @@ pairElement("GCG");
   return arrDNA;
 }
 pairElement("GCG");
-```
+```Gh:B@m92
