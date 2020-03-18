@@ -208,7 +208,7 @@ pairElement("GCG");
 
 ## 4. Using Split and Map
 
-Let try to resolve using ```String.prototype.split()``` and ```Array.prototype.map()```. The first method (```split()```) is used to convert a string into an array. The ```map()``` method creates a new array with the results of calling a function for every array element.
+Let's try to resolve using ```String.prototype.split()``` and ```Array.prototype.map()```. The first method (```split()```) is used to convert a string into an array. The ```map()``` method creates a new array with the results of calling a function for every array element.
 
 ```javascript
 function pairElement(str) {
@@ -339,4 +339,10 @@ pairElement("GCG");
   return arrDNA;
 }
 pairElement("GCG");
-```Gh:B@m92
+```
+
+## Wrap up
+
+That is it for this tutorial. We have used five different ways to solve the DNA Pairing challenge that is available on FreeCodeCamp.
+
+Which of these solutions is fine for you? Do you have any other solutions? Share with us. Among all these solution if I have to chose just one, I'd go for the 3rd one that makes use of `for...of`.
