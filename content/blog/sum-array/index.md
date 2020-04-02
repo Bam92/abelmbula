@@ -223,3 +223,4 @@ In this tutorial we learned how to find the sum of an array of numbers. I showed
 There might be other ways of doing the same operaton that exist, feel free to share with us.
 
 I advice you not to go with `map` method for this problem as it is an anti-pattern. 
+
