@@ -1,7 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
+import Bio from "./bio"
 
 import { rhythm, scale } from "../utils/typography"
+
 
 class Layout extends React.Component {
   render() {
@@ -58,12 +60,13 @@ class Layout extends React.Component {
           marginRight: `auto`,
           maxWidth: rhythm(24),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          
         }}
       >
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-        
+        {Bio}
           <a href="https://www.twitter.com/abelmbula">twitter</a> 
         </footer>
       </div>

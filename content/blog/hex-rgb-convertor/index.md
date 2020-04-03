@@ -43,7 +43,7 @@ The output will be printed in the ```span``` element above after the user has su
 
 ## The Style with CSS Flex
 
-Let start by the body:
+Let's start by the body:
 
 ```css
 body {
@@ -52,7 +52,7 @@ body {
 }
 ```
 
-We use ```box-sizing: border-box``` because it  makes it much easier to size elements. ```margin: 0``` lets us occupy the whole viewpoint.
+We use ```box-sizing: border-box``` because it  makes it much easier to size elements. ```margin: 0``` let us occupy the whole viewpoint.
 
 Next, we style ```main``` element as a flex container with a height of ```45em```  as this...
 
@@ -86,7 +86,7 @@ The content is aligned in the column (```flex-direction: column```) and occupy a
 }
 ```
 
-For the text in the ```.main-child:last-child```, let use ```floralwhite``` for the color:
+For the text in the ```.main-child:last-child```, let's use ```floralwhite``` for the color:
 
 ```css
 .main-child:last-child p {
@@ -94,7 +94,7 @@ For the text in the ```.main-child:last-child```, let use ```floralwhite``` for 
 }
 ```
 
-To finish, let add some style to the ```:first-child``` of ```.main-child``` class.
+To finish, let's add some style to the ```:first-child``` of ```.main-child``` class.
 
 ```css
 .main-child:first-child input[type="text"] {

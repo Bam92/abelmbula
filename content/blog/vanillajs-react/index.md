@@ -98,7 +98,7 @@ The second parametor is an object containing properties (aka 'props' in React te
 
 The last argument is the children of the component. This can be a string as in our example or a reference to another component.
 
-NOw that we have our element created, we can render it to the page using `ReactDOM.render()`. It takes two parametors. The first one is what we want to render (`childElt` in our case), and the last on is the target DOM node to render things into (`rootElt` here). 
+Now that we have our element created, we can render it to the page using `ReactDOM.render()`. It takes two parametors. The first one is what we want to render (`childElt` in our case), and the last on is the target DOM node to render things into (`rootElt` here). 
 
 ```html
 <body>
