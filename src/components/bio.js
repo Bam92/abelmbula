@@ -38,9 +38,9 @@ const Bio = () => {
         display: `flex`,
         marginBottom: rhythm(2.5),
       }}
-    >
-      
+    >      
       {author}
+      {/* {social.twitter} */}
     </div>
   )
 }

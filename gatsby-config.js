@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `abelmbula`,
-    author: `Abel L Mbula`,
-    description: `I write about JavaScript ecosystem and software developement`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Abel L. Mbula`,
+    author: `Abel L. Mbula`,
+    description: `Hi, I'm Abel L. Mbula. I write software and help people`,
+    bio: `Software Engeneer and CS Teacher. He spends much of his time contributiong to FLOSS and helping beginners.
+    If you think this is great and shoud continue, consider supporting him.`,
+    // siteUrl: ``,
     social: {
       twitter: `abelmbula`,
     },
