@@ -67,7 +67,6 @@ class Layout extends React.Component {
         <main>{children}</main>
         <footer>
         {Bio}
-          <a href="https://www.twitter.com/abelmbula">twitter</a> 
         </footer>
       </div>
     )
