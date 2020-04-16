@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 
 import Container from "../components/container" 
 import Profession from "../components/work"
+import Footer from "../components/Footer"
 import "./index.css"
 
 export default ({data}) => (
@@ -22,8 +23,12 @@ export default ({data}) => (
                  margin: `0`
 
              }}>
-                 <li><a href="https://twitter.com/abelmbula">Twitter</a> / </li>
-                 <li> <a href="https://www.linkedin.com/in/abel-lifaefi-mbula-8371087b/"> LinkedIn</a> /</li>
+                 <li><a href="https://twitter.com/abelmbula">Twitter</a> 
+                    <span className="separator">/</span> 
+                 </li>
+                 <li> <a href="https://www.linkedin.com/in/abel-lifaefi-mbula-8371087b/"> LinkedIn</a> 
+                    <span className="separator">/</span> 
+                 </li>
                  <li><a href="https://github.com/Bam92">GitHub</a></li>
 
              </ul>
@@ -49,6 +54,10 @@ export default ({data}) => (
              </ul>
 
          </section>
+
+         <footer>
+             <Footer />
+         </footer>
          
     </Container>
  
