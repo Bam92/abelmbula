@@ -3,7 +3,7 @@ const ghPages = require("gh-pages")
 ghPages.publish(
     'public',
     {
-      branch: 'develop',
+      branch: 'master',
       repo: 'https://github.com/Bam92/abelmbula.git',
     },
     (err) => {
