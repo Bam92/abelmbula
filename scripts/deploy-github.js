@@ -6,8 +6,9 @@ ghPages.publish(
       branch: 'develop',
       repo: 'https://github.com/Bam92/abelmbula.git',
     },
-    () => {
-      console.log('Deploy Completed!')
+    (err) => {
+      if(err) console.error(err)
+      else console.log('Deploy Completed!')
     }
   )
 
