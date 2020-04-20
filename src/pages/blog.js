@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Header from "../components/header"
 import Container from "../components/container" 
 
 export default () => (
@@ -9,8 +8,7 @@ export default () => (
         <Container>
             <Link to="/">Abel L. Mbula</Link>
 
-            <div>Articles will be here</div>
-            <Header  headerTxt="blog"/>
+            <div>The content for this page isn't ready yet. <span role="img">🤷‍♂️</span></div>
         </Container>
     </>
 )
