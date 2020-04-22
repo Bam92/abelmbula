@@ -19,32 +19,3 @@ export default () => {
         </>
     )
 }
-
-
-// export default () => {
-//     const { data } = useStaticQuery(graphql`
-//         query WorkQuery {
-//             allWorkJson {
-//                 edges {
-//                     node {
-//                         position
-//                         company
-//                         description
-//                     }
-//                 }
-//             }
-//         }
-//     `)
-
-//      return (
-//          <>
-//          const {data} = data.allWorkJson.edges
-//          {data.map(({ node }) => {
-//              return (<h2> { node.position }</h2>) 
-//              )}
-//              </>
-//              )
-//          }        
-      
-
-   

@@ -1,0 +1,27 @@
+[
+    {
+        "image": "../images/covid-monitor.png",
+        "title": "Covid-19 monitor",
+        "description": "This app is built with Angular 9 to track COVID-19 desease for the whole world",
+        "link": "https://bam92.github.io/insure/index.html"
+    },
+    {
+        "image": "../images/insure-landing.png",
+        "title": "Insure landing page",
+        "description": "Used pure CSS to design this landing page that's responsive ",
+        "link": "https://bam92.github.io/insure/index.html"
+    },
+    {
+        "image": "../images/site-abel.png",
+        "title": "My personal site",
+        "description": "Use Gatsby to build personal website",
+        "link": "https://bam92.github.io/insure/index.html"
+    },
+    {
+        "image": "../images/server-api.png",
+        "title": "API Server",
+        "description": "Built the backend of the frontend app  with Node and many packages including JWT",
+        "link": "https://github.com/Bam92/teamwork#links"
+    }
+    
+]

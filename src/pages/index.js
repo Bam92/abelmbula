@@ -1,8 +1,9 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Container from "../components/container" 
 import Profession from "../components/work"
+import Projects from "../components/projects"
 import Footer from "../components/Footer"
 import "./index.css"
 
@@ -47,10 +48,14 @@ export default ({data}) => (
             
          </section>
          <section>
-             <h1>- Projects</h1>
+             <h1>- Selected Projects</h1>
 
-             <ul>
-                 <li><Link to="#">Coming soon...</Link></li>
+             <ul 
+                style={{
+                    marginTop:`2.5em`
+                }}
+             >
+                <li><Projects /></li>
              </ul>
 
          </section>
