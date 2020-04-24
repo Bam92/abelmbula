@@ -45,6 +45,7 @@ export default ({data}) => (
          <section>
              <h1>- Work</h1>
              <ul><li><Profession /></li></ul>
+             
             
          </section>
          <section>
@@ -57,6 +58,15 @@ export default ({data}) => (
              >
                 <li><Projects /></li>
              </ul>
+
+                {/* A call to action for more projects or lab */}
+             <div>
+                 <p>
+                     Need more real world projects? Drop me a line  
+                     <a href='/contact'> here</a> or visit my <a href='/lab'>lab</a> where I 
+                     built software for or with my students
+                 </p>
+             </div>
 
          </section>
 
