@@ -7,7 +7,7 @@ description: "How to display 'Hello World' on the UI using React library"
 
 You know vanilla JavaScript like no one in the world, and you are so confident that you can do whatever you want on the DOM with only pure JS. No need of a framework or a library. Yeah?
 
-Let's do a tour and see if your "commitment" of JS world will still be the same. In this tutorial, we will display the string **Hello Wolrd** to the UI using both your very loved vanilla JS and React, a new library I want to try when it comes to work with the view (UI).`
+Let's do a tour and see if your "commitment" of JS world will still be the same. In this tutorial, we will display the string **Hello Wolrd** to the UI using both your very loved vanilla JS and React, a new library I want to try when it comes to work with the view (UI).
 
 Before diving in dept, let's say something about React.
 
@@ -21,19 +21,25 @@ That is it. React is what it claims to be, the **view (V)** in a MVC architectur
 
 It's OK. But is React worth of learning? You can ask. This question takes me to the *Why* section.
 
-There are many reasons out there for why you might give React a try. 
+There are many reasons out there for why you might give React a try. Let's discuss some of them that I find important. 
 
-When it comes to building app you need the right tools to do the right job. If you're working on front end stuffs in this modern Web, React is right for you. It is fast (thanks to its virtual DOM). If you are looking for a way to gain in performance for your apps, you should give React a try. It is easy to learn and integrate to an existing app. If you are thinking of the learning curve how to migrate your existing code base, know that React was built in a way that it can be easy to introduce it in existing Facebook app. It is so popular, backed by Facebook (I am not paid by them) and adopted by many big companies (Instagram, Dropbox). If you're looking front-end jobs, Reack skill is a must-have. 
+When it comes to building app you need the right tools to do the right job. 
 
-Let's now start our tour.
+* If you're working on front end stuffs in this modern Web, React is right for you. It is fast (thanks to its virtual DOM). 
+* If you are looking for a way to gain in performance for your apps, you should give React a try. It is easy to learn and integrate to an existing app. 
+* If you are thinking of the learning curve how to migrate your existing code base, know that React was built in a way that it can be easy to introduce it in existing Facebook app. 
+* React is so popular. It is backed by Facebook (I am not paid by them :)) and adopted by many tech giants (Instagram, Dropbox). 
+* If you're looking for front-end jobs, Reack skill is a must-have. 
+
+Are you a bit conviced? If so, let's now start our tour.
 
 ## #Displaying "Hello World" on the DOM
 
-We are not going to build something big. We only want to display the traditional "Hello world" starting with how you do it in vanilla JS and how you can do it now in React.
+We are not going to build something big today. We only want to display the traditional "Hello world" starting with how you do it in vanilla JS and how you can do it now in React.
 
 ### The vanilla JS way
 
-I can't teach you anything here, you are the JS ninja.
+I can't teach you anything here, you are the JS ninja. :)
 
 Let's create a simple `div` in `HTML` and use JS to append `Hello World`.
 
@@ -60,7 +66,7 @@ Now is the time to try React.
 
 ### The React way
 
-React and it realated tools are `npm` packages. It means that you need a `CLI` (command line interface) tool to work with it. But for sake of simplicity, we'll use a service called `unpackage.com`. This service is a CDN (content delivery network) for everything on `npmjs.com`. It will provide us with a file of the package we need, that we'll later add on our page in a script tag.
+React and its realated tools are `npm` packages. It means that you need a `CLI` (command line interface) tool to work with it. But for sake of simplicity, we'll use a service called `unpackage.com`. This service is a CDN (content delivery network) for everything on `npmjs.com`. It will provide us with a file of the package we need, that we'll later add on our page in a script tag.
 
 To work with React we need two packages:
 
@@ -164,7 +170,7 @@ https://codepen.io/bam92/pen/vYOMogy
 
 Let's move to the next level in our React journey: `JSX` syntax.
 
-### Write React code like a pro: use JSX syntax
+## #Write React code like a pro: use JSX syntax
 
 `JSX` stands for `JavaScript + XML`. It is written like this `const divElt = <div>Hello World</div>;`. Don't think of it as `HTML` but as a kind of template language with the full power of JavaScript.
 
