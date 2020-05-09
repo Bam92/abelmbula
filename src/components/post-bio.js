@@ -15,7 +15,7 @@ import { rhythm } from "../utils/typography"
 const PostBio = () => {
   const data = useStaticQuery(graphql`
     query PostBioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/abel-profile.png/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
@@ -46,31 +46,28 @@ const PostBio = () => {
     >      
       <div
         style={{
-          // display: `flex`,   
+          display: `flex`,   
         }}>
+        <div>
         <Img 
         style={{
-          width: '4.5em',
-          height: '4.5em',
+          width: '5em',
+          height: '5em',
           borderRadius: '50%',
           marginRight: '1em'
         }}
         fixed={data.avatar.childImageSharp.fixed} alt="me in picture" />
-        <div
-        style={{
-          // border: '2px solid red'
-        }}
-        >
+        </div>
+        <div>
           <strong>{author} </strong>  is a {bio}
           {/* add buy me a coffe and patron buttons here */}
           <div 
           style={{
-            // border: '2px solid red'
             marginTop: '1em'
           }}
           >
-            <button>Bye him a coffee</button>
-            <button>Become a Patron</button>
+            {/* <button>Bye him a coffee</button>
+            <button>Become a Patron</button> */}
           </div>
         </div>
       </div>
