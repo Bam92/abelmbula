@@ -40,7 +40,7 @@ const Bio = () => {
       }}
     >      
       {author}
-      {/* {social.twitter} */}
+      {social.twitter}
     </div>
   )
 }

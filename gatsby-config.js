@@ -2,27 +2,26 @@ module.exports = {
   siteMetadata: {
     title: `Abel L. Mbula`,
     author: `Abel L. Mbula`,
-    description: `Hi, I'm Abel L. Mbula. I write software and help people`,
-    bio: `Software Engeneer and CS Teacher. He spends much of his time contributiong to FLOSS and helping beginners.
-    If you think this is great and shoud continue, consider supporting him.`,
-    siteUrl: ``,
-    social: {
+      social: {
       twitter: `abelmbula`,
     },
+    bio: `Software Engeneer and CS Teacher. He spends much of his time contributiong to FLOSS and helping beginners.
+    If you think this is great and shoud continue, consider supporting him.`,
+    description: `Hi, I'm Abel L. Mbula. I write software and help people`,
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
         name: `blog`,
+        path: `${__dirname}/content/blog`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
         name: `assets`,
+        path: `${__dirname}/content/assets`,
       },
     },
     {
