@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Abel L. Mbula`,
     author: `Abel L. Mbula`,
+    siteUrl: `http://abelmbula.com`,
     social: {
       twitter: `abelmbula`,
     },
-    siteUrl: `www.abelmbula.com`,
     bio: `Software Engeneer and CS Teacher. He spends much of his time contributiong to FLOSS and helping beginners.
     If you think this is great and shoud continue, consider supporting him.`,
     description: `Hi, I'm Abel L. Mbula. I write software and help people`,
