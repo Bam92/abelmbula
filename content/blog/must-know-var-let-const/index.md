@@ -1,6 +1,6 @@
 ---
 title: Five Things you Should Know (by Heart) about var, let, and const in JavaScript
-date: "2020-14-05T22:23:03.284Z"
+date: "2020-05-14T22:23:03.284Z"
 description: "A simple recal about var, let, and const JS key-word "
 ---
 Today, I want to refresh our memory with some basic notions about `var`, `let`, and `const`; the keywords we use almost every day when we are coding our software in JavaScript.
