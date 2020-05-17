@@ -23,7 +23,7 @@ There are many data that the browser may keep for us:
 * Bookmarks,
 * Passwords,
 * Cookies,
-* Histrories,
+* Histrory,
 * etc.
 But in this article, I am going to focus on the first two (bookmarks and passwords).
 
@@ -65,7 +65,7 @@ You can enjoy browsing with your new Browser as I did.
 
 ## Closing Notes
 
-If you want to use a new computer or browser, you don't have to worry about your browser (bookmarks, passwords...). The only thing you have to do is to export your data from the old browser and then import them in the new browser.
+If you want to use a new computer or browser, you don't have to worry about your browser data (bookmarks, passwords...). The only thing you have to do is to export your them from the old browser and then import them in the new browser.
 
 Make sure you keep your exported data in a safe place. I'd suggest to to delete after use.
 
