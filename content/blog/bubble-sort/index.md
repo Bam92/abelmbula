@@ -89,11 +89,11 @@ I always see it a good way to write my thinking of an algorithm in plain English
 function bubbleSort(arr)
 Set isSwapped to true
 WHILE isSwapped = true
-    Set isSwapped to false
+    Reset isSwapped to false
     FOR each item in the arr
         IF current item > next item
             swap items
-            Set isSwapped to true
+            Reset isSwapped to true
         ENDIF
     ENDFOR
 ENDWHILE
