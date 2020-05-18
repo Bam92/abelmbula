@@ -6,7 +6,7 @@ description: "A quick introduction on bubble sort algorithm"
 
 As some of you know, I am runnig a [challenge](https://twitter.com/abelmbula/status/1260575365162041350) that consists of writing a blog post everyday (plus other activities) for the next 100 days.
 
-For today (day / 100), I want to share with you about **Bubble Sort Algorithm** and how to implement it in JavaScript language.
+For today (day 4 / 100), I want to share with you about **Bubble Sort Algorithm** and how to implement it in JavaScript language.
 
 Let's go!
 
