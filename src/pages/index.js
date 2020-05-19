@@ -1,8 +1,10 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Container from "../components/container" 
 import Profession from "../components/work"
+import Projects from "../components/projects"
+import Footer from "../components/Footer"
 import "./index.css"
 
 export default ({data}) => (
@@ -22,8 +24,12 @@ export default ({data}) => (
                  margin: `0`
 
              }}>
-                 <li><a href="https://twitter.com/abelmbula">Twitter</a> / </li>
-                 <li> <a href="https://www.linkedin.com/in/abel-lifaefi-mbula-8371087b/"> LinkedIn</a> /</li>
+                 <li><a href="https://twitter.com/abelmbula">Twitter</a> 
+                    <span className="separator">/</span> 
+                 </li>
+                 <li> <a href="https://www.linkedin.com/in/abel-lifaefi-mbula-8371087b/"> LinkedIn</a> 
+                    <span className="separator">/</span> 
+                 </li>
                  <li><a href="https://github.com/Bam92">GitHub</a></li>
 
              </ul>
@@ -39,16 +45,34 @@ export default ({data}) => (
          <section>
              <h1>- Work</h1>
              <ul><li><Profession /></li></ul>
+             
             
          </section>
          <section>
-             <h1>- Projects</h1>
+             <h1>- Selected Projects</h1>
 
-             <ul>
-                 <li><Link to="#">Coming soon...</Link></li>
+             <ul 
+                style={{
+                    marginTop:`2.5em`
+                }}
+             >
+                <li><Projects /></li>
              </ul>
 
+                {/* A call to action for more projects or lab */}
+             <div>
+                 <p>
+                     Need more real world projects? Drop me a line  
+                     <a href='/contact'> here</a> or visit my <a href='/lab'>lab</a> where I 
+                     built software for or with my students
+                 </p>
+             </div>
+
          </section>
+
+         <footer>
+             <Footer />
+         </footer>
          
     </Container>
  

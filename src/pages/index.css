@@ -1,4 +1,5 @@
-section {
+section,
+footer {
     margin-top: 5.5em;
 }
 
@@ -16,6 +17,12 @@ section h3 {
     margin-top: .5em;
 }
 
-section ul {
+section ul,
+footer ul {
     list-style: none;
+}
+
+/* Link separator / style */
+.separator {
+    margin: 0 .4em;
 }
