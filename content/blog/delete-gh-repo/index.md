@@ -8,7 +8,7 @@ When learning Git and GitHub, you create so many repos just for a test. Once you
 
 Let's go step by step!
 
-1. Login to [https://github.com/](Github)
+1. Login to [Github](https://github.com/)
 2. Open the repo you want to delete
 3. Click Setting tab (the last on the right)
 4. Scroll down till the `Danger zone` (you have read well, Danger zone) 

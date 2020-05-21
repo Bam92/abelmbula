@@ -136,6 +136,6 @@ Bubble sort is a very simple sorting algorithm but it is too slow. You'll almost
 Note that I did not reinvent the wheel, references are there (see down)
 
 ## References
-* [Bubble Sort Algorithm](https://www.studytonight.com/data-structures/bubble-sort)
-* [Bubble sort on Wikipedia](https://en.wikipedia.org/wiki/Bubble_sort)
-* [Javascript Algorithms — Bubble Sort](https://medium.com/javascript-algorithms/javascript-algorithms-bubble-sort-3d27f285c3b2)
+1. [Bubble Sort Algorithm](https://www.studytonight.com/data-structures/bubble-sort), studytonight.com
+2. [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort), Wikipedia
+3. [Javascript Algorithms — Bubble Sort](https://medium.com/javascript-algorithms/javascript-algorithms-bubble-sort-3d27f285c3b2), medium.com
