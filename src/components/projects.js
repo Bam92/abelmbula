@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import { useProjectsData } from "../hooks/use-projects"
 import "./projects.css"
