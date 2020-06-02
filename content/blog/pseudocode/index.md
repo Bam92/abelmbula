@@ -1,19 +1,23 @@
 ---
 title: How I Write my Pseudocode
 date: "2020-05-18T22:23:03.284Z"
-description: "A quick introduction on how you can write pseudocode"
+description: "A quick introduction on how you can write your own pseudocode"
 ---
 
 I am working a lot on algorithms nowadays, and I find it easy to use pseudocode to express my thinking on a given algorithm. So, I have decided to share with you on that topic.
 
-## Please man tell me, is pseudocode a new language by Facebook or Google?
-I new that you could ask this question. To answer quickly to your question, I'd say that it is not all a language, so nothing with GAFAM here.
+## Intro to Pseudocode
+> Please man tell me, is pseudocode a new language by Facebook or Google?
+
+I knew that you could ask the question above, so I have prepared a simple answer for you. Read down.
+
+To answer quickly to your question, I'd say that it is not all a language, so nothing with GAFAM here.
 
 Let's hear what Wikipedia says about it:
 
 >  an informal high-level description of the operating principle of a computer program or other algorithm. It uses the structural conventions of a normal programming language, but is intended for human reading rather than machine reading.
 
-In short, pseudocode is just the resolution of an algorithm writen in plain English.
+In short, pseudocode is just the resolution of an algorithm writen in plain English (I mean in a human language: french, chinese, lingala...).
 
 ## Benefits
 There are many benefit out there for you to use pseudocode. Let's me cite some that I know (you may complete me if you have others):
@@ -93,3 +97,9 @@ Don't be astonished to see pseudocode follows the format of a given language. A 
 * Etc. 
 
 And you? Can you share with us your pseudocode? 
+
+## Closing Notes
+
+A pseudocode is a plain English (or other language) written process of how you can proceed to resolve an algorithm or any givem computer problem.
+
+There's no formal rule at all, it's all depend upon your personal style or schools or entreprise. The most important thing is consistency in your chosen style. You can make use of key-word as `Do While...EndDo`, `If...Endif`, `Return`.
