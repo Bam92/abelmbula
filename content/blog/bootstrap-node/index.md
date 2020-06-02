@@ -114,8 +114,11 @@ app.listen(5000, () => {
 ```
 Thanks to `express.static()` we are able to serve up `Bootstrap` without any difficulty.
 
+Now we can make use of `Bootstrap` in our `HTML` pages by just linking to it as `<link rel="stylesheet" href="./css/bootstrap.min.css">`. 
+
 ## Conclusion
 
 In this article we learned how to integrate `Bootstrap` in our `Nodejs` project in two different ways. The first way is to use official `CDN` and the last one to use `npm`. This last solution is suitable if you're working locally (and offline).
 
 Do you have another you to work with Bootstrap in a Node project? Share with us!
+
