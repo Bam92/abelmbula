@@ -8,7 +8,11 @@ With just a little knowledge of HTML, CSS, and JavaScript (JS), you can create s
 
 ## What are we building?
 
-As you may have read in the title, the app you'll build at the end of this lesson takes a hex (short for hexadecimal) color (e.g **#457a7a**) as input and returns an rgb equivalent as output (**rgb(69,122,122)**). Let call it **RGBizer**. Also, we will use the submitted color as a background on the right side of the page, and as the color for the RGB text. You can see the finished app https://codepen.io/bam92/pen/QWwOMYR.
+As you may have read in the title, the app you'll build at the end of this lesson takes a hex (short for hexadecimal) color (e.g **#457a7a**) as input and returns an rgb equivalent as output (**rgb(69,122,122)**). 
+
+Let call our app **RGBizer App**. As a bonus feature, the submitted color will be the background color on the right side of the page, and as the color for the RGB text. 
+
+You can see the finished app https://codepen.io/bam92/pen/QWwOMYR.
 
 We will be building our app in two parts. This is the first one, and it is focusing on HTML and CSS.
 
