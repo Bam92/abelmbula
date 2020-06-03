@@ -28,7 +28,7 @@ class Layout extends React.Component {
             }}
             to={`/`}
           >
-            {title}
+            {/* {title} */}
           </Link>
         </h1>
       )
@@ -43,12 +43,13 @@ class Layout extends React.Component {
           <Link
             style={{
               boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
+              // textDecoration: `none`,
+              // color: `inherit`,
             }}
             to={`/`}
+            title={`See all post by Abel`}
           >
-            {title}
+            Home
           </Link>
         </h3>
       )
