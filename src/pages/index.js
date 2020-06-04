@@ -5,16 +5,18 @@ import Container from "../components/container"
 import Profession from "../components/work"
 import Projects from "../components/projects"
 import Footer from "../components/Footer"
+import Menu from "../components/verticalMenu"
+
 import "./index.css"
 
 export default ({data}) => (
-    <>
+    <div>
       <Container>
-         <header>
+         <header id="intro">
              <h1>Hello, I'm {data.site.siteMetadata.firstName} 👋</h1>
              <h2>a {data.site.siteMetadata.title}</h2>
              <p style={{
-                 marginBottom: `1.5em`
+                marginBottom: `1.5em`
              }}>
                 {data.site.siteMetadata.description}
              </p>
@@ -42,14 +44,12 @@ export default ({data}) => (
                  <li><Link to="#">Hello World</Link></li>
              </ul> */}
 
-         </section>
-         <section>
+         </section> 
+         <section id="work">
              <h1>- Work</h1>
-             <ul><li><Profession /></li></ul>
-             
-            
+             <ul><li><Profession /></li></ul>             
          </section>
-         <section>
+         <section id="projects">
              <h1>- Selected Projects</h1>
 
              <ul 
@@ -76,8 +76,8 @@ export default ({data}) => (
          </footer>
          
     </Container>
- 
-    </>
+      <Menu />  
+    </div>
 )
 
 export const query = graphql`
