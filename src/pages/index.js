@@ -13,6 +13,12 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <p>
+          <a href={`https://bam92.github.io/abelmbula/`} 
+          style={{textAlign: `right`}}>
+            Visit my Internet home
+          </a>
+        </p>
         <SEO title="All posts" />
         <h3>Great Articles by Abel</h3>
         {posts.map(({ node }) => {
