@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Container from "../components/container" 
 import Profession from "../components/work"
@@ -34,14 +34,15 @@ export default ({data}) => (
 
              </ul>
          </header>
-         {/* <section>
-             <h1>- Blog</h1>
+         <section>
+           You can read my Blog posts <Link to="/blog">here</Link>
+             {/* <h1>- Blog</h1>
 
              <ul>
                  <li><Link to="#">Hello World</Link></li>
-             </ul>
+             </ul> */}
 
-         </section> */}
+         </section>
          <section>
              <h1>- Work</h1>
              <ul><li><Profession /></li></ul>

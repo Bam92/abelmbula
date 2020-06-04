@@ -1,0 +1,9 @@
+article a:hover {
+    color: #1ca086; ;
+    
+    
+}
+
+article a {
+    text-decoration: none !important;
+}
