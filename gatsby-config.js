@@ -10,11 +10,13 @@ module.exports = {
     lastName: "L. Mbula",   
     title: "software engeneer and CS instructor" ,
     description: "I write quality software and help people getting started in the software industry. For me, code is poetry and I put all my effort to make it look \"good\".",
+    siteUrl: "http://abelmbula.com",
     bio: `Software Engeneer and CS Instructor. He spends much of his time contributiong to FLOSS and helping beginners.
     If you think this is great and shoud continue, consider supporting him.`,
     twitter: "",
     linkedin: "",
-    github: ""
+    github: "",
+    
     
   },
   plugins: [

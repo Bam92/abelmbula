@@ -37,7 +37,7 @@ export default ({data}) => (
              </ul>
          </header>
          <section>
-           You can read my Blog posts <Link to="/blog">here</Link>
+           You can read my Blog posts <Link to="blog">here</Link>
              {/* <h1>- Blog</h1>
 
              <ul>
