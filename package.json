@@ -1,9 +1,10 @@
 {
   "name": "abelmbula-app",
   "private": true,
-  "description": "My personal site",
+  "description": "My Internet Home",
   "version": "0.1.0",
   "license": "MIT",
+  "author": "Abel",
   "scripts": {
     "deploy:github": "npm run build && node ./scripts/deploy-github",
     "build": "gatsby build",

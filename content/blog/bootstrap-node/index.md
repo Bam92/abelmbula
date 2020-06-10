@@ -1,5 +1,4 @@
 ---
-slug: "/blog/my-first-post"
 title: How to Add Bootstrap to your Nodejs Project
 date: "2020-05-26T22:23:03.284Z"
 description: "Getting started with Nodejs and Bootstrap"
@@ -11,6 +10,8 @@ Let's create a simple app that contains the text `Hello the World` in a Bootstra
 
 ## The Initial Project
 Create a simple Node project like the one below.
+
+![Project Tree](project-tree.png)
 
 Nothing tricky here. Create a folder for your project and initialise it as Node project, `npm init -y`. Create the server file, `app.js` (`touch app.js`) and other directories (`mkdir views`).
 
@@ -120,3 +121,4 @@ Now we can make use of `Bootstrap` in our `HTML` pages by just linking to it as 
 In this article we learned how to integrate `Bootstrap` in our `Nodejs` project in two different ways. The first way is to use official `CDN` and the last one to use `npm`. This last solution is suitable if you're working locally (and offline).
 
 Do you have another you to work with Bootstrap in a Node project? Share with us!
+

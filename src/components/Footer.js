@@ -10,7 +10,7 @@ export default () => {
                 <li><Link to="/">Abel L. Mbula</Link> 
                     <span className="separator">/</span>
                 </li>
-                <li><Link to="./blog">Blog</Link></li>
+                <li><Link to="/blog">Blog</Link></li>
             </ul>
         </>
     )
