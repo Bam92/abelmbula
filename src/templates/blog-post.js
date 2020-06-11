@@ -19,15 +19,15 @@ class BlogPostTemplate extends React.Component {
         />
         <article>
           <header>
-            <h1
+            <h2
               style={{
                 marginTop: rhythm(1),
                 marginBottom: 0,
-                fontSize: `2.5em`,
+                fontSize: `2.0em`,
               }}
             >
               {post.frontmatter.title}
-            </h1>
+            </h2>
             <p
               style={{
                 ...scale(-1 / 5),

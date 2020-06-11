@@ -34,7 +34,12 @@ module.exports = {
 
   },
   plugins: [
-    
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `tomato`
+      }
+    },    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
