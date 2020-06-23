@@ -2,6 +2,7 @@
 title: How to Get the Sum of an Array in JavaScript
 date: "2020-01-10T22:23:03.284Z"
 description: "How to compute a single value from an array"
+published: true
 ---
 
 

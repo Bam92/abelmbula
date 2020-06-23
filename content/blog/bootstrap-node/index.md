@@ -2,9 +2,10 @@
 title: How to Add Bootstrap to your Nodejs Project
 date: "2020-05-26T22:23:03.284Z"
 description: "Getting started with Nodejs and Bootstrap"
+published: true
 ---
 
-If you're building apps with Nodejs and feel like you need a tool to help you inhence the UI, this article is for you. It will guide you step by step on how you can add `Bootstrap` to your `Nodejs`.
+If you're building apps with Nodejs and feel like you need a tool to help you enhance the UI, this article is for you. It will guide you step by step on how you can add `Bootstrap` to your `Nodejs`.
 
 Let's create a simple app that contains the text `Hello the World` in a Bootstrap `jumbotron`.
 
@@ -13,7 +14,7 @@ Create a simple Node project like the one below.
 
 ![Project Tree](project-tree.png)
 
-Nothing tricky here. Create a folder for your project and initialise it as Node project, `npm init -y`. Create the server file, `app.js` (`touch app.js`) and other directories (`mkdir views`).
+Nothing tricky here. Create a folder for your project and initialize it as Node project, `npm init -y`. Create the server file, `app.js` (`touch app.js`) and other directories (`mkdir views`).
 
 Let's install `express` to configure a lightweight Node server.
 
@@ -45,7 +46,7 @@ Start your server (`node app.js`) and see if everything is OK. If so, let's movi
 
 The first solution I'd suggest you here is to use a CDN. Here's how you can do it.
 
-Go [here](https://getbootstrap.com/docs/4.5/getting-started/introduction/#quick-start) to copy Bootstrap CSS and and eventually additional JS and paste them in your index file.
+Go [here](https://getbootstrap.com/docs/4.5/getting-started/introduction/#quick-start) to copy Bootstrap CSS and eventually additional JS and paste them in your index file.
 
 ### Using a CDN
 

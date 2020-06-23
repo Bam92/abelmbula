@@ -2,6 +2,7 @@
 title: "Understanding JS: Soft (==) vs Hard Equality (===)"
 date: "2020-01-02T22:23:03.284Z"
 description: "What are == and === in JavaScript?"
+published: true
 ---
 
 We often need to compare values when we are programming. To check for equality in JavaScript, there are more than one way of doing it. You can use either a double equals operator, ==, aka "soft equality" or the triple equals operator, ===, aka "hard equality".

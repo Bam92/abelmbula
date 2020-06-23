@@ -2,6 +2,7 @@
 title: "Understanding JavaScript: Null vs Undefined"
 date: "2020-01-03T22:23:03.284Z"
 description: "Do you think they are the same? Follow me in this tutorial and you'll see that they are different"
+published: true
 ---
 
 When you come across `null` and `undefined` you might be tempted to think that they are just synonym. In this tutorial you'll discover that they are not. Let's go.

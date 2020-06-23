@@ -2,17 +2,18 @@
 title: How to Export/Import Browser Data from One Computer to an other with Chrom(ium)
 date: "2020-05-16T22:23:03.284Z"
 description: "Import your bookmarks, passwords with easy"
+published: true
 ---
 Today, I want to share with you some tips I use to have my browser data when I switch to a new computer.
 
-A litle bit about my browsers use: I was using Firefox and Chromium for a longtime. I have abandonned firefox to only use chromium. In a recent computer I only use Chromium. But, I want to give chrome a try. I am not at all comfortable with the browsers `sync` functionality.
+A little bit about my browsers use: I was using Firefox and Chromium for a longtime. I have abandoned firefox to only use chromium. In a recent computer I only use Chromium. But, I want to give chrome a try. I am not at all comfortable with the browsers `sync` functionality.
 
 The experience I'm about to share with you here conceerns taking all my data from my `Chromium` to my newly installed `Chrome`.
 
 First, what is Chrome and what is Chromium? If you wondering about it, read the next section. If not, jump it.
 
 ## Chrome or chromium?
-Symply speaking, they are two different browsers. `Chrome`, or `Google Chrome`, is a `propriatary software` by Google built based on `Chromium` which is a free and open source project from Google too. Chrome has more features than Chromium. Chromium is also the source base for some other browsers such as `Microsoft Edge`, `Opera`, and `Amazon Silk`. 
+Simply speaking, they are two different browsers. `Chrome`, or `Google Chrome`, is a `propriatary software` by Google built based on `Chromium` which is a free and open-source project from Google too. Chrome has more features than Chromium. Chromium is also the source base for some other browsers such as `Microsoft Edge`, `Opera`, and `Amazon Silk`. 
 
 After this simple refresher, let's now start by exporting data.
 
@@ -23,7 +24,7 @@ There are many data that the browser may keep for us:
 * Bookmarks,
 * Passwords,
 * Cookies,
-* Histrory,
+* History,
 * etc.
 But in this article, I am going to focus on the first two (bookmarks and passwords).
 
@@ -32,7 +33,7 @@ Open your browser (Chromium), got to the menu button (top right) --> Bookmarks -
 
 ![Bookmarks Manager](bookmarks-mngr.png "Bookmarks Manager")
 
-In the Bookmarks Manager, click the three dots on top right and `Export bookmarks` in the location of your choice (make sure you don't forget it as you'll need it in order to import)
+In the Bookmarks Manager, click the three dots on the top right and `Export bookmarks` in the location of your choice (make sure you don't forget it as you'll need it in order to import)
 
 ![Export bookmarks](export-bookmarks.png "Export bookmarks")
 

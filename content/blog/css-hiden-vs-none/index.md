@@ -2,12 +2,13 @@
 title: "Understanding CSS: visibility hidden vs display none"
 date: "2020-01-01T22:23:03.284Z"
 description: "All these two properties are used to hide content on the page, let see how they are different"
+published: true
 ---
 
 When it comes to hide HTML content to the client, we have two main techniques in CSS: ```visibility: hidden``` and ```display: none```. Some people think they are just synonyms, others are just confused and don't know which one to use in which case. Let make things clear in this tutorial.
 
 These two rules are not synonyms, no. 
-* ```visibility: hidden``` means that the element won't be visible but the space is allocated for it in the page. In the other words, the element is hidden from the view but not the page flow, leaving space for it on the page.
+* ```visibility: hidden``` means that the element won't be visible but space is allocated for it in the page. In other words, the element is hidden from the view but not the page flow, leaving space for it on the page.
 *  ```display: none``` unlike the first one, this CSS rule means the element will not appear on the page at all. In this case the tag is removed from the normal flow of the page, allowing other elements to fill in.
 
 >In one word, in ```visibility: hidden``` the space is allocated but in ```display: none``` no space allocated. 

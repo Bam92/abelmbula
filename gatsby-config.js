@@ -5,7 +5,6 @@
 
 module.exports = {
   siteMetadata: {
-
     author: "Abel",
     firstName: "Abel",
     lastName: "L. Mbula",   

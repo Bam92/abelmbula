@@ -2,6 +2,7 @@
 title: How to Solve "Confirm the Ending" Algorithm
 date: "2020-05-20T22:23:03.284Z"
 description: "My FCC resolution for Confirm the Ending algorithm challenge"
+published: true
 ---
 
 Today, I spent a little time working on this FreeCodeCamp algorithm challenge. So, I decided to share my solution with you in case you might need or be stuck somewhere in your resolution.

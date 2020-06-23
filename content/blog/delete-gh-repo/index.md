@@ -2,6 +2,7 @@
 title: How to Delete a GitHub Repo
 date: "2020-05-19T22:23:03.284Z"
 description: ""
+published: true
 ---
 
 When learning Git and GitHub, you create so many repos just for a test. Once you master the skill, you no longer need those repos. So, how do you delete them? This post is there to answer to your question.

@@ -2,6 +2,7 @@
 title: How I Write my Pseudocode
 date: "2020-05-18T22:23:03.284Z"
 description: "A quick introduction on how you can write your own pseudocode"
+published: true
 ---
 
 I am working a lot on algorithms nowadays, and I find it easy to use pseudocode to express my thinking on a given algorithm. So, I have decided to share with you on that topic.

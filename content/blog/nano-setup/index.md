@@ -2,6 +2,7 @@
 title: "How to configure the Nano Text Editor on GNU/Linux"
 date: "2018-11-06T22:23:03.284Z"
 description: "a step by step guide on how to customise Nano editor"
+published: true
 ---
 
 Nano is an easy to use and friendly command line text editor for UNIX-like systems. It can be customized with command line options or with the `.nanorc` file.

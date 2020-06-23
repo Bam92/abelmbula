@@ -2,6 +2,7 @@
 title: How to Implement Bubble Sort Algorithm in JavaScript
 date: "2020-05-17T22:23:03.284Z"
 description: "A quick introduction on bubble sort algorithm"
+published: true
 ---
 
 As some of you know, I am runnig a [challenge](https://twitter.com/abelmbula/status/1260575365162041350) that consists of writing a blog post everyday (plus other activities) for the next 100 days.
@@ -27,7 +28,7 @@ Let's consider a sample array with the expected output.
 - array: `[4, 3, 5, 9, 1]`
 - output: `[1, 3, 4, 5, 9]`
 
-Here is how bubble sort will sort this sample array step by step. Items in **bold** are those that are being compared.
+Here is how the bubble sort will sort this sample array step by step. Items in **bold** are those that are being compared.
 
 **First iteration**:
 
@@ -124,7 +125,7 @@ function bubbleSort(arr) {
 Nothing tricky here. I use a `while` loop and prefer `forEach` to iterate over the passed array.
 
 ## Complexity Analysis
-To end our journey, let me say a just one word about the performance of this algorithm.
+To end our journey, let me say just one word about the performance of this algorithm.
 
 Bubble sort is a very simple sorting algorithm but it is too slow. You'll almost never find or use it in real world. It is mostly used for education purpose.
 

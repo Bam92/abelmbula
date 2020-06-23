@@ -2,6 +2,7 @@
 title: Five Ways to Solve the DNA Pairing Challenge in JavaScript
 date: "2019-12-30T22:23:03.284Z"
 description: "Step by step guide on how to solve the FCC DNA Pairing Challenge in five different ways"
+published: true
 ---
 
 Computer Science is awesome and amazing, trust me! There is always more than one way to come to a solution to a given problem in most cases.

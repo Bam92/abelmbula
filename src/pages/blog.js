@@ -13,7 +13,7 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title='{siteTitle}'>
         <SEO title="All posts" />
         <h3>Great Articles by Abel</h3>
         {posts.map(({ node }) => {
@@ -36,7 +36,6 @@ class BlogIndex extends React.Component {
               </header>
               <main>
                 <p
-                 
                   dangerouslySetInnerHTML={{
                     __html: node.frontmatter.description || node.excerpt,
                   }}
@@ -59,7 +58,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { published: { eq: true } } }
+      ) {
       edges {
         node {
           excerpt
