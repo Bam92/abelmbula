@@ -346,4 +346,4 @@ pairElement("GCG");
 
 That is it for this tutorial. We have used five different ways to solve the DNA Pairing challenge that is available on FreeCodeCamp.
 
-Which of these solutions is fine for you? Do you have any other solutions? Share with us. Among all these solution if I have to chose just one, I'd go for the 3rd one that makes use of `for...of`.
+Which of these solutions is fine for you? Do you have any other solutions? Share with us. Among all these solutions if I have to chose just one, I'd go for the 3rd one that makes use of `for...of`.

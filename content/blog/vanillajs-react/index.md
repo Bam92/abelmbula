@@ -4,8 +4,6 @@ date: "2020-04-01T22:23:03.284Z"
 description: "How to display 'Hello World' on the UI using React library"
 published: true
 ---
-
-
 You know vanilla JavaScript like no one in the world, and you are so confident that you can do whatever you want on the DOM with only pure JS. No need for a framework or a library. Yeah?
 
 Let's do a tour and see if your "commitment" of the JS world will still be the same. In this tutorial, we will display the string **Hello Wolrd** to the UI using both your very loved vanilla JS and React, a new library I want to try when it comes to working with the view (UI).
@@ -85,10 +83,7 @@ Let's use the same code as above and modify where it is necessary.
     <script src="https://unpkg.com/react-dom@^16/umd/react-dom.development.js"></script>
     <script>
         const rootElt = document.getElementById('root');
-        const childElt = React.createElement('div', {}, 'Hello World');
-        // childElt.textContent = 'Hello World';
-        // childElt.className = 'container';
-        // rootElt.appendChild(childElt);
+        const childElt = React.createElement('div', {}, 'Hello World');       
     </script>
 </body>
 ```
@@ -114,9 +109,6 @@ Now that we have our element created, we can render it to the page using `ReactD
         const rootElt = document.getElementById('root');
         const childElt = React.createElement('div', {}, 'Hello World');
 
-        // childElt.textContent = 'Hello World';
-        // childElt.className = 'container';
-        // rootElt.appendChild(childElt);
         ReactDOM.render(childElt, rootElt);
     </script>
 </body>
@@ -135,9 +127,6 @@ The final code looks like this:
         const rootElt = document.getElementById('root');
         const childElt = React.createElement('div', {}, 'Hello World');
 
-        // childElt.textContent = 'Hello World';
-        // childElt.className = 'container';
-        // rootElt.appendChild(childElt);
         ReactDOM.render(childElt, rootElt);
     </script>
 </body>
@@ -154,9 +143,6 @@ We have `Hello World` displayed on the page just as in vanilla JS. But there is 
             className: 'container'
         });
 
-        // childElt.textContent = 'Hello World';
-        // childElt.className = 'container';
-        // rootElt.appendChild(childElt);
         ReactDOM.render(childElt, rootElt);
     </script>
 </body>

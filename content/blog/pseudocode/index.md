@@ -31,7 +31,7 @@ There are many benefit out there for you to use pseudocode. Let's me cite some t
 ## Implementation
 I think this is the section you were looking for.
 
-Let's take an exemple: implement the bubble sort algorithm.
+Let's take an example: implement the bubble sort algorithm.
 
 ```
 function bubbleSort(arr)
@@ -47,9 +47,9 @@ WHILE isSwapped = true
 ENDWHILE
 RETURN arr
 ```
-As you can see, I am just explain my logic flow so you can easilly implement it in your prefered language.
+As you can see, I am just explain my logic flow so you can easily implement it in your prefered language.
 
-I use `function` key-word here just to let you know that it is a function, other people use `procedure` key-word. Eveytime I use a bloc(for, if...) I make sure I use endBloc at the end (they are called scope terminators) of it and I also capitalize them (but I think all these are optional, although they may be recommanded). 
+I use `function` key-word here just to let you know that it is a function, other people use `procedure` key-word. Everytime I use a bloc(for, if...) I make sure I use endBloc at the end (they are called scope terminators) of it and I also capitalize them (but I think all these are optional, although they may be recommanded). 
 
 I think you also see that I use indentation as much as I can. I suggest you to do so for readability.
 
@@ -61,7 +61,7 @@ Just make sure:
 * your logical flow is clear and easy enough to be understood by kids or grandpa
 * you're consistent on the format you opt to use.
 
-Don't be astonished to see pseudocode follows the format of a given language. A C developer will naturally format his pseudocode following C coding style, that is so for a fortran dev and others. The main thing is that your pseudocode must be easy to consume by almost everyone without so many efforts. Don't hesitate to be creative if you want :).
+Don't be astonished to see pseudocode follows the format of a given language. A, C developer will naturally format their pseudocode following C coding style, that is so for a Fortran dev and others. The main thing is that your pseudocode must be easy to consume by almost everyone without so many efforts. Don't hesitate to be creative if you want :).
 
 ## Some Key-words to Use
 
@@ -101,6 +101,6 @@ And you? Can you share with us your pseudocode?
 
 ## Closing Notes
 
-A pseudocode is a plain English (or other language) written process of how you can proceed to resolve an algorithm or any givem computer problem.
+A pseudocode is a plain English (or other language) written process of how you can proceed to resolve an algorithm or any given computer problem.
 
-There's no formal rule at all, it's all depend upon your personal style or schools or entreprise. The most important thing is consistency in your chosen style. You can make use of key-word as `Do While...EndDo`, `If...Endif`, `Return`.
+There's no formal rule at all, it's all depend upon your personal style or schools or entreprize. The most important thing is consistency in your chosen style. You can make use of key-word as `Do While...EndDo`, `If...Endif`, `Return`.

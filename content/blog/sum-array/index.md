@@ -63,7 +63,7 @@ https://codepen.io/bam92/pen/LYVrQjj
 
 ## -2- Using forEach
 
-I like forEach as it is builtin or an array-like method. It's simple, just like English. Don't take my words as that, see by yourself below.
+I like `forEach` as it is a builtin or an array-like method. It's simple, just like English. Don't take my words as that, see by yourself below.
 
 ```js
 function sumArray(array) {
@@ -103,7 +103,7 @@ sumArray([1, 4, 0, 9, -3]);
 https://codepen.io/bam92/pen/rNVKJby
 
 ## -3- Using for...of
-`for...of` lets us iterate over an array, so we can make use of it to get the sum of an array. As we keep the same style of fucntions above, let copy and adjust.
+`for...of` lets us iterate over an array, so we can make use of it to get the sum of an array. As we keep the same style of functions above, let copy and adjust.
 
 ```js
 function sumArray(array) {
@@ -123,7 +123,7 @@ function sumArray(array) {
 sumArray([1, 4, 0, 9, -3]); //logs 11
 ```
 
-We still have the same result as other methods we used. You can test it on the pen below
+We still have the same result as the other methods we used. You can test it on the pen below
 https://codepen.io/bam92/pen/MWwXVQE
 
 Last, but not least. Let use `reduce` method.
@@ -133,7 +133,7 @@ I know that `reduce` is a bit difficult to use, for beginners, that's why I intr
 
 In the solutions above, you have noticed that everytime we have to mutate the `sum` variable. Using this solution (`reduce()`) will save us from mutating.
 
-`reduce` accepte two mandatory parametors, the `accumulator` (total) and the `currentValue` (item). cycles through each number in the array much like it would in a traditional for loop.
+`reduce` accepts two mandatory parameters, the `accumulator` (total) and the `currentValue` (item). cycles through each number in the array much like it would in a traditional for loop.
 
 ```js
 function sumArray(array) {
@@ -158,7 +158,7 @@ sumArray([1, 4, 0, 9, -3]); //logs 11
 ```
 You have noticed that we made four calls instead of five. It's because initially reduce takes the first and second items, so next time we jump to the third item. When there are no more numbers left in the array the method returns the total value.
 
-If you are afraid of arrow functions, here is the traditional way (old fationned)
+If you are afraid of arrow functions, here is the traditional way (old fashionned)
 
 
 ```js
@@ -198,7 +198,7 @@ function sumArray(array) {
 sumArray([1, 4, 0, 9, -3]); 
 ```
 
-Old fationned
+Old fashioned
 
 ```js
 function sumArray(array) {
@@ -219,9 +219,9 @@ Live test it on codepen
 https://codepen.io/bam92/pen/rNVKvgB
 
 ## Wrap up
-In this tutorial we learned how to find the sum of an array of numbers. I showed you 4 methods, among which my prefered is the 3rd one (Using `for...of`). And you?
+In this tutorial we learned how to find the sum of an array of numbers. I showed you 4 methods, among which my preferred is the 3rd one (Using `for...of`). And you?
 
-There might be other ways of doing the same operaton that exist, feel free to share with us.
+There might be other ways of doing the same operation that exist, feel free to share with us.
 
 I advice you not to go with `map` method for this problem as it is an anti-pattern. 
 
