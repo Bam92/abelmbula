@@ -42,11 +42,8 @@ class Layout extends React.Component {
           <Link
             style={{
               boxShadow: `none`,
-              // textDecoration: `none`,
-              // color: `inherit`,
             }}
             to={`/`}
-            // title={`See all post by Abel`}
           >
             Home
           </Link>

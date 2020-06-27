@@ -1,9 +1,10 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import PostBio from "../components/post-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Footer from "../components/Footer"
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
@@ -12,22 +13,21 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title='{siteTitle}'>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
         <article>
           <header>
-            <h2
+            <h3
               style={{
                 marginTop: rhythm(1),
                 marginBottom: 0,
-                fontSize: `2.0em`,
               }}
             >
               {post.frontmatter.title}
-            </h2>
+            </h3>
             <p
               style={{
                 ...scale(-1 / 5),
@@ -48,6 +48,7 @@ class BlogPostTemplate extends React.Component {
             <PostBio />
           </footer>
         </article>
+        <footer><Footer /></footer>
 
         {/* <nav>
           <ul

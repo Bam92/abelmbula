@@ -5,12 +5,7 @@
         "description": "This app is built with Angular 9 to track COVID-19 desease for the whole world",
         "link": "https://bam92.github.io/insure/index.html"
     },
-    {
-        "image": "../images/insure-landing.png",
-        "title": "Insure landing page",
-        "description": "Used pure CSS to design this landing page that's responsive ",
-        "link": "https://bam92.github.io/insure/index.html"
-    },
+    
     {
         "image": "../images/conFusion.png",
         "title": "Confusion Restaurante",

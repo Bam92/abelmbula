@@ -1,27 +1,25 @@
-import { graphql, useStaticQuery  } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 export const useProjectsData = () => {
- const { allProjectsJson } = useStaticQuery(graphql`
- query ProjectsQuery {
-    allProjectsJson {
+  const { allProjectsJson } = useStaticQuery(graphql`
+    query ProjectsQuery {
+      allProjectsJson {
         edges {
-            node {
-                image{                    
-                    
-                        childImageSharp{
-                            fluid {
-                                ...GatsbyImageSharpFluid
-                            }
-                        }
-                    
+          node {
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
                 }
-                title
-                description
-                link
+              }
             }
+            title
+            description
+            link
+          }
         }
-        }
+      }
     }
- `)  
- return allProjectsJson.edges
+  `)
+  return allProjectsJson.edges
 }
