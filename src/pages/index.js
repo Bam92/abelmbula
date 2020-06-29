@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
 import Container from "../components/container"
 import Profession from "../components/work"
@@ -10,16 +11,40 @@ import "./index.css"
 
 export default ({ data }) => (
   <div>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Abel L Mbula</title>
+    </Helmet>
     <Container>
-      <header id="intro">
+      <header
+        id="intro"
+        style={{
+          width: "50%",
+        }}
+      >
         <h1>Hello, I'm {data.site.siteMetadata.firstName} 👋</h1>
-        <h2>Engineer | Educator | Mentor</h2>
         <p
+          className="subTitle"
           style={{
-            marginBottom: `1.5em`,
+            color: "#868e96",
+            fontSize: "1.2em",
+            marginTop: "1.8em"
           }}
         >
-          {data.site.siteMetadata.description}
+          I'm a software engineer, technical writter and educator, and mentor.
+          This is my Internet home.
+        </p>
+        <p>
+          I'm here to help. I learn in public and I can't wait to share my
+          knowledge with the community. I consume from the web, but I also contribute
+          to make it.
+        </p>
+
+        <p>
+          You can read my <Link to="/blog">blog</Link>, view my{" "}
+          <Link to="/lab">lab</Link>, or contact me at{" "}
+          <strong>news.abel </strong> at
+          <strong> protonmail.com</strong>
         </p>
         <ul
           style={{
@@ -34,7 +59,7 @@ export default ({ data }) => (
           </li>
           <li>
             {" "}
-            <a href="https://www.linkedin.com/in/abel-lifaefi-mbula-8371087b/">
+            <a href="https://www.linkedin.com/in/abel-lifaefi-mbula-8371087b/?locale=en_US">
               {" "}
               LinkedIn
             </a>
@@ -46,20 +71,23 @@ export default ({ data }) => (
         </ul>
       </header>
       <section>
-        You can read my Blog posts <Link to="/blog">here</Link>
         {/* <h1>- Blog</h1>
 
              <ul>
                  <li><Link to="#">Hello World</Link></li>
              </ul> */}
       </section>
-      <section id="work">
+      {/* <section id="work">
         <h1>- Work</h1>
         <ul>
           <li>
             <Profession />
           </li>
         </ul>
+      </section> */}
+      <section id="latest">
+        <h1>- Latest</h1>
+        You can read my Blog posts <Link to="/blog">here</Link>
       </section>
       <section id="projects">
         <h1>- Selected Projects</h1>
@@ -88,7 +116,6 @@ export default ({ data }) => (
         <Footer />
       </footer>
     </Container>
-    {/* <Menu />   */}
   </div>
 )
 
