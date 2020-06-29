@@ -3,14 +3,11 @@
  */
 
 import React from "react"
-import { 
-  useStaticQuery,
-  graphql 
-} from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Img from "gatsby-image"
 
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../../utils/typography"
 
 const PostBio = () => {
   const data = useStaticQuery(graphql`
@@ -37,41 +34,44 @@ const PostBio = () => {
       style={{
         marginTop: rhythm(2.5),
         marginBottom: rhythm(2.5),
-        borderRadius: '1em',
-        padding: '2rem',
-        color: 'hsla(0,0%,100%,.9)',
-        background: 'radial-gradient(circle at 20% 20%,#5183f5 25%,#4640ff 100%)',
-        boxShadow: '0.5rem 1.25rem 1.75rem 0 rgba(100,110,140,.4)'
+        borderRadius: "1em",
+        padding: "2rem",
+        color: "hsla(0,0%,100%,.9)",
+        background:
+          "radial-gradient(circle at 20% 20%,#5183f5 25%,#4640ff 100%)",
+        boxShadow: "0.5rem 1.25rem 1.75rem 0 rgba(100,110,140,.4)",
       }}
-    >      
+    >
       <div
         style={{
-          display: `flex`,   
-        }}>
-        <div>
-        <Img 
-        style={{
-          width: '5em',
-          height: '5em',
-          borderRadius: '50%',
-          marginRight: '1em'
+          display: `flex`,
         }}
-        fixed={data.avatar.childImageSharp.fixed} alt="me in picture" />
+      >
+        <div>
+          <Img
+            style={{
+              width: "5em",
+              height: "5em",
+              borderRadius: "50%",
+              marginRight: "1em",
+            }}
+            fixed={data.avatar.childImageSharp.fixed}
+            alt="me in picture"
+          />
         </div>
         <div>
-          <strong>{author} </strong>  is a {bio}
+          <strong>{author} </strong> is a {bio}
           {/* add buy me a coffe and patron buttons here */}
-          <div 
-          style={{
-            marginTop: '1em'
-          }}
+          <div
+            style={{
+              marginTop: "1em",
+            }}
           >
             {/* <button>Bye him a coffee</button>
             <button>Become a Patron</button> */}
           </div>
         </div>
       </div>
-
     </div>
   )
 }

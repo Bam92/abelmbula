@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import Container from "../components/container"
-import Profession from "../components/work"
+import Latest from "../components/blog/Latest"
 import Projects from "../components/projects"
 import Footer from "../components/Footer"
 
@@ -28,7 +28,7 @@ export default ({ data }) => (
           style={{
             color: "#868e96",
             fontSize: "1.2em",
-            marginTop: "1.8em"
+            marginTop: "1.8em",
           }}
         >
           I'm a software engineer, technical writter and educator, and mentor.
@@ -36,8 +36,8 @@ export default ({ data }) => (
         </p>
         <p>
           I'm here to help. I learn in public and I can't wait to share my
-          knowledge with the community. I consume from the web, but I also contribute
-          to make it.
+          knowledge with the community. I consume from the web, but I also
+          contribute to make it.
         </p>
 
         <p>
@@ -70,28 +70,17 @@ export default ({ data }) => (
           </li>
         </ul>
       </header>
-      <section>
-        {/* <h1>- Blog</h1>
 
-             <ul>
-                 <li><Link to="#">Hello World</Link></li>
-             </ul> */}
-      </section>
-      {/* <section id="work">
-        <h1>- Work</h1>
-        <ul>
-          <li>
-            <Profession />
-          </li>
-        </ul>
-      </section> */}
-      <section id="latest">
+      {/* Latest 5 blog posts */}
+      <section id="latest" style={{
+        width: "80%"
+      }}>
         <h1>- Latest</h1>
-        You can read my Blog posts <Link to="/blog">here</Link>
+        <Latest />
       </section>
+
       <section id="projects">
         <h1>- Selected Projects</h1>
-
         <ul
           style={{
             marginTop: `2.5em`,

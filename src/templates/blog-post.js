@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import PostBio from "../components/post-bio"
+import PostBio from "../components/blog/post-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/Footer"
