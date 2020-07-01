@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import PostBio from "../components/blog/post-bio"
 import Layout from "../components/layout"
@@ -9,11 +9,12 @@ import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const { data, location } = this.props
+    const post = data.markdownRemark
+    const siteTitle = data.site.siteMetadata.title
 
     return (
-      <Layout location={this.props.location} title='{siteTitle}'>
+      <Layout location={location} title="{siteTitle}">
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -48,7 +49,9 @@ class BlogPostTemplate extends React.Component {
             <PostBio />
           </footer>
         </article>
-        <footer><Footer /></footer>
+        <footer>
+          <Footer />
+        </footer>
 
         {/* <nav>
           <ul
@@ -88,7 +91,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -102,4 +104,5 @@ export const pageQuery = graphql`
         description
       }
     }
-  }`
+  }
+`

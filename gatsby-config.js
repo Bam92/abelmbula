@@ -7,38 +7,26 @@ module.exports = {
   siteMetadata: {
     author: "Abel",
     firstName: "Abel",
-    lastName: "L. Mbula",   
-    title: "software engeneer and CS instructor" ,
-    description: "I write quality software and help people getting started in the software industry. For me, code is poetry and I put all my effort to make it look \"good\".",
+    lastName: "L. Mbula",
+    title: "software engeneer and CS instructor",
+    description:
+      'I write quality software and help people getting started in the software industry. For me, code is poetry and I put all my effort to make it look "good".',
     siteUrl: "http://abelmbula.com",
     bio: `Software Engeneer and CS Instructor. He spends much of his time contributiong to FLOSS and helping beginners.
     If you think this is great and shoud continue, consider supporting him.`,
-    twitter: "",
-    linkedin: "",
-    github: "",
     social: {
-      twitter: `abelmbula`,
+      twitter: `https://twitter.com/abelmbula`,
+      linkedin: `https://www.linkedin.com/in/abel-lifaefi-mbula-8371087b/?locale=en_US`,
+      github: `https://github.com/Bam92`,
     },
-    
-    
-    // title: `Abel L. Mbula`,
-    // author: `Abel L. Mbula`,
-    // siteUrl: `http://abelmbula.com`,
-    // social: {
-    //   twitter: `abelmbula`,
-    // },
-    // bio: `Software Engeneer and CS Instructor. He spends much of his time contributiong to FLOSS and helping beginners.
-    // If you think this is great and shoud continue, consider supporting him.`,
-    // description: `Hi, I'm Abel L. Mbula. I write software and help people`,
-
   },
   plugins: [
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        color: `tomato`
-      }
-    },    
+        color: `tomato`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -47,14 +35,14 @@ module.exports = {
         // plugins: [
         //   `gatsby-transformer-json`
         // ]
-      }
+      },
     },
     {
-        resolve: `gatsby-source-filesystem`,
-        options: {
-          name: `images`,
-          path: `${__dirname}/src/images`,
-        },
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -99,15 +87,13 @@ module.exports = {
           {
             resolve: `@weknow/gatsby-remark-codepen`,
             options: {
-              theme: 'dark',
+              theme: "dark",
               height: 400,
-            }
+            },
           },
           {
             resolve: `gatsby-remark-prismjs`,
-            options: {
-              
-            }
+            options: {},
           },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
@@ -143,6 +129,5 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-  
   ],
 }
