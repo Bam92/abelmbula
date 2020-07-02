@@ -52,7 +52,7 @@ export default () => {
               marginTop: "1.8em",
             }}
           >
-            I'm a software engineer, technical writter and educator, and mentor.
+            I'm a software engineer, technical writter, educator, and mentor.
             This is my Internet home.
           </p>
           <p>

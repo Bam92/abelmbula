@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
-
 class Layout extends React.Component {
   render() {
     const { location, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
+    const isBlogPostPath = /blog\/\S+$/
     let header
 
     if (location.pathname === rootPath) {
@@ -30,6 +30,24 @@ class Layout extends React.Component {
             {/* {title} */}
           </Link>
         </h1>
+      )
+    } else if (isBlogPostPath.test(location.pathname)) {
+      header = (
+        <h4
+          style={{
+            fontFamily: `Montserrat, sans-serif`,
+            marginTop: 0,
+          }}
+        >
+          <Link
+            style={{
+              boxShadow: `none`,
+            }}
+            to={`/blog`}
+          >
+            Back to Blog
+          </Link>
+        </h4>
       )
     } else {
       header = (
@@ -57,14 +75,11 @@ class Layout extends React.Component {
           marginRight: `auto`,
           maxWidth: rhythm(24),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          
         }}
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
-        {/* {Bio} */}
-        </footer>
+        <footer>{/* {Bio} */}</footer>
       </div>
     )
   }

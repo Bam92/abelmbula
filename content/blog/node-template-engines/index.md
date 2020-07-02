@@ -1,8 +1,8 @@
 ---
 title: Let's Play with Template Engines for NodeJS
-date: "2020-06-01T22:23:03.284Z"
+date: "2020-06-08T22:23:03.284Z"
 description: "A quick introduction to Pug and EJS for quick and easy templating in a NodeJS project"
-published: false
+published: true
 ---
 Working with template engines will allow you to dynamically generate HTML markup with JavaScript for your different page in a Node app which does not make use of any frontend library or framework like [React](/vanillajs-react/) or Angular.
 
