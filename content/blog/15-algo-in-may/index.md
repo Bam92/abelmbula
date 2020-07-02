@@ -143,6 +143,18 @@ function sumAll(arr) {
 
 [Link](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/slice-and-splice)
 
+> You are given two arrays and an index.
+> Use the array methods slice and splice to copy each element of the first array into the second array, in order.
+> Begin inserting elements at index n of the second array.
+> Return the resulting array. The input arrays should remain the same after the function runs.
+>
+> ```js
+> function frankenSplice(arr1, arr2, n) {
+>   return arr2
+> }
+> frankenSplice([1, 2, 3], [4, 5, 6], 1)
+> ```
+
 ### Resources
 
 - [slice() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice), MDN web docs
@@ -152,7 +164,7 @@ function sumAll(arr) {
 
 I've written a detailed post about this [here](confirm-ending). No time? Read below.
 
-Let's firt take the challenge description.
+Let's first take the challenge description.
 
 > Check if a string (first argument, **str**) ends with the given target string (second argument, target).
 > This challenge can be solved with the **.endsWith()** method, which was introduced in ES2015. But for the purpose of this challenge, we would like you to use one of the JavaScript substring methods instead.
@@ -185,6 +197,14 @@ confirmEnding("I am a test", "st")
 This challenge is available following this [link](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/repeat-a-string-repeat-a-string). It is stated as this:
 
 > Repeat a given string **str** (first argument) for **num** times (second argument). Return an empty string if **num** is not a positive number.
+>
+> ```js
+> function repeatStringNumTimes(str, num) {
+>   return str
+> }
+>
+> repeatStringNumTimes("abc", 3)
+> ```
 
 My solution is
 
@@ -209,10 +229,70 @@ Click [here](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-s
 > Check if a value is classified as a boolean primitive. Return true or false.
 >
 > Boolean primitives are true and false.
+>
 > ```js
->function booWho(bool) {
-> return bool;
+> function booWho(bool) {
+>   return bool
 > }
 >
->booWho(null);
+> booWho(null)
+> ```
 
+## -7- Where do I Belong
+
+Go to the [challenge](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/where-do-i-belong).
+
+> Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.<br />
+>For example, `getIndexToIns([1,2,3,4], 1.5)` should return 1 because it is greater than 1 (index 0), but less than 2 (index 1).<br />
+>Likewise, `getIndexToIns([20,3,5], 19)` should return 2 because once the array has been sorted it will look like [3,5,20] and 19 is less than 20 (index 2) and greater than 5 (index 1).<br />
+>```js
+>function getIndexToIns(arr, num) {
+>  return num;
+>}
+>
+>getIndexToIns([40, 60], 50);
+>```
+
+## -8- Mutations
+This challenge can be retrieved [here](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/mutations).
+>Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.<br />
+>For example, ["hello", "Hello"], should return true because all of the letters in the second string are present in the first, ignoring case.<br />
+>The arguments ["hello", "hey"] should return false because the string "hello" does not contain a "y".<br>
+>Lastly, ["Alien", "line"], should return true because all of the letters in "line" are present in "Alien".
+> ```js
+>function mutation(arr) {
+>  return arr;
+>}
+>
+>mutation(["hello", "hey"]);
+>```
+
+## -9- Title Case a Sentence
+Challenge [link](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/title-case-a-sentence)
+
+>Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+>
+>For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
+> ```js
+>function titleCase(str) {
+>  return str;
+>}
+>
+>titleCase("I'm a little tea pot");
+>
+>```
+
+## -10- Falsy Bouncer
+[Link](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/falsy-bouncer)
+>
+
+## -11- Diff Two Arrays
+Challenge [link](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/diff-two-arrays).
+## -12- Seek and Destroy
+Go here to find the [link](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/seek-and-destroy).
+
+## -13-
+
+## -14-
+
+## -15-

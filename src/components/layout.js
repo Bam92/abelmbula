@@ -33,7 +33,7 @@ class Layout extends React.Component {
       )
     } else if (isBlogPostPath.test(location.pathname)) {
       header = (
-        <h4
+        <p
           style={{
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
@@ -47,7 +47,7 @@ class Layout extends React.Component {
           >
             Back to Blog
           </Link>
-        </h4>
+        </p>
       )
     } else {
       header = (
