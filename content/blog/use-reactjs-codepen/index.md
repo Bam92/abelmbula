@@ -44,8 +44,7 @@ ReactDOM.render(childElt, rootElt)
 ```
 If something is broken in your pen, go and fork mine.
 
-https://codepen.io/bam92/pen/MWYGYyE
-
+https://codepen.io/bam92/pen/bGEaeXv
 
 ## Closing Notes
 To start using **React** on CodePen, you need to add **react** and **react-dom** packages and **Babel** to the settings of your pen.
