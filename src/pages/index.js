@@ -7,6 +7,9 @@ import Latest from "../components/blog/Latest"
 import Projects from "../components/projects"
 import Footer from "../components/Footer"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
+import art1 from "../images/arts/shape-light-coral-edge.svg"
+import art2 from "../images/arts/shape-mint-edge.svg"
+import art3 from "../images/arts/shape-light-coral-edge-bottom.svg"
 
 import "./index.css"
 
@@ -22,12 +25,19 @@ export default () => {
         <meta charSet="utf-8" />
         <title>Abel L Mbula</title>
       </Helmet>
+
       <img
-        src={"./arts/shape-light-coral-edge.svg"}
+        src={art1}
         style={{ ...artHeaderStyle, top: "3em", width: "45vw" }}
+        all=""
       />
+      {/* <img
+        src={art2}
+        style={{ ...artHeaderStyle, top: "3em", width: "45vw" }}
+        alt=""
+      /> */}
       <img
-        src={"./arts/shape-mint-edge.svg"}
+        src={art2}
         style={{
           ...artHeaderStyle,
           right: "0px",
@@ -123,8 +133,9 @@ export default () => {
         <Footer />
       </Container>
       <img
-        src={"./arts/shape-light-coral-edge-bottom.svg"}
+        src={art3}
         style={{ ...artHeaderStyle, right: "0px", bottom: "-75em" }}
+        alt=""
       />
     </div>
   )

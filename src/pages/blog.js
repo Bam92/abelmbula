@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import "./blog.css"
 import PostLink from "../components/blog/post-link"
 
@@ -17,44 +16,15 @@ class BlogIndex extends React.Component {
     ))
 
     return (
-      <Layout location={this.props.location} >
+      <Layout location={this.props.location}>
         <Helmet>
           <meta charSet="utf-8" />
           <title>Blog | Abel L Mbula</title>
         </Helmet>
-        <SEO title="Blog " />
+        <SEO title="Blog" />
         <h3>Blog</h3>
         <p>Articles, tutorials, and more...</p>
         <div>{posts}</div>
-        {/* {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <article key={node.fields.slug}>
-              <header>
-                <h4
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link
-                    style={{ boxShadow: `none` }}
-                    to={`.` + node.fields.slug}
-                  >
-                    {title}
-                  </Link>
-                </h4>
-                <small>{node.frontmatter.date}</small>
-              </header>
-              <main>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </main>
-            </article>
-          )
-        })} */}
       </Layout>
     )
   }
@@ -64,11 +34,6 @@ export default BlogIndex
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { published: { eq: true } } }
