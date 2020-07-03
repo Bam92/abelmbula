@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import Layout from "../components/layout"
@@ -10,7 +10,6 @@ import PostLink from "../components/blog/post-link"
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges.map(edge => (
       <PostLink key={edge.node.id} post={edge.node} />
     ))
