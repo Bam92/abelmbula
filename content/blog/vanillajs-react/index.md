@@ -223,4 +223,4 @@ https://codepen.io/bam92/pen/oNXRvgw
 
 In this tutorial, we tried to get started with React by building a simple UI that says `Hello World`. We used both `React.createElement()` and `JSX` syntax coupled with `React.render()`. I think this gives a taste of React.
 
-Tell me if you'll go to React or not yet.
+Tell [me](https://twitter.com/abelmbula) if you'll go to React or not yet.
