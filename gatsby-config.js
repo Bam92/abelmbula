@@ -24,7 +24,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        color: `tomato`,
+        color: `#1ca086`,
       },
     },
     {
@@ -105,7 +105,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-171641434-1`,
       },
     },
     `gatsby-plugin-feed`,

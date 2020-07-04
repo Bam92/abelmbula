@@ -5,10 +5,12 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 import { rhythm } from "../utils/typography"
 
 const Bio = () => {
+
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/abel-profile.png/" }) {
@@ -29,7 +31,7 @@ const Bio = () => {
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
+  const { author, social } = useSiteMetadata()
   return (
     <div
       style={{

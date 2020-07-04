@@ -31,11 +31,6 @@ export default () => {
         style={{ ...artHeaderStyle, top: "3em", width: "45vw" }}
         all=""
       />
-      {/* <img
-        src={art2}
-        style={{ ...artHeaderStyle, top: "3em", width: "45vw" }}
-        alt=""
-      /> */}
       <img
         src={art2}
         style={{
@@ -44,6 +39,7 @@ export default () => {
           top: "-10em",
           width: "20vw",
         }}
+        all=""
       />
 
       <Container>
