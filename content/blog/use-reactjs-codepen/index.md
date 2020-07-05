@@ -11,7 +11,7 @@ React is a front end library, so, it can be used on CodePen. Let's see how.
 
 ## Prerequisite
 
-You should be familar with [CodePen](https://codepen.io/pen/). At least, you know how to create a pen.
+You should be familiar with [CodePen](https://codepen.io/pen/). At least, you know how to create a pen.
 
 ## Step by step Process
 

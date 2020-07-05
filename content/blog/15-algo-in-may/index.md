@@ -243,56 +243,228 @@ Click [here](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-s
 Go to the [challenge](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/where-do-i-belong).
 
 > Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.<br />
->For example, `getIndexToIns([1,2,3,4], 1.5)` should return 1 because it is greater than 1 (index 0), but less than 2 (index 1).<br />
->Likewise, `getIndexToIns([20,3,5], 19)` should return 2 because once the array has been sorted it will look like [3,5,20] and 19 is less than 20 (index 2) and greater than 5 (index 1).<br />
->```js
->function getIndexToIns(arr, num) {
->  return num;
->}
+> For example, `getIndexToIns([1,2,3,4], 1.5)` should return 1 because it is greater than 1 (index 0), but less than 2 (index 1).<br />
+> Likewise, `getIndexToIns([20,3,5], 19)` should return 2 because once the array has been sorted it will look like [3,5,20] and 19 is less than 20 (index 2) and greater than 5 (index 1).<br />
 >
->getIndexToIns([40, 60], 50);
->```
+> ```js
+> function getIndexToIns(arr, num) {
+>   return num
+> }
+>
+> getIndexToIns([40, 60], 50)
+> ```
 
 ## -8- Mutations
+
 This challenge can be retrieved [here](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/mutations).
->Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.<br />
->For example, ["hello", "Hello"], should return true because all of the letters in the second string are present in the first, ignoring case.<br />
->The arguments ["hello", "hey"] should return false because the string "hello" does not contain a "y".<br>
->Lastly, ["Alien", "line"], should return true because all of the letters in "line" are present in "Alien".
-> ```js
->function mutation(arr) {
->  return arr;
->}
+
+> Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.<br />
+> For example, ["hello", "Hello"], should return true because all of the letters in the second string are present in the first, ignoring case.<br />
+> The arguments ["hello", "hey"] should return false because the string "hello" does not contain a "y".<br>
+> Lastly, ["Alien", "line"], should return true because all of the letters in "line" are present in "Alien".
 >
->mutation(["hello", "hey"]);
->```
+> ```js
+> function mutation(arr) {
+>   return arr
+> }
+>
+> mutation(["hello", "hey"])
+> ```
 
 ## -9- Title Case a Sentence
+
 Challenge [link](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/title-case-a-sentence)
 
->Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+> Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
 >
->For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
+> For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
+>
 > ```js
->function titleCase(str) {
->  return str;
->}
+> function titleCase(str) {
+>   return str
+> }
 >
->titleCase("I'm a little tea pot");
->
->```
+> titleCase("I'm a little tea pot")
+> ```
 
 ## -10- Falsy Bouncer
+
 [Link](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/falsy-bouncer)
+
 >
 
 ## -11- Diff Two Arrays
+
 Challenge [link](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/diff-two-arrays).
+
 ## -12- Seek and Destroy
+
 Go here to find the [link](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/seek-and-destroy).
 
-## -13-
+## -13- Single Number
 
-## -14-
+The challenge [link](https://leetcode.com/problems/single-number/).
 
-## -15-
+Let's see the description.
+
+> Given a non-empty array of integers, every element appears twice except for one. Find that single one.
+>
+> **Note**:<br>
+> Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+>
+> **Example 1**:<br>
+>
+> ```
+> Input: [2,2,1]
+> Output: 1
+> ```
+>
+> **Example 2**:<br>
+>
+> ```
+> Input: [4,1,2,1,2]
+> Output: 4
+> ```
+
+And now the solution
+
+```js
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var singleNumber = function(nums) {
+  const uniq = []
+  nums.forEach(item => {
+    if (nums.indexOf(item) == nums.lastIndexOf(item)) uniq.push(item)
+  })
+
+  return uniq
+}
+```
+
+## -14- Counting Bits
+
+The link to the challenge is [here](https://leetcode.com/problems/counting-bits/) if you need it.
+
+The challenge description is as follow.
+
+> Given a non-negative integer number num. For every numbers i in the range 0 ≤ i ≤ num calculate the number of 1's in their binary representation and return them as an array.
+>
+> **Example 1**:
+>
+> ```
+> Input: 2
+> Output: [0,1,1]
+> ```
+>
+> **Example 2**:
+>
+> ```
+> Input: 5
+> Output: [0,1,1,2,1,2]
+> ```
+
+**Starter Code**
+```js
+/**
+ * @param {number} num
+ * @return {number[]}
+ */
+var countBits = function(num) {
+    
+};
+```
+
+**My Solution**
+
+```js
+var countBits = function(num) {
+  const numArr = []
+  const onesCountArr = []
+
+  for (let i = 0; i <= num; i += 1) numArr.push(i)
+
+  numArr.forEach(val => {
+    const bin = val.toString(2)
+    const OnesCount = (bin.match(/1/g) || []).length
+    onesCountArr.push(OnesCount)
+  })
+
+  return onesCountArr
+}
+```
+
+## -15- K Closest Points to Origin
+
+Visit the challenge [site](https://leetcode.com/problems/k-closest-points-to-origin/) if you want.
+
+> We have a list of **points** on the plane. Find the **K** closest points to the origin **(0, 0)**.
+> 
+> (Here, the distance between two points on a plane is the Euclidean distance.)
+>
+> You may return the answer in any order. The answer is guaranteed to be unique (except for the order that it is in.)
+>
+>**Example 1**:
+> ```
+> Input: points = [[1,3],[-2,2]], K = 1
+> Output: [[-2,2]]
+>
+> Explanation: 
+> The distance between (1, 3) and the origin is sqrt(10).
+> The distance between (-2, 2) and the origin is sqrt(8).
+> Since sqrt(8) < sqrt(10), (-2, 2) is closer to the origin.
+> We only want the closest K = 1 points from the origin, so the answer is just [[-2,2]]. 
+>
+>```
+>**Example 2**:
+> ```
+> Input: points = [[3,3],[5,-1],[-2,4]], K = 2
+> Output: [[3,3],[-2,4]]
+> (The answer [[-2,4],[3,3]] would also be accepted.)
+>```
+>
+> **Note:**
+> `
+> # 1 <= K <= points.length <= 10000
+> # -10000 < points[i][0] < 10000
+> # -10000 < points[i][1] < 10000
+>`
+
+**Starter Code**
+```js
+/**
+ * @param {number[][]} points
+ * @param {number} K
+ * @return {number[][]}
+ */
+var kClosest = function(points, K) {
+    
+};
+```
+
+**Solution**
+
+```js
+var kClosest = function(points, K) {
+    const result = []
+    const distanceObjList = [] // store Euclidian distances here
+
+    // find Euclidian distances
+    points.forEach(arr => {
+      let thisDistance = arr[0] * arr[0] + arr[1] * arr[1]
+      distanceObjList.push({
+        d: thisDistance,
+        arr
+      })
+    })
+  
+    distanceObjList.sort((x,y) => x.d - y.d)
+
+    const subArr = distanceObjList.slice(0, K)
+
+    subArr.forEach(arr => result.push(arr.arr))
+    
+    return result
+};
+```
