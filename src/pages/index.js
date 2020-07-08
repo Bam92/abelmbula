@@ -23,6 +23,7 @@ export default () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
+        <meta name="monetization" content="$ilp.uphold.com/rmLyURx6aPz6"></meta>
         <title>Abel L Mbula</title>
       </Helmet>
 
