@@ -14,7 +14,8 @@ const PostLink = ({ post }) => (
       padding: ".5em 30px .7em",
       background: "#fff",
       borderRadius: "4px",
-      boxShadow: "2px 2px 4px #000000",
+      boxShadow:
+        "rgba(60, 64, 67, .3) 0 1px 2px 0, rgba(60, 64, 67, .15) 0 1px 3px 1px",
     }}
   >
     <div className="cell">{post.frontmatter.title}</div>

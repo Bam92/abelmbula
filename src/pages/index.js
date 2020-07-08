@@ -14,7 +14,7 @@ import art3 from "../images/arts/shape-light-coral-edge-bottom.svg"
 import "./index.css"
 
 export default () => {
-  const { social } = useSiteMetadata()
+  const { social, firstName } = useSiteMetadata()
   const artHeaderStyle = {
     zIndex: "-1",
     position: "absolute",
@@ -49,7 +49,7 @@ export default () => {
             width: "50%",
           }}
         >
-          <h1>Hello, I'm {social.firstName} 👋</h1>
+          <h1>Hello, I'm {firstName} 👋</h1>
           <p
             className="subTitle"
             style={{

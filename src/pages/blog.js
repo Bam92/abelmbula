@@ -15,16 +15,18 @@ class BlogIndex extends React.Component {
     ))
 
     return (
-      <Layout location={this.props.location}>
+      <>
         <Helmet>
           <meta charSet="utf-8" />
           <title>Blog | Abel L Mbula</title>
         </Helmet>
-        <SEO title="Blog" />
-        <h3>Blog</h3>
-        <p>Articles, tutorials, and more...</p>
-        <div>{posts}</div>
-      </Layout>
+        <Layout location={this.props.location}>
+          <SEO title="Blog" />
+          <h3>Blog</h3>
+          <p>Articles, tutorials, and more...</p>
+          <div>{posts}</div>
+        </Layout>
+      </>
     )
   }
 }
