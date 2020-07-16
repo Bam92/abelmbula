@@ -2,3 +2,13 @@
     margin: 8rem 0px 4rem 12rem;
     /* max-width: 800px; */
 }
+
+/* Mobile Design */
+@media (max-width: 450px) {
+    .container {
+      margin: 0px ;
+      /* border: 2px solid red; */
+      padding: 0 .8em !important;
+    }
+    
+  }

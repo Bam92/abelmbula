@@ -130,7 +130,6 @@ function sumAll(arr) {
      return 'There\'se something wrong with your argument. Please check it and try again'
  }
 }
-
 ```
 
 ### Resource(s)
@@ -208,6 +207,18 @@ This challenge is available following this [link](https://www.freecodecamp.org/l
 
 My solution is
 
+```js
+function repeatStringNumTimes(str, num) {
+  let repeatedStr = ""
+
+  if (num < 0) return repeatedStr
+
+  for (let i = 0; i < num; i += 1) repeatedStr += str
+
+  return repeatedStr
+}
+```
+
 ## -5- Finders Keepers
 
 Click [here](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/finders-keepers) to go to the challenge.
@@ -221,6 +232,29 @@ Click [here](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-s
 > }
 > findElement([1, 2, 3, 4], num => num % 2 === 0)
 > ```
+
+Here's how I did solve it:
+
+```js
+function findElement(arr, func) {
+  let num = 0
+  // Solution 1 with for loop
+  for (let i = 0; i < arr.length; i += 1) {
+    if (func(arr[i]) === true) {
+      num = arr[i]
+      break
+    } else num = undefined
+  }
+  // Solution 2 with forEach
+  /*arr.forEach(elt => {
+    if(func(elt) === true) num = elt
+     else num = undefined
+  })*/
+  return num
+}
+```
+
+As you can see, I use two solutions. One with traditional `for loop` and the second one with `forEach`
 
 ## -6- Boo who
 
@@ -238,13 +272,21 @@ Click [here](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-s
 > booWho(null)
 > ```
 
+**The Solution**
+
+```js
+function booWho(bool) {
+  return bool === true || bool === false ? true : false
+}
+```
+
 ## -7- Where do I Belong
 
 Go to the [challenge](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/where-do-i-belong).
 
 > Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.<br />
 > For example, `getIndexToIns([1,2,3,4], 1.5)` should return 1 because it is greater than 1 (index 0), but less than 2 (index 1).<br />
-> Likewise, `getIndexToIns([20,3,5], 19)` should return 2 because once the array has been sorted it will look like [3,5,20] and 19 is less than 20 (index 2) and greater than 5 (index 1).<br />
+> Likewise, `getIndexToIns([20,3,5], 19)` should return 2 because once the array has been sorted it will look like [3,5,20] and 19 is less than 20 (index 2) and greater than 5 (index 1).
 >
 > ```js
 > function getIndexToIns(arr, num) {
@@ -253,6 +295,39 @@ Go to the [challenge](https://www.freecodecamp.org/learn/javascript-algorithms-a
 >
 > getIndexToIns([40, 60], 50)
 > ```
+
+**Solution**
+
+```js
+// Solution 1
+function getIndexToIns(arr, num) {
+  arr.push(num)
+  arr.sort((a, b) => a - b)
+
+  for (let i = 0; i < arr.length; i += 1) {
+    if (arr[i] === num) return i
+  }
+}
+
+// Solution 2
+function getIndexToIns(arr, num) {
+  const arrSort = arr.sort((a, b) => a - b)
+  let index = 0
+
+  for (let i = 0; i < arrSort.length; i += 1) {
+    if (num < arrSort[i] || num == arrSort[i]) {
+      index = i
+      break
+    } else {
+      index = i + 1
+    }
+  }
+
+  return index
+}
+```
+
+Nothing tricky here. I first add the passed value to the array, then after I sort the array. The last step is to loop over the array and return the index of the value in the sorted array.
 
 ## -8- Mutations
 
@@ -271,6 +346,25 @@ This challenge can be retrieved [here](https://www.freecodecamp.org/learn/javasc
 > mutation(["hello", "hey"])
 > ```
 
+My solution is as follow:
+
+```js
+function mutation(arr) {
+  const baseStr = arr[0].toLowerCase()
+  const targetStr = arr[1].toLowerCase()
+  const targetL = targetStr.length
+
+  for (let i = 0; i < targetL; i += 1) {
+    if (!baseStr.includes(targetStr.charAt(i))) {
+      return false
+      break
+    }
+  }
+
+  return true
+}
+```
+
 ## -9- Title Case a Sentence
 
 Challenge [link](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/title-case-a-sentence)
@@ -287,19 +381,84 @@ Challenge [link](https://www.freecodecamp.org/learn/javascript-algorithms-and-da
 > titleCase("I'm a little tea pot")
 > ```
 
+**Solution**
+
+```js
+function titleCase(str) {
+  const words = str.toLowerCase().split(" ")
+  const arrCap = []
+
+  words.forEach(word => {
+    arrCap.push(word.charAt(0).toUpperCase() + word.slice(1))
+  })
+
+  return arrCap.join(" ")
+}
+```
+
 ## -10- Falsy Bouncer
 
 [Link](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/falsy-bouncer)
 
 >
 
+Here's how I solved it.
+
+```js
+function bouncer(arr) {
+  const falsyArr = [false, null, 0, "", undefined, NaN]
+  const newArr = []
+
+  arr.forEach(item => {
+    if (!falsyArr.includes(item)) newArr.push(item)
+  })
+  return newArr
+}
+```
+
 ## -11- Diff Two Arrays
 
 Challenge [link](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/diff-two-arrays).
 
+**My solution**
+
+```js
+function diffArray(arr1, arr2) {
+  var sumArr = [...arr1, ...arr2]
+  const symArr = []
+
+  sumArr.forEach(elt => {
+    if (sumArr.indexOf(elt) == sumArr.lastIndexOf(elt)) {
+      symArr.push(elt)
+    }
+  })
+
+  return symArr
+}
+```
+
 ## -12- Seek and Destroy
 
 Go here to find the [link](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/seek-and-destroy).
+
+**My solution**
+
+```js
+function destroyer(arr) {
+  const toDestroy = []
+  const remainArr = []
+
+  for (let i = 1; i < arguments.length; i++) {
+    toDestroy.push(arguments[i])
+  }
+
+  arr.forEach(item => {
+    if (!toDestroy.includes(item)) remainArr.push(item)
+  })
+
+  return remainArr
+}
+```
 
 ## -13- Single Number
 
@@ -366,14 +525,13 @@ The challenge description is as follow.
 > ```
 
 **Starter Code**
+
 ```js
 /**
  * @param {number} num
  * @return {number[]}
  */
-var countBits = function(num) {
-    
-};
+var countBits = function(num) {}
 ```
 
 **My Solution**
@@ -400,71 +558,81 @@ var countBits = function(num) {
 Visit the challenge [site](https://leetcode.com/problems/k-closest-points-to-origin/) if you want.
 
 > We have a list of **points** on the plane. Find the **K** closest points to the origin **(0, 0)**.
-> 
+>
 > (Here, the distance between two points on a plane is the Euclidean distance.)
 >
 > You may return the answer in any order. The answer is guaranteed to be unique (except for the order that it is in.)
 >
->**Example 1**:
+> **Example 1**:
+>
 > ```
 > Input: points = [[1,3],[-2,2]], K = 1
 > Output: [[-2,2]]
 >
-> Explanation: 
+> Explanation:
 > The distance between (1, 3) and the origin is sqrt(10).
 > The distance between (-2, 2) and the origin is sqrt(8).
 > Since sqrt(8) < sqrt(10), (-2, 2) is closer to the origin.
-> We only want the closest K = 1 points from the origin, so the answer is just [[-2,2]]. 
+> We only want the closest K = 1 points from the origin, so the answer is just [[-2,2]].
 >
->```
->**Example 2**:
+> ```
+>
+> **Example 2**:
+>
 > ```
 > Input: points = [[3,3],[5,-1],[-2,4]], K = 2
 > Output: [[3,3],[-2,4]]
 > (The answer [[-2,4],[3,3]] would also be accepted.)
->```
+> ```
 >
 > **Note:**
 > `
+>
 > # 1 <= K <= points.length <= 10000
+>
 > # -10000 < points[i][0] < 10000
+>
 > # -10000 < points[i][1] < 10000
->`
+>
+> `
 
 **Starter Code**
+
 ```js
 /**
  * @param {number[][]} points
  * @param {number} K
  * @return {number[][]}
  */
-var kClosest = function(points, K) {
-    
-};
+var kClosest = function(points, K) {}
 ```
 
 **Solution**
 
 ```js
 var kClosest = function(points, K) {
-    const result = []
-    const distanceObjList = [] // store Euclidian distances here
+  const result = []
+  const distanceObjList = [] // store Euclidian distances here
 
-    // find Euclidian distances
-    points.forEach(arr => {
-      let thisDistance = arr[0] * arr[0] + arr[1] * arr[1]
-      distanceObjList.push({
-        d: thisDistance,
-        arr
-      })
+  // find Euclidian distances
+  points.forEach(arr => {
+    let thisDistance = arr[0] * arr[0] + arr[1] * arr[1]
+    distanceObjList.push({
+      d: thisDistance,
+      arr,
     })
-  
-    distanceObjList.sort((x,y) => x.d - y.d)
+  })
 
-    const subArr = distanceObjList.slice(0, K)
+  distanceObjList.sort((x, y) => x.d - y.d)
 
-    subArr.forEach(arr => result.push(arr.arr))
-    
-    return result
-};
+  const subArr = distanceObjList.slice(0, K)
+
+  subArr.forEach(arr => result.push(arr.arr))
+
+  return result
+}
 ```
+
+That's all for now. Thank you for reading.
+
+Share with me your solutions on twitter.

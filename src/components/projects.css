@@ -1,4 +1,11 @@
 img:hover {
-    width: 30em;
-    cursor: pointer;
+  width: 30em;
+  cursor: pointer;
+}
+
+/* Mobile Design */
+@media (max-width: 450px) {
+  .wraper {
+    flex-direction: column !important;
+  }
 }

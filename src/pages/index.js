@@ -9,7 +9,6 @@ import Footer from "../components/Footer"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import art1 from "../images/arts/shape-light-coral-edge.svg"
 import art2 from "../images/arts/shape-mint-edge.svg"
-import art3 from "../images/arts/shape-light-coral-edge-bottom.svg"
 
 import "./index.css"
 
@@ -24,15 +23,17 @@ export default () => {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="monetization" content="$ilp.uphold.com/rmLyURx6aPz6"></meta>
-        <title>Abel L Mbula</title>
+        <title>Abel L. Mbula</title>
       </Helmet>
 
       <img
+        id="art1"
         src={art1}
         style={{ ...artHeaderStyle, top: "3em", width: "45vw" }}
-        all=""
+        alt=""
       />
       <img
+        id="art2"
         src={art2}
         style={{
           ...artHeaderStyle,
@@ -40,7 +41,7 @@ export default () => {
           top: "-10em",
           width: "20vw",
         }}
-        all=""
+        alt=""
       />
 
       <Container>
@@ -100,6 +101,7 @@ export default () => {
           id="latest"
           style={{
             width: "80%",
+            marginTop: `2.5em`,
           }}
         >
           <h1>- Latest</h1>
@@ -129,11 +131,6 @@ export default () => {
         </section>
         <Footer />
       </Container>
-      <img
-        src={art3}
-        style={{ ...artHeaderStyle, right: "0px", bottom: "-75em" }}
-        alt=""
-      />
     </div>
   )
 }

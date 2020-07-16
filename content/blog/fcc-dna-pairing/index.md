@@ -43,7 +43,7 @@ In biology class, we learned about DNA base pairs (need a refresher? [Wikipedia]
 
 ## 1. Using For Loop, and If Statement
 
-For this solution, we will loop over the parameter passed to the function and use if statement to return the correct pair.
+For this solution, we will loop over the parameter passed to the function and use *if statement* to return the correct pair.
 
 ```javascript
 function pairElement(str) {

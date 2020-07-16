@@ -2,10 +2,15 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
+import art3 from "../images/arts/shape-light-coral-edge-bottom.svg"
+
 
 export default () => {
   const { social } = useSiteMetadata()
-
+  const artHeaderStyle = {
+    zIndex: "-1",
+    position: "absolute",
+  }
   const liStyle = {
     borderRadius: "50%",
     width: "1.8em",
@@ -61,6 +66,11 @@ export default () => {
           <a href={social.twitter}>T</a>
         </li>
       </ul>
+      <img
+        src={art3}
+        style={{ ...artHeaderStyle, right: "0px", bottom: "-95em" }}
+        alt=""
+      />
     </footer>
   )
 }

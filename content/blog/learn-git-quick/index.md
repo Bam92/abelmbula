@@ -7,39 +7,44 @@ published: true
 
 Git is a fantastic tool that every modern developer should know no matter the language they use. It tracks changes to your source code so that you don't loose any history of your project.
 
-In this tutorial I want you learn the fundamental notions of Git and how you can host your code online on Github so that you can share your it with the word.
+In this tutorial I want you learn the fundamental notions of Git and how you can host your code online on Github so that you can share it with the world.
 
 ## Getting Started
 
 Make sure you have already installed Git locally on your working desktop. If not, go [here](https://git-scm.com/downloads) to download it.
 
 > **Tips**:<br>
-> * To check if git is already installed, open the **Terminal** and hit:
+>
+> - To check if git is already installed, open the **Terminal** and hit:
+>
 > ```bash
 > git --version # output git version 2.20.1
->```
-> * To get the latest version of git: 
+> ```
+>
+> - To get the latest version of git:
+>
 > ```bash
 > git clone https://github.com/git/git
->```
+> ```
 
 To start working with Git, we need to create, if not already done, a directory (folder) for our project. On your Terminal window, type the command below:
 
- ```bash
+```bash
 mkdir my-project
 ```
 
 Then we move to that project with `cd` command:
 
- ```bash
+```bash
 cd my-project
 ```
 
 We can now tell git to track changes in this directory:
 
- ```bash
+```bash
 git init
 ```
+
 The command above is so important as it helps create a git repository in your project.
 
 > **Note**:<br>
@@ -52,7 +57,7 @@ The working flow of git is very simple:
 
 1. Do some modifications
 2. Add them to git
-3. Create a commit (a snapshot) 
+3. Create a commit (a snapshot)
 
 Let's detail them one by one.
 
@@ -60,12 +65,13 @@ Let's detail them one by one.
 
 Adding or deleting content or files is what we call modifications. To check for (a) modification(s), hit
 
- ```bash
+```bash
 git status
 ```
+
 If there's any modification, as in our case, you'll get this message:
 
- ```bash
+```bash
 On branch master
 
 No commits yet
@@ -75,19 +81,21 @@ nothing to commit (create/copy files and use "git add" to track)
 
 > **Note**:<br>
 > If you try `git status` command in a project that is not recognized by git, you'll get this error:
->  ```bash
+>
+> ```bash
 > fatal: not a git repository (or any parent up to mount point /)
 > Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
 > ```
+>
 > To fix it, just do `git init`.
 
 **Add them to git**
 
 Let's do some modifications in our project.
 
-Create an `index.html` and add some content.  Use your favorite editor for that. If you want to use the command line:
+Create an `index.html` and add some content. Use your favorite editor for that. If you want to use the command line:
 
- ```bash
+```bash
 touch index.html # create file
 ```
 
@@ -96,7 +104,7 @@ You can see if it was created with `ls` command.
 To add content via CLI (Command Line interface)
 
 ```bash
-echo "Hello World" > index.html 
+echo "Hello World" > index.html
 ```
 
 Use `cat index.html` to see the content added.
@@ -118,7 +126,6 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 Git finds a file that is modified but not yet added for tracking. To do that you can use `git add <file>`. For simplicity I advice you to use:
 
-
 ```bash
 git add .  # dot at the end
 ```
@@ -136,10 +143,10 @@ Simply speaking, a **commit** is a version of your code at a given time; a snaps
 ```bash
 git commit -m "Initial commit"
 ```
+
 > **Note**:<br>
 > It is common to name your first commit as **Initial commit** or **First commit**. For the next commits, make sure you give a good description so that you can
 > easily remember what change you did in that specific commit.
-
 
 > **Tip**:<br>
 > To edit the commit message of the current commit, use:
@@ -154,7 +161,7 @@ That's all for git workflow. You can repeat it as much as you want. Let's see so
 
 **History**
 
-To get the history of your commits (different versions of your source code): 
+To get the history of your commits (different versions of your source code):
 
 ```bash
 git log
@@ -166,7 +173,7 @@ If you did the work above, you'll see at least 2 commits.
 
 **Move back in the history**
 
-The powerful of Git is that it allows you to easily go back in the history of your code. This is helpfull especial if the current code is broken and you want have it previous version. You need to have the commit id (aka SHA) to do this operation.
+The powerful of Git is that it allows you to easily go back in the history of your code. This is helpful especial if the current code is broken and you want have it previous version. You need to have the commit id (aka SHA) to do this operation.
 
 The commit id looks like this:
 
@@ -180,17 +187,21 @@ To switch to any commit use
 git checkout <sha>
 ```
 
-You can use the whole commit id string or the first 7 charactors.
-
-> **Tip**:<br>
-> To move to the lastest commit use:
+> **Tips**:<br>
+>
+> - The first 7 charactors of your commit sha are enough to switch to it: `git checkout b7dffea`
+> - To move to the lastest commit use:
+>
 > ```bash
 > git checkout master
 > ```
 
 ## Host Your Source Code on GitHub
 
-Github is an online plateform where developers host their source code. Go there and create an account if you don't have one.
+Github is an online platform where developers host their source code. Go there and create an account if you don't have one.
 
 ## Conclusion
 
+We've learned the fundamental notions of Git and Github. The very important commands to retain are _git add <file>_ and **git commit -m 'message'** if you're working locally, and **git push** and **git clone** if you're working with remotes.
+
+Thank you for reading.
