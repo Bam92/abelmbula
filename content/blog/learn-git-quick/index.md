@@ -198,10 +198,50 @@ git checkout <sha>
 
 ## Host Your Source Code on GitHub
 
-Github is an online platform where developers host their source code. Go there and create an account if you don't have one.
+Github is an online platform where developers host their source code (and can share it the world). Go [there](https://github.com/) and create an account if you don't have one.
+
+You need to [create](https://github.com/new) a folder (called repository) for your project.
+
+![Create a new repo](new-repo.png "Create a new repo")
+
+Now you can connect your remote repository with your local project. First copy the address that's shown out there.
+
+**Add a remote repository**
+
+```bash
+git remote add origin git@github.com:Bam92/my-project.git
+```
+
+Our remote is named **origin**. Make sure you use your link (that might be in https).
+
+**Send your code to a remote repository**
+
+Make sure you have already saved all your commits
+
+```bash
+git git push origin master
+```
+
+In case you've done modifications on Github and you want have them locally:
+
+```bash
+git git pull origin
+```
+<br>
+
+**Copy a remote repository**
+
+Everything on Github is public and you can copy as well. To do that you have 2 options:
+
+- To copy on your Github account: click the **fork** button
+- To copy on your local machine:
+
+```bash
+git git clone <URL>
+```
 
 ## Conclusion
 
-We've learned the fundamental notions of Git and Github. The very important commands to retain are _git add <file>_ and **git commit -m 'message'** if you're working locally, and **git push** and **git clone** if you're working with remotes.
+We've learned the fundamental notions of Git and Github. The very important commands to remember are _git add <file>_ and **git commit -m 'message'** if you're working locally, and **git push** and **git clone** if you're working with remotes.
 
 Thank you for reading.
