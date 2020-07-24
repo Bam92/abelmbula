@@ -11,7 +11,6 @@ class BlogPostTemplate extends React.Component {
   render() {
     const { data, location } = this.props
     const post = data.markdownRemark
-
     return (
       <Layout location={location} title="{siteTitle}">
         <SEO
@@ -44,13 +43,37 @@ class BlogPostTemplate extends React.Component {
               marginBottom: rhythm(1),
             }}
           /> */}
+          <div
+            id="edit"
+            style={{
+              background: "rgba(0, 0, 0, .1)",
+              borderLeft: "5px solid #1ca086",
+              padding: ".7em 1.5em",
+              fontSize: "smaller",
+
+            }}
+          >
+            <p>
+              Find an issue with this post? Think you could clarify, update or
+              add something?
+            </p>
+            <p>
+              All my posts are available to edit on Github. Any fix, little or
+              small, is appreciated!
+            </p>
+            <p>
+              <a
+                href={`https://github.com/Bam92/abelmbula/tree/master/content/${location.pathname}`}
+              >
+                edit on github
+              </a>
+            </p>
+          </div>
+
           <footer>
             <PostBio />
           </footer>
         </article>
-        <footer>
-          <Footer />
-        </footer>
 
         {/* <nav>
           <ul
@@ -78,6 +101,9 @@ class BlogPostTemplate extends React.Component {
             </li>
           </ul>
         </nav> */}
+        <footer>
+          <Footer />
+        </footer>
       </Layout>
     )
   }

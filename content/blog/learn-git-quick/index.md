@@ -5,9 +5,9 @@ description: "Git is not so difficult as you think..."
 published: true
 ---
 
-Git is a fantastic tool that every modern developer should know no matter the language they use. It tracks changes to your source code so that you don't loose any history of your project.
+Git is a fantastic tool that every modern developer should know no matter the language they use. It tracks changes to your source code so that you don't lose any history of your project.
 
-In this tutorial I want you learn the fundamental notions of Git and how you can host your code online on Github so that you can share it with the world.
+In this tutorial I want you to learn the fundamental notions of Git and how you can host your code online on Github so that you can share it with the world.
 
 ## Getting Started
 
@@ -48,8 +48,8 @@ git init
 The command above is so important as it helps create a git repository in your project.
 
 > **Note**:<br>
-> You can use Git in a **GUI** mode, but in this tutorial we are using **Shell** (**Terminal**) to type commands.
-> You can use the built-in Terminal in your OS or the one that is integrated in your editor (VSCode for instance)
+> You can use Git in a **GUI** mode, but in this tutorial, we are using **Shell** (**Terminal**) to type commands.
+> You can use the built-in Terminal in your OS or the one that is integrated into your editor (VSCode for instance)
 
 ## Working Locally
 
@@ -91,12 +91,12 @@ nothing to commit (create/copy files and use "git add" to track)
 
 **Add them to git**
 
-Let's do some modifications in our project.
+Let's do some modifications to our project.
 
 Create an `index.html` and add some content. Use your favorite editor for that. If you want to use the command line:
 
 ```bash
-touch index.html # create file
+touch index.html # create a file
 ```
 
 You can see if it was created with `ls` command.
@@ -124,15 +124,15 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-Git finds a file that is modified but not yet added for tracking. To do that you can use `git add <file>`. For simplicity I advice you to use:
+Git finds a file that is modified but not yet added for tracking. To do that you can use `git add <file>`. For simplicity I advise you to use:
 
 ```bash
 git add .  # dot at the end
 ```
 
-... to add any file that has been modified in our projet.
+... to add any file that has been modified in our project.
 
-Doing `git status` once again, git will tell you that your changes are ready for commit.
+Doing `git status` once again, git will tell you that your changes are ready to commit.
 
 Now is time to create our first commit.
 
@@ -173,7 +173,7 @@ If you did the work above, you'll see at least 2 commits.
 
 **Move back in the history**
 
-The powerful of Git is that it allows you to easily go back in the history of your code. This is helpful especial if the current code is broken and you want have it previous version. You need to have the commit id (aka SHA) to do this operation.
+The power of Git is that it allows you to easily go back to the history of your code. This is helpful especial if the current code is broken and you want to have its previous version. You need to have the commit id (aka SHA) to do this operation.
 
 The commit id looks like this:
 
@@ -222,7 +222,7 @@ Make sure you have already saved all your commits
 git git push origin master
 ```
 
-In case you've done modifications on Github and you want have them locally:
+In case you've done modifications on Github and you want to have them locally:
 
 ```bash
 git git pull origin
@@ -242,6 +242,6 @@ git git clone <URL>
 
 ## Conclusion
 
-We've learned the fundamental notions of Git and Github. The very important commands to remember are _git add <file>_ and **git commit -m 'message'** if you're working locally, and **git push** and **git clone** if you're working with remotes.
+We've learned the fundamental notions of Git and Github. The very important commands to remember are `git add <file>` and **git commit -m 'message'** if you're working locally, and **git push** and **git clone** if you're working with remotes.
 
 Thank you for reading.

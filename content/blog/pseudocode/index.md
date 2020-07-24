@@ -12,7 +12,7 @@ I am working a lot on algorithms nowadays, and I find it easy to use pseudocode 
 
 I knew that you could ask the question above, so I have prepared a simple answer for you. Read down.
 
-To answer quickly to your question, I'd say that it is not all a language, so nothing with GAFAM here.
+To quickly answer  to your question, I'd say that it is not at all a language, so nothing with GAFAM here.
 
 Let's hear what Wikipedia says about it:
 
