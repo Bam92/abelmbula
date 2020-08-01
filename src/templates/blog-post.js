@@ -6,9 +6,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/Footer"
 import { rhythm, scale } from "../utils/typography"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 class BlogPostTemplate extends React.Component {
   render() {
+    // const { social } = useSiteMetadata()
     const { data, location } = this.props
     const post = data.markdownRemark
     return (
@@ -38,41 +40,32 @@ class BlogPostTemplate extends React.Component {
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          {/* <hr
-            style={{
-              marginBottom: rhythm(1),
-            }}
-          /> */}
+
           <div
-            id="edit"
             style={{
               background: "rgba(0, 0, 0, .1)",
               borderLeft: "5px solid #1ca086",
               padding: ".7em 1.5em",
               fontSize: "smaller",
-
             }}
           >
-            <p>
-              Find an issue with this post? Think you could clarify, update or
-              add something?
-            </p>
-            <p>
-              All my posts are available to edit on Github. Any fix, little or
-              small, is appreciated!
-            </p>
-            <p>
-              <a
-                href={`https://github.com/Bam92/abelmbula/tree/master/content/${location.pathname}`}
-              >
-                edit on github
-              </a>
-            </p>
+            Find an issue with this post? Think you could clarify, update or add
+            something?
+            <br />
+            All my posts are available to{" "}
+            <a
+              href={`https://github.com/Bam92/abelmbula/tree/master/content/${location.pathname}`}
+            >
+              edit on Github
+            </a>
+            . Any fix, little or small, is appreciated!
+            
+            <br /><br />I'm also available for discussion on <a href={'#'}>Twitter</a>
           </div>
-
+          {/* 
           <footer>
             <PostBio />
-          </footer>
+          </footer> */}
         </article>
 
         {/* <nav>

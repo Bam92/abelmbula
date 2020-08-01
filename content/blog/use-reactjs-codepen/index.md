@@ -27,7 +27,7 @@ In the search bar, type **react**. In the result click **react** to add it. Repe
 
 You now have React ready to be used in your pen. But we need to fix one more thing to be completely ready to start working.
 
-If you're going to use [**JSX** syntax](../jsx-syntax-how-to), you must add **Babel**.
+If you're going to use [**JSX** syntax](../understanding-jsx), you must add **Babel**.
 
 Return where we were and on **JavaScript Preprocessor**, click the box to select **Babel**. Don't forget to save your new change.
 

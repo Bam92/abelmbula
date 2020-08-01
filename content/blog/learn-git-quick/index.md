@@ -9,6 +9,9 @@ Git is a fantastic tool that every modern developer should know no matter the la
 
 In this tutorial I want you to learn the fundamental notions of Git and how you can host your code online on Github so that you can share it with the world.
 
+> **Note**<br>
+> I first wrote this post for one of my mentee living in France to help them refresh on (or quickly learn?) Git and GitHub. I hope that you'll also find this useful.
+
 ## Getting Started
 
 Make sure you have already installed Git locally on your working desktop. If not, go [here](https://git-scm.com/downloads) to download it.

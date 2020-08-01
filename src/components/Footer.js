@@ -41,7 +41,7 @@ export default () => {
           <span className="separator">/</span>
         </li>
         <li>
-          <Link to="/lab">Newsletter</Link>
+          <Link to="/newsletter">Newsletter</Link>
         </li>
       </ul>
       <ul

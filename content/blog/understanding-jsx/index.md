@@ -1,7 +1,7 @@
 ---
-title: How to Use React JSX Syntax
+title: Understanding React JSX Syntax
 date: "2020-06-26T22:23:03.284Z"
-description: "Getting started with React JSX Syntax"
+description: "Learn a bit more about the React JSX Syntax"
 published: true
 ---
 ![](react-jsx.png)
@@ -47,7 +47,7 @@ You may notice that we don't yet talk about rendering here!
 ## Exercise
 Time for practice now.
 
->**Warning:**<br>Be aware that JSX is not a regular JS. As a consequence, a browser cannot execute JS files that contain JSX code. If you're working offline or using React with `script` tag, make sure you add `Babel` in your project.
+>**Warning:**<br>Be aware that JSX is not a regular JS. As a consequence, a browser cannot execute JS files that contain JSX code. If you're working offline or using React with `script` tag, make sure you [add `Babel` in your project](use-reactjs-codepen).
 
 ## Why Use JSX?
 It is not mandatory to use JSX when writing React code, but JSX is highly recommended and massively adopted by the community.
@@ -69,4 +69,4 @@ https://codepen.io/bam92/pen/MWaRKZo
 ## Closing Notes
 In this tutorial, we have learned that JSX provides syntactic sugar for the `React.createElement()` API. It is concise and let us combine everything (HTML, CSS, JS) in our component.
 
-It requires `Babel` to be transpiled into plain JavaScript.
+JSX requires `Babel` to be transpiled into plain JavaScript.

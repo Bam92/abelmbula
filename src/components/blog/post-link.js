@@ -9,7 +9,7 @@ const PostLink = ({ post }) => (
       display: "flex",
       justifyContent: "space-between",
       border: "2px solid #fff",
-      borderLeft: "8px solid #1ca086",
+      borderLeft: "7px solid #1ca086",
       marginBottom: ".7em",
       padding: ".5em 30px .7em",
       background: "#fff",
