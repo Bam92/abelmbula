@@ -4,6 +4,7 @@ date: "2020-07-31T22:23:03.284Z"
 description: "Learn how to install and use PostgreSQL on Ubuntu, Debian..."
 published: true
 ---
+![Cover for psql on linux post](cover.png "Cover for psql on linux post")
 
 PostgreSQL /ˈpoʊstɡrɛs ˌkjuː ˈɛl/ is a relational database system like MySQL or other SQL-like database systems. It is  open-source and used as a primary database for many web applications as well as mobile and analytics applications. PostgreSQL supports most popular programming languages.
 
@@ -147,7 +148,7 @@ Everything is OK now. Let's try to connect to our database.
 psql -U postgres
 ```
 
-Once connected, you can get all connection info With this command: `\conninfo`.
+Once connected, you can get all connection info with this command: `\conninfo`.
 
 # Basic Usage
 
@@ -240,7 +241,7 @@ DROP TABLE IF EXISTS name CASCADE;
 > **Note**<br>
 > To get the description of a table use `\d table_name`
 
-## Table: insert, read and delete entries
+## Table: insert, read, update and delete entries
 
 In this section, we want to learn how to work with entries (data) in a table.
 
@@ -284,6 +285,11 @@ SELECT * FROM users ORDER BY username;
 
 This command will order the output by `username` (an existing column in the table).
 
+**Update**
+Imagine that our user `pati` has changed their email address. So, we want modify it in our database too. How can we proceed? We cannot use `INSERT` command because the user is already in the database. The good command to use in this situation is `UPDATE`
+
+
+
 **Deletion**
 
 Use the command `DELETE` like this:
@@ -312,6 +318,10 @@ That's all for today.
 # Let's Recap
 
 In this tutorial, we have learned how to set up `PostgreSQL` in a UNIX-like machine and how to use basic commands like `CREATE USER/DATABASE/TABLE`, `DROP DATABASE/TABLE`, and more.
+
+> **Be aware**<br>
+> You should never forget to terminate your commands with **
+**
 
 It was an introductory course, so if you want learn more you can read the [documentation](https://www.postgresql.org/docs/).
 
