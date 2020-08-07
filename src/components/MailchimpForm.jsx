@@ -7,17 +7,30 @@ import React from "react"
 export default class MailChimpForm extends React.Component {
   constructor() {
     super()
-    this.state = { email: "", result: null }
+    this.state = { email: "", name: "", result: null }
   }
   _handleSubmit = async e => {
     e.preventDefault()
-    const result = await addToMailchimp(this.state.email)
-    this.setState({result: result})
+    const result = await addToMailchimp(this.state.email, {
+      FNAME: this.state.name,
+    })
+    if (result.result === "error") {
+      alert(`Whoops, ${this.state.name} you're already subscribed!`)
+    } else {
+      alert(`Thank you for subscribing ${this.state.name}!`)
+    }
+    this.setState({ result: result })
   }
-handleChange = event => {
+
+  handleEmailChange = event => {
     this.setState({ email: event.target.value })
   }
-render() {
+
+  handleNameChange = event => {
+    this.setState({ name: event.target.value })
+  }
+
+  render() {
     return (
       <form onSubmit={this._handleSubmit}>
         <TextField
@@ -27,8 +40,19 @@ render() {
           name="email"
           autoComplete="email"
           variant="outlined"
-          onChange={this.handleChange}
+          onChange={this.handleEmailChange}
         />
+        <br />
+        <TextField
+          id="outlined-name-input"
+          label="Name"
+          type="text"
+          name="name"
+          autoComplete="name"
+          variant="outlined"
+          onChange={this.handleNameChange}
+        />
+
         <br />
         <Button
           variant="contained"
@@ -36,7 +60,7 @@ render() {
           label="Submit"
           type="submit"
         >
-          <Typography variant="button">Envoyer</Typography>
+          <Typography variant="button">Subscribe</Typography>
         </Button>
       </form>
     )
