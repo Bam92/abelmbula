@@ -1,12 +1,12 @@
 ---
-title: Getting Started with PostgreSQL on GNU/Linux OS
+title: Getting Started with PostgreSQL on GNU/Linux
 date: "2020-07-31T22:23:03.284Z"
 description: "Learn how to install and use PostgreSQL on Ubuntu, Debian..."
 published: true
 ---
 ![Cover for psql on linux post](cover.png "Cover for psql on linux post")
 
-PostgreSQL /ˈpoʊstɡrɛs ˌkjuː ˈɛl/ is a relational database system like MySQL or other SQL-like database systems. It is  open-source and used as a primary database for many web applications as well as mobile and analytics applications. PostgreSQL supports most popular programming languages.
+PostgreSQL /ˈpoʊstɡrɛs ˌkjuː ˈɛl/ is a relational database system like MySQL or other SQL-like database systems. It is  open-source and used as a primary database for many web applications as well as mobile and analytics applications. PostgreSQL supports the most popular programming languages.
 
 In this tutorial, I want to learn how you can use PostgreSQL in your UNIX-like computer. Hope that you'll find this interesting!
 
@@ -320,8 +320,7 @@ That's all for today.
 In this tutorial, we have learned how to set up `PostgreSQL` in a UNIX-like machine and how to use basic commands like `CREATE USER/DATABASE/TABLE`, `DROP DATABASE/TABLE`, and more.
 
 > **Be aware**<br>
-> You should never forget to terminate your commands with **
-**
+> You should never forget to terminate your commands with **;**
 
 It was an introductory course, so if you want learn more you can read the [documentation](https://www.postgresql.org/docs/).
 

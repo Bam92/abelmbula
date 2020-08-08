@@ -32,37 +32,43 @@ export default class MailChimpForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this._handleSubmit}>
-        <TextField
-          id="outlined-email-input"
-          label="Email"
-          type="email"
-          name="email"
-          autoComplete="email"
-          variant="outlined"
-          onChange={this.handleEmailChange}
-        />
-        <br />
-        <TextField
-          id="outlined-name-input"
-          label="Name"
-          type="text"
-          name="name"
-          autoComplete="name"
-          variant="outlined"
-          onChange={this.handleNameChange}
-        />
+        <form onSubmit={this._handleSubmit} id="subscribe-newsletter">
+          <TextField
+            id="outlined-email-input"
+            required={true}
+            label="Email"
+            type="email"
+            name="email"
+            autoComplete="email"
+            variant="outlined"
+            fullWidth
+            onChange={this.handleEmailChange}
+          />
+          <br />
+          <br />
+          <TextField
+            id="outlined-name-input"
+            required={true}
+            label="Name"
+            type="text"
+            name="name"
+            autoComplete="name"
+            variant="outlined"
+            fullWidth
+            onChange={this.handleNameChange}
+          />
 
-        <br />
-        <Button
-          variant="contained"
-          color="primary"
-          label="Submit"
-          type="submit"
-        >
-          <Typography variant="button">Subscribe</Typography>
-        </Button>
-      </form>
+          <br />
+          <br />
+          <Button
+            variant="contained"
+            color="primary"
+            label="Submit"
+            type="submit"
+          >
+            <Typography variant="button">Subscribe</Typography>
+          </Button>
+        </form>
     )
   }
 }

@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import Footer from "../components/Footer"
 import { rhythm, scale } from "../utils/typography"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
+import Newsletter from "../components/MailchimpForm"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -59,15 +60,24 @@ class BlogPostTemplate extends React.Component {
               edit on Github
             </a>
             . Any fix, little or small, is appreciated!
-            
-            <br /><br />I'm also available for discussion on <a href={'#'}>Twitter</a>
+            <br />
+            <br />
+            I'm also available for discussion on{" "}
+            <a href="https://twitter.com/abelmbula">Twitter</a>
           </div>
           {/* 
           <footer>
             <PostBio />
           </footer> */}
+          <hr />
+          <div className="newsletter">
+            <h4>
+              Like the article? Subscribe to get notified whenever a new article
+              gets published!
+            </h4>
+            <Newsletter />
+          </div>
         </article>
-
         {/* <nav>
           <ul
             style={{
