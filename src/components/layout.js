@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -8,8 +9,8 @@ class Layout extends React.Component {
     const { location, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     const isBlogPostPath = /blog\/\S+$/
-    let header
-
+    let header 
+    let cover = !!cover ? <Img sizes={cover.childImageSharp.sizes} /> : null
     if (location.pathname === rootPath) {
       header = (
         <h1

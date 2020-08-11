@@ -15,13 +15,18 @@ class BlogPostTemplate extends React.Component {
     const { data, location } = this.props
     const post = data.markdownRemark
     return (
-      <Layout location={location} title="{siteTitle}">
+      <Layout
+        location={location}
+        title=""
+        cover={post.frontmatter.cover}
+      >
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
         <article>
           <header>
+          {/* {post.frontmatter.cover} */}
             <h3
               style={{
                 marginTop: rhythm(1),
@@ -123,6 +128,14 @@ export const pageQuery = graphql`
       frontmatter {
         published
         title
+        cover {
+          publicURL
+          childImageSharp {
+            sizes(maxWidth: 2000) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
         date(formatString: "MMMM DD, YYYY")
         description
       }

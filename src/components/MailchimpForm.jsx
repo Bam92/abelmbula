@@ -32,11 +32,11 @@ export default class MailChimpForm extends React.Component {
 
   render() {
     return (
-        <form onSubmit={this._handleSubmit} id="subscribe-newsletter">
+        <form onSubmit={this._handleSubmit} >
           <TextField
             id="outlined-email-input"
             required={true}
-            label="Email"
+            label="Your email"
             type="email"
             name="email"
             autoComplete="email"
@@ -49,7 +49,7 @@ export default class MailChimpForm extends React.Component {
           <TextField
             id="outlined-name-input"
             required={true}
-            label="Name"
+            label="Your name"
             type="text"
             name="name"
             autoComplete="name"
@@ -66,7 +66,7 @@ export default class MailChimpForm extends React.Component {
             label="Submit"
             type="submit"
           >
-            <Typography variant="button">Subscribe</Typography>
+            <Typography variant="button">Join the familly</Typography>
           </Button>
         </form>
     )

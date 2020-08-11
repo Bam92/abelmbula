@@ -3,10 +3,12 @@ title: Getting Started with PostgreSQL on GNU/Linux
 date: "2020-07-31T22:23:03.284Z"
 description: "Learn how to install and use PostgreSQL on Ubuntu, Debian..."
 published: true
+cover: "./cover.png"
 ---
+
 ![Cover for psql on linux post](cover.png "Cover for psql on linux post")
 
-PostgreSQL /ˈpoʊstɡrɛs ˌkjuː ˈɛl/ is a relational database system like MySQL or other SQL-like database systems. It is  open-source and used as a primary database for many web applications as well as mobile and analytics applications. PostgreSQL supports the most popular programming languages.
+PostgreSQL /ˈpoʊstɡrɛs ˌkjuː ˈɛl/ is a relational database system like MySQL or other SQL-like database systems. It is open-source and used as a primary database for many web applications as well as mobile and analytics applications. PostgreSQL supports the most popular programming languages.
 
 In this tutorial, I want to learn how you can use PostgreSQL in your UNIX-like computer. Hope that you'll find this interesting!
 
@@ -287,8 +289,6 @@ This command will order the output by `username` (an existing column in the tabl
 
 **Update**
 Imagine that our user `pati` has changed their email address. So, we want modify it in our database too. How can we proceed? We cannot use `INSERT` command because the user is already in the database. The good command to use in this situation is `UPDATE`
-
-
 
 **Deletion**
 
