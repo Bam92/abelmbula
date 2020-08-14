@@ -6,20 +6,20 @@ import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
-    const { location, children } = this.props
+    const { location, children, cover } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     const isBlogPostPath = /blog\/\S+$/
     let header 
-    let cover = !!cover ? <Img sizes={cover.childImageSharp.sizes} /> : null
     if (location.pathname === rootPath) {
       header = (
         <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
+        style={{
+          ...scale(1.5),
+          marginBottom: rhythm(1.5),
+          marginTop: 0,
+        }}
         >
+        
           <Link
             style={{
               boxShadow: `none`,
@@ -34,12 +34,14 @@ class Layout extends React.Component {
       )
     } else if (isBlogPostPath.test(location.pathname)) {
       header = (
+        <>
         <p
           style={{
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
           }}
         >
+          
           <Link
             style={{
               boxShadow: `none`,
@@ -49,6 +51,10 @@ class Layout extends React.Component {
             Back to Blog
           </Link>
         </p>
+        <div>
+          {!!cover ? <Img sizes={cover.childImageSharp.sizes} /> : null}
+        </div>
+        </>
       )
     } else {
       header = (

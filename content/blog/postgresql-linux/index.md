@@ -6,8 +6,6 @@ published: true
 cover: "./cover.png"
 ---
 
-![Cover for psql on linux post](cover.png "Cover for psql on linux post")
-
 PostgreSQL /ˈpoʊstɡrɛs ˌkjuː ˈɛl/ is a relational database system like MySQL or other SQL-like database systems. It is open-source and used as a primary database for many web applications as well as mobile and analytics applications. PostgreSQL supports the most popular programming languages.
 
 In this tutorial, I want to learn how you can use PostgreSQL in your UNIX-like computer. Hope that you'll find this interesting!
@@ -18,7 +16,7 @@ First thing first, let's install it in our machine.
 
 PostgreSQL is included by default in your system packet manager. So, you can just use your distribution packet manager to install it. I am on Debian, I use `apt` by default.
 
-```bash
+```sh
 sudo apt update && sudo apt install postgresql-12 # to get postgresql v12
 ```
 
@@ -57,7 +55,7 @@ psql -U postgres
 
 But what do we get? An error.
 
-```bash
+```sh
 psql: error: could not connect to server: FATAL:  Peer authentication failed for user "postgres"
 ```
 
@@ -288,6 +286,7 @@ SELECT * FROM users ORDER BY username;
 This command will order the output by `username` (an existing column in the table).
 
 **Update**
+
 Imagine that our user `pati` has changed their email address. So, we want modify it in our database too. How can we proceed? We cannot use `INSERT` command because the user is already in the database. The good command to use in this situation is `UPDATE`
 
 **Deletion**
