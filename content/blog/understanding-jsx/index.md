@@ -3,8 +3,8 @@ title: Understanding React JSX Syntax
 date: "2020-06-26T22:23:03.284Z"
 description: "Learn a bit more about the React JSX Syntax"
 published: true
+cover: "react-jsx.png"
 ---
-![](react-jsx.png)
 
 JSX is a syntactic sugar available in the React library. This new syntax makes it easy to develop apps.
 
