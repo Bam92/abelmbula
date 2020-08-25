@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import Container from "../components/container"
@@ -9,7 +8,8 @@ import Footer from "../components/Footer"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import art1 from "../images/arts/shape-light-coral-edge.svg"
 import art2 from "../images/arts/shape-mint-edge.svg"
-
+import Cover from "../components/landing/cover"
+import Portfolio from "../components/landing/portfolio"
 import "./index.css"
 
 export default () => {
@@ -25,6 +25,9 @@ export default () => {
         <meta name="monetization" content="$ilp.uphold.com/rmLyURx6aPz6"></meta>
         <title>Abel L. Mbula</title>
       </Helmet>
+
+      {/* Cover landing */}
+      <Cover />
 
       <img
         id="art1"
@@ -43,9 +46,10 @@ export default () => {
         }}
         alt=""
       />
-
+      
+      <Portfolio />
       <Container>
-        <header
+        {/* <header
           id="intro"
           style={{
             width: "50%",
@@ -94,7 +98,7 @@ export default () => {
               <a href={social.github}>GitHub</a>
             </li>
           </ul>
-        </header>
+        </header> */}
 
         {/* Latest 5 blog posts */}
         <section
