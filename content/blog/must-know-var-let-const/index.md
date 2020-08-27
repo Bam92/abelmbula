@@ -3,7 +3,9 @@ title: Five Things you Should Know (by Heart) about var, let, and const in JavaS
 date: "2020-05-14T22:23:03.284Z"
 description: "A simple recall about var, let, and const JS key-word "
 published: true
+cover: "cover.png"
 ---
+
 Today, I want to refresh our memory with some basic notions about `var`, `let`, and `const`; the keywords we use almost every day when we are coding our software in JavaScript.
 
 ## -1- They are all used to create bindings, aka variables
@@ -25,7 +27,7 @@ console.log("You're " + age);
 
 ```
 
-## -2- Only var is global scope
+## -2- Only `var` is global scope
 Just to recall you, the visibility and lifetime of a given variable is determined by its scope. As such, a variable is not visible/accessible outside the scope in which it is declared.
 
 A variable has global scope if it is declared outside a function, block... scope. It can be accessed from everywhere in your program.
@@ -47,11 +49,11 @@ function doSomething() {
 
 console.log(someVar)
 ```
-... if you run this code, you'll get a `ReferenceError` saying that `x is not defined`.
+... if you run this code, you'll get a `ReferenceError` saying that `someVar is not defined`.
 
 You'll get the same thing if you try to replace `var` by `let` or `const`.
 
-## -4- Only const and let are block scope
+## -4- Only `const` and `let` are block scope
 
 The block scope is defined with curly braces (`{}`).
 
@@ -76,7 +78,8 @@ listFruits();
 ```
 As you can see in the code above, only `fruit3` is accessed; because `var` does not have block scope.   
 
-## -5- let and var can be reassigned but const
+## -5- `let` and `var` can be reassigned but `const`
+
 `const` is still unique as long as the program lives. `var` and `let` can be reassigned as much as needed.
 
 
