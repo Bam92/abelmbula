@@ -1,14 +1,20 @@
 ---
-title: How To Connect To An SQL Database In PHP
-date: "2020-09-10T22:23:03.284Z"
-description: "Using PDO to connect to any MySQL database in PHP"
-published: true
+title: Learn How to Debug SQL in PHP with debugDumpParams()
+date: "2020-09-23T22:23:03.284Z"
+description: "When in trouble with your queries, call debugDumpParams() for the rescue"
+published: false
 cover: "cover.png"
 ---
 
-Today, I want to you to learn the right way to make a connection to an SQL database in a PHP project.
+A new day, a new tutorial.
 
-[tdl;r: no time to read, show me the script](https://github.com/Bam92/php-pdo).
+As you know, I'm bussy nowadays working on a course for **Educative Inc**. While working on the course project, I encountered an issue that I want to share with you my solution hoping it will be for help one day.
+
+First, let's see what was the:
+
+# Problem
+
+I was implementing a feature to filter by date, but this was not working as expected and I could not figure out why. Let's reproduce it.
 
 # Prerequisite
 
@@ -62,7 +68,7 @@ $connection = new PDO();
 ```
 
 > **Note**: <br>
-> PDO syntax looks stranger to you? Don't be intimidated by it. Just follow a long with me to see how to use it.
+> If you're not familiar with **object-oriented programming**, it's possible that the way we work with or use PDO might look a bit strange for you. But don't worry, I'll try as much as I can to explain the important things you need to efficiently implement PDO
 
 PDO() accepts these four parameters:
 
