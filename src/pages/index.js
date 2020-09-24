@@ -4,8 +4,6 @@ import { Helmet } from "react-helmet"
 
 import Container from "../components/container"
 import Latest from "../components/blog/Latest"
-import Projects from "../components/projects"
-import Footer from "../components/Footer"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import art1 from "../images/arts/shape-light-coral-edge.svg"
 import art2 from "../images/arts/shape-mint-edge.svg"
@@ -107,29 +105,6 @@ export default () => {
           <h1>- Latest</h1>
           <Latest />
         </section>
-
-        <section id="projects">
-          <h1>- Selected Projects</h1>
-          <ul
-            style={{
-              marginTop: `2.5em`,
-            }}
-          >
-            <li>
-              <Projects />
-            </li>
-          </ul>
-
-          {/* A call to action for more projects or lab */}
-          <div>
-            <p>
-              Need more real world projects? Drop me a line
-              <a href="/contact"> here</a> or visit my <a href="/lab">lab</a>{" "}
-              where I built software for or with my students
-            </p>
-          </div>
-        </section>
-        <Footer />
       </Container>
     </div>
   )
