@@ -8,7 +8,7 @@ cover: "cover.png"
 
 Today, I want to you to learn the right way to make a connection to an SQL database in a PHP project.
 
-[tdl;r: no time to read, show me the script](https://github.com/Bam92/php-pdo).
+[td;lr: no time to read, show me the script](https://github.com/Bam92/php-pdo).
 
 # Prerequisite
 

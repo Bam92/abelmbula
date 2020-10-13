@@ -116,15 +116,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-171641434-1`,
+        trackingId: process.env.ID_GOOGLE_ANALITICS,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `abelmbula.com`,
+        short_name: `Abel on software`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

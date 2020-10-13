@@ -11,7 +11,6 @@ import Newsletter from "../components/MailchimpForm"
 
 class BlogPostTemplate extends React.Component {
   render() {
-    // const { social } = useSiteMetadata()
     const { data, location } = this.props
     const post = data.markdownRemark
     return (
@@ -46,7 +45,7 @@ class BlogPostTemplate extends React.Component {
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
 
-          <div
+          {/* <div
             style={{
               background: "rgba(0, 0, 0, .1)",
               borderLeft: "5px solid #1ca086",
@@ -68,19 +67,19 @@ class BlogPostTemplate extends React.Component {
             <br />
             I'm also available for discussion on{" "}
             <a href="https://twitter.com/abelmbula">Twitter</a>
-          </div>
+          </div> */}
           {/* 
           <footer>
             <PostBio />
           </footer> */}
-          <hr />
+          {/* <hr />
           <div className="newsletter">
             <h4>
               Like the article? Subscribe to get notified whenever a new article
               gets published!
             </h4>
             <Newsletter />
-          </div>
+          </div> */}
         </article>
         {/* <nav>
           <ul
@@ -108,9 +107,9 @@ class BlogPostTemplate extends React.Component {
             </li>
           </ul>
         </nav> */}
-        <footer>
+        {/* <footer>
           <Footer />
-        </footer>
+        </footer> */}
       </Layout>
     )
   }
