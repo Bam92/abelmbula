@@ -3,7 +3,7 @@ title: "Setting up a LAMP environement in GNU/Linux with XAMPP"
 date: "2020-10-16T22:23:03.284Z"
 description: ""
 published: true
-cover: "./cover.png"
+cover: "./cover.jpg"
 ---
 
 Who said that everything in GNU/Linux should be a headache for the users/developers? Did you know that you can have a ready to use software bundle to set up an LAMP environment? Read the tutorial below to learn how to do so.
