@@ -1,12 +1,12 @@
 ---
-title: "Setting up a LAMP environement in GNU/Linux with XAMPP"
+title: "Setting up a LAMP environment in GNU/Linux with XAMPP"
 date: "2020-10-16T22:23:03.284Z"
 description: ""
 published: true
 cover: "./cover.jpg"
 ---
 
-Who said that everything in GNU/Linux should be a headache for the users/developers? Did you know that you can have a ready to use software bundle to set up an LAMP environment? Read the tutorial below to learn how to do so.
+Who said that everything in GNU/Linux should be a headache for the users/developers? Did you know that you can have a ready to use software bundle to set up a LAMP environment? Read the tutorial below to learn how to do so.
 
 The purpose of this tutorial is to show you a step by step guide on how to get started with XAMPP in your GNU/Linux OS.
 
@@ -33,7 +33,7 @@ Make it an executable like so:
 - right-click on the file and go to `Properties`
 - under `Permissions` tab, mark `Allow executing file as program` (see image)
 
-![](/api/collection/4668316850323456/4792272899014656/page/4832025002377216/image/5619749653315584)
+![](make-it-exe.png)
 
 Or via command line (CLI)
 
@@ -43,7 +43,7 @@ chmod 755 xampp-linux-*-installer.run
 
 Next, you could just double-click the installer to start the installation process. unfortunately, XAMPP requires **root privilege**
 
-![](/api/collection/4668316850323456/4792272899014656/page/4832025002377216/image/6586971355873280)
+![](root-privilege-needed.png)
 
 Let's see how to fix it.
 

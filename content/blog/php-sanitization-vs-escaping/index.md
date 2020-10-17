@@ -6,7 +6,12 @@ published: false
 cover: "./cover.png"
 ---
 
-As software developers, we are required to take security of our apps. to be continued
+## resources
+
+- https://security.stackexchange.com/questions/42498/which-is-the-best-way-to-sanitize-user-input-in-php
+- https://developer.wordpress.org/themes/theme-security/data-sanitization-escaping/
+
+  As software developers, we are required to take the security of our apps. to be continued
 
 In this tutorial, I want you to learn how to **sanitize** and **escape data** in your PHP apps.
 
