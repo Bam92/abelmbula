@@ -5,9 +5,11 @@ description: "I spent time working on algo challenges. Here some 15 that are wor
 published: true
 ---
 
-I don't you, but it seems to me that the year is flying away too fast. I'm looking for a [remote position](https://twitter.com/abelmbula/status/1260575365162041350) this year, so I've decided to work too hard: build tools, write blog posts, help people in forums, and of course work on algorithms.
+I don't know you, but it seems to me that the year is flying away too fast. I'm looking for a [remote position](https://twitter.com/abelmbula/status/1260575365162041350) this year, so I've decided to work too hard: build tools, write blog posts, help people in forums, and of course work on data structure and algorithms.
 
-Last month, May, I did work on around 15 challenges on [FreecodeCamp](https://www.freecodecamp.org/) and [LeetCode](https://leetcode.com/). Let's take a look at them. I'll try to add some explanations, if necessary.
+Last month, May 2020, I did work on around 15 challenges on [FreecodeCamp](https://www.freecodecamp.org/) and [LeetCode](https://leetcode.com/). Let's take a look at them. I'll try to add some explanations, if necessary. The language I'm using to solve all these challenges is JavaScript.
+
+Let's get started!
 
 ## -1- Sum All Numbers in a Range
 
@@ -47,7 +49,7 @@ Let's another way to resolve this challenge.
 
 ### Alternative Solution and Improvement
 
-The solution above is the way I did when working on that algorithm challenge. But there are many other ways to do so. And you can also improve the my code to make it robust.
+The solution above is the way I did when working on that algorithm challenge. But there are many other ways to do so. And you can also improve my code to make it robust.
 
 Let's see how.
 
@@ -55,7 +57,7 @@ Let's see how.
 
 Although our code seems to works properly in the context of this challenge, it has some weaknesses. Let's find them.
 
-Our code only assumes that the user we always submit the right argument when this is not true in the real world.
+Our code only assumes that the user will always submit the right argument when this is not true in the real world.
 
 - What happens if the user calls the function without any argument at all?
 - What if the argument is not an array?
@@ -635,4 +637,4 @@ var kClosest = function(points, K) {
 
 That's all for now. Thank you for reading.
 
-Share with me your solutions on twitter.
+Share with me your solutions on Twitter.
