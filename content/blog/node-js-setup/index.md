@@ -200,7 +200,7 @@ Even better, add `src/server.js` as the value of `main` property and modify the 
 
 To start the server, you simply have to do `npm start`.
 
-To finish this section, add the string "world" after after "Hello" and go to the browser to see the result. Do you see "world"? No, sorry :(. The reason is that, the server did not restart to serve up new modifications. Stop the server (`Ctrl + C`) and restart it. Now you can see "Hello world" on the browser.
+To finish this section, add the string "world" after "Hello" and go to the browser to see the result. Do you see "world"? No, sorry :(. The reason is that, the server did not restart to serve up new modifications. Stop the server (`Ctrl + C`) and restart it. Now you can see "Hello world" on the browser.
 
 To allow the automatic restart of the server, we can use `nodemon` package. Install it and modify the "start" script as so: `"start": "nodemon ."`.
 
@@ -244,7 +244,7 @@ Let's put all into practice.
 ```js
 res.sendFile(path);
 ```
-The path we want want send is this `views/index.html`. We could just do this to define our path:
+The path we want send is this `views/index.html`. We could just do this to define our path:
 
 ```js
 res.sendFile(__dirname + "views/index.html");

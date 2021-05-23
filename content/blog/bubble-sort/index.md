@@ -5,7 +5,7 @@ description: "A quick introduction on bubble sort algorithm"
 published: true
 ---
 
-As some of you know, I am runnig a [challenge](https://twitter.com/abelmbula/status/1260575365162041350) that consists of writing a blog post everyday (plus other activities) for the next 100 days.
+As some of you know, I am running a [challenge](https://twitter.com/abelmbula/status/1260575365162041350) that consists of writing a blog post every day (plus other activities) for the next 100 days.
 
 For today (day 4 / 100), I want to share with you about **Bubble Sort Algorithm** and how to implement it in JavaScript language.
 
@@ -15,9 +15,9 @@ Let's go!
 
 What does Wikipedia say about it?
 
-> is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
+> is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
 
-Simply speaking, Bubble Sort compares all the element one by one and sort them based on their values.
+Simply speaking, Bubble Sort compares all the elements one by one and sorts them based on their values.
 
 For example, given a list of integers that is to sort in ascending order. Using Bubble Sort, we begin by comparing the first item of the list with the next one; if the first item is greater than the second one, we swap both of them. We will then compare the second item with the third one and continue like this until we reach the last item.
 
@@ -80,11 +80,11 @@ Here is how the bubble sort will sort this sample array step by step. Items in *
 
 [1, 3, 4, **5**, **9**] --> [1, 3, 4, 5, 9], 5 < 9 so no swapping
 
-As you can see in the 4th iteration the array is already sorted, but the algorithm does not know if it is complete. The algorithm needs one **whole** pass without any **swap** to know it is sorted, reason why you see 5th iteration.
+As you can see in the 4th iteration the array is already sorted, but the algorithm does not know if it is complete. The algorithm needs one **whole** pass without any **swap** to know it is sorted, reason why you see the 5th iteration.
 
 
 ### Pseudocode
-I always see it a good way to write my thinking of an algorithm in plain English before writing it in a real programming language. This is what I call the pseudocode notation (I think. Tell me if I am wrong)
+I always see it as a good way to write my thinking of an algorithm in plain English before writing it in a real programming language. This is what I call the pseudocode notation (I think. Tell me if I am wrong)
 
 ```
 function bubbleSort(arr)
@@ -101,7 +101,7 @@ ENDWHILE
 RETURN arr
 ```
 
-I am not an expert in pseudocoding, but I am totally sure that even grandma may understand this.
+I am not an expert in pseudocoding, but I am sure that even grandma may understand this. You can read a post I wrote about it [here][https://www.abelmbula.com/blog/pseudocode/]
 
 Let's translate our pseudocode into JavaScript.
 
@@ -127,7 +127,7 @@ Nothing tricky here. I use a `while` loop and prefer `forEach` to iterate over t
 ## Complexity Analysis
 To end our journey, let me say just one word about the performance of this algorithm.
 
-Bubble sort is a very simple sorting algorithm but it is too slow. You'll almost never find or use it in real world. It is mostly used for education purpose.
+Bubble sort is a very simple sorting algorithm but it is too slow. You'll almost never find or use it in the real world. It is mostly used for educational purposes.
 
 * Worst Case Time Complexity, aka `Big-O`: `O(n^2)`
 * Best Case Time Complexity, aka `Big-omega`: `O(n)`

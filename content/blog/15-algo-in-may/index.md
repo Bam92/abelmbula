@@ -637,4 +637,4 @@ var kClosest = function(points, K) {
 
 That's all for now. Thank you for reading.
 
-Share with me your solutions on Twitter.
+Share with me your solutions on [Twitter](https://twitter.com/abelmbula).
