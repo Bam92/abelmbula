@@ -67,6 +67,6 @@
     "url": "https://github.com/Bam92/abelmbula/issues"
   },
   "optionalDependencies": {
-    "fsevents": "^2.3.2"
+    "fsevents": "^1.2.13"
   }
 }
