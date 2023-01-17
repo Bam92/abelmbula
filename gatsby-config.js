@@ -3,9 +3,9 @@
  *
  */
 
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// })
 
 module.exports = {
   siteMetadata: {
@@ -24,18 +24,13 @@ module.exports = {
       github: `https://github.com/Bam92`,
     },
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
-    `gatsby-plugin-material-ui`,
     {
-      resolve: "gatsby-plugin-mailchimp",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        endpoint: process.env.MAILCHIMP_ENDPOINT,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        color: `#1ca086`,
+        name: `blog`,
+        path: `${__dirname}/content/blog`,
       },
     },
     {
@@ -43,9 +38,6 @@ module.exports = {
       options: {
         name: `data`,
         path: `${__dirname}/src/data`,
-        // plugins: [
-        //   `gatsby-transformer-json`
-        // ]
       },
     },
     {
@@ -58,41 +50,21 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blog`,
-        path: `${__dirname}/content/blog`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `assets`,
         path: `${__dirname}/content/assets`,
-      },
-    },
-    `gatsby-transformer-json`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
       },
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-smartypants`,
           {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 620,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
           {
@@ -102,24 +74,26 @@ module.exports = {
               height: 400,
             },
           },
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {},
-          },
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-        ],
-      },
+        ]
+      }
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-transformer-json`,
+    { resolve: `gatsby-remark-images`, },
+    { resolve: `gatsby-transformer-sharp`, },
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-typography`,
       options: {
-        trackingId: process.env.ID_GOOGLE_ANALITICS,
+        pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-plugin-feed`,
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#1ca086`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -133,12 +107,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
-  ],
+
+  ]
 }
