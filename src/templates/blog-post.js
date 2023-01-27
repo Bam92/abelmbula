@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import PostBio from "../components/blog/post-bio"
 import Layout from "../components/layout"
@@ -129,8 +130,8 @@ export const pageQuery = graphql`
         cover {
           publicURL
           childImageSharp {
-            sizes(maxWidth: 2000) {
-              ...GatsbyImageSharpSizes
+            fixed(width: 2000) { 
+              ...GatsbyImageSharpFixed
             }
           }
         }
@@ -139,4 +140,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`// is there something like fixed(maxWidth)?
