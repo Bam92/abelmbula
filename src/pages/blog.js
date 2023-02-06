@@ -18,12 +18,11 @@ class BlogIndex extends React.Component {
       <>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Blog | Abel L Mbula</title>
+          <title>Blog | Great articles for great developers</title>
         </Helmet>
         <Layout location={this.props.location}>
           <SEO title="Blog" />
-          <h3>Blog</h3>
-          <p>Articles, tutorials, and more...</p>
+          <h3>Find great articles that <i>really</i> suit your need.</h3>
           <div>{posts}</div>
         </Layout>
       </>

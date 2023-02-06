@@ -48,11 +48,11 @@ class Layout extends React.Component {
             }}
             to={`/blog`}
           >
-            Back to Blog
+            Back to overview
           </Link>
         </p>
         <div>
-          {!!cover ? <Img sizes={cover.childImageSharp.sizes} /> : null}
+          {cover ? <Img sizes={cover.childImageSharp.sizes} /> : null}
         </div>
         </>
       )
