@@ -35,7 +35,7 @@ export default BlogIndex
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC }}
       filter: { frontmatter: { published: { eq: true } } }
     ) {
       edges {
@@ -49,6 +49,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            cover {id}
           }
         }
       }
