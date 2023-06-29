@@ -1,7 +1,7 @@
 ---
 title: Five Things you Should Know (by Heart) about var, let, and const in JavaScript
 date: "2020-05-14T22:23:03.284Z"
-description: "A simple recall about var, let, and const JS key-word "
+description: "A simple recall about var, let, and const JS key-word"
 published: true
 cover: "cover.png"
 ---
