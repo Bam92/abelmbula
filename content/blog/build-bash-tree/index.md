@@ -3,7 +3,7 @@ title: Code your own Bash "tree" command from scratch in JavaScript
 date: "2023-06-06T02:50:03.284Z"
 description: "Build a basic bash tree command in JavaScript"
 published: true
-cover: "no-cove.png"
+cover: no-cover.png
 ---
 
 

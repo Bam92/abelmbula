@@ -20,6 +20,7 @@ class BlogIndex extends React.Component {
           <meta charSet="utf-8" />
           <title>Blog | Great articles for great developers</title>
         </Helmet>
+        
         <Layout location={this.props.location}>
           <SEO title="Blog" />
           <h3>Find great articles that <i>really</i> suit your need.</h3>
@@ -48,8 +49,15 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            cover {
+              publicURL
+              childImageSharp {
+                fixed(width: 2000) { 
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
             description
-            cover {id}
           }
         }
       }

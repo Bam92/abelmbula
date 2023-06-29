@@ -3,7 +3,7 @@ title: How to Add Bootstrap to your Nodejs Project
 date: "2020-05-26T22:23:03.284Z"
 description: "Getting started with Nodejs and Bootstrap"
 published: true
-cover: "node-bootstrap.png"
+cover: ./node-bootstrap.png
 ---
 
 If you're building apps with Nodejs and feel like you need a tool to help you enhance the UI, this article is for you. It will guide you step by step on how you can add `Bootstrap` to your `Nodejs`.

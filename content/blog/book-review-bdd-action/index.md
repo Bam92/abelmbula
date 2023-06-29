@@ -3,7 +3,7 @@ title: I've read the "BDD in action" book for you. Here's what's in side
 date: "2023-02-04T02:50:03.284Z"
 description: "Book review"
 published: true
-cover: "bdd-action-front-cover.png"
+cover: ./bdd-action-front-cover.png
 ---
 *Note: This is a WIP*
 

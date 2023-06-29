@@ -9,17 +9,17 @@ class Layout extends React.Component {
     const { location, children, cover } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     const isBlogPostPath = /blog\/\S+$/
-    let header 
+    let header
     if (location.pathname === rootPath) {
       header = (
         <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
+          style={{
+            ...scale(1.5),
+            marginBottom: rhythm(1.5),
+            marginTop: 0,
+          }}
         >
-        
+
           <Link
             style={{
               boxShadow: `none`,
@@ -35,25 +35,27 @@ class Layout extends React.Component {
     } else if (isBlogPostPath.test(location.pathname)) {
       header = (
         <>
-        <p
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          
-          <Link
+          <p
             style={{
-              boxShadow: `none`,
+              fontFamily: `Montserrat, sans-serif`,
+              marginTop: 0,
             }}
-            to={`/blog`}
           >
-            Back to overview
-          </Link>
-        </p>
-        <div>
-          {cover ? <Img sizes={cover.childImageSharp.sizes} /> : null}
-        </div>
+
+            <Link
+              style={{
+                boxShadow: `none`,
+              }}
+              to={`/blog`}
+            >
+              Back to overview
+            </Link>
+          </p>
+          <div>
+            {
+              cover ? <Img fluid={cover.childImageSharp.fluid} /> : null
+            }
+          </div>
         </>
       )
     } else {

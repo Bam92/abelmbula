@@ -2,13 +2,9 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import PostBio from "../components/blog/post-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Footer from "../components/Footer"
 import { rhythm, scale } from "../utils/typography"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
-import Newsletter from "../components/MailchimpForm"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -128,10 +124,9 @@ export const pageQuery = graphql`
         published
         title
         cover {
-          publicURL
           childImageSharp {
-            fixed(width: 2000) { 
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 1000, quality: 100) { 
+              ...GatsbyImageSharpFluid
             }
           }
         }
