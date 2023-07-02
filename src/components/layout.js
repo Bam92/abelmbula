@@ -10,6 +10,7 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     const isBlogPostPath = /blog\/\S+$/
     let header
+
     if (location.pathname === rootPath) {
       header = (
         <h1
@@ -19,11 +20,9 @@ class Layout extends React.Component {
             marginTop: 0,
           }}
         >
-
           <Link
             style={{
               boxShadow: `none`,
-              textDecoration: `none`,
               color: `inherit`,
             }}
             to={`/`}
@@ -37,11 +36,9 @@ class Layout extends React.Component {
         <>
           <p
             style={{
-              fontFamily: `Montserrat, sans-serif`,
               marginTop: 0,
             }}
           >
-
             <Link
               style={{
                 boxShadow: `none`,
@@ -52,9 +49,7 @@ class Layout extends React.Component {
             </Link>
           </p>
           <div>
-            {
-              cover ? <Img fluid={cover.childImageSharp.fluid} /> : null
-            }
+            {cover ? <Img fluid={cover.childImageSharp.fluid} /> : null}
           </div>
         </>
       )
@@ -62,7 +57,6 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
           }}
         >
@@ -82,8 +76,7 @@ class Layout extends React.Component {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          maxWidth: rhythm(25),
         }}
       >
         <header>{header}</header>

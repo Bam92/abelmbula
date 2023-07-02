@@ -9,7 +9,7 @@ export default class MailChimpForm extends React.Component {
     super()
     this.state = { email: "", name: "", result: null }
   }
-  _handleSubmit = async e => {
+  _handleSubmit = async (e) => {
     e.preventDefault()
     const result = await addToMailchimp(this.state.email, {
       FNAME: this.state.name,
@@ -22,53 +22,53 @@ export default class MailChimpForm extends React.Component {
     this.setState({ result: result })
   }
 
-  handleEmailChange = event => {
+  handleEmailChange = (event) => {
     this.setState({ email: event.target.value })
   }
 
-  handleNameChange = event => {
+  handleNameChange = (event) => {
     this.setState({ name: event.target.value })
   }
 
   render() {
     return (
-        <form onSubmit={this._handleSubmit} >
-          <TextField
-            id="outlined-email-input"
-            required={true}
-            label="Your email"
-            type="email"
-            name="email"
-            autoComplete="email"
-            variant="outlined"
-            fullWidth
-            onChange={this.handleEmailChange}
-          />
-          <br />
-          <br />
-          <TextField
-            id="outlined-name-input"
-            required={true}
-            label="Your name"
-            type="text"
-            name="name"
-            autoComplete="name"
-            variant="outlined"
-            fullWidth
-            onChange={this.handleNameChange}
-          />
+      <form onSubmit={this._handleSubmit}>
+        <TextField
+          id="outlined-email-input"
+          required={true}
+          label="Your email"
+          type="email"
+          name="email"
+          autoComplete="email"
+          variant="outlined"
+          fullWidth
+          onChange={this.handleEmailChange}
+        />
+        <br />
+        <br />
+        <TextField
+          id="outlined-name-input"
+          required={true}
+          label="Your name"
+          type="text"
+          name="name"
+          autoComplete="name"
+          variant="outlined"
+          fullWidth
+          onChange={this.handleNameChange}
+        />
 
-          <br />
-          <br />
-          <Button
-            variant="contained"
-            color="primary"
-            label="Submit"
-            type="submit"
-          >
-            <Typography variant="button">Join the familly</Typography>
-          </Button>
-        </form>
+        <br />
+        <br />
+        <Button
+          variant="contained"
+          color="primary"
+          label="Submit"
+          type="submit"
+        >
+          <Typography variant="button">Join the familly</Typography>
+        </Button>
+      </form>
     )
   }
 }

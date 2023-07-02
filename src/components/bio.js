@@ -10,7 +10,6 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { rhythm } from "../utils/typography"
 
 const Bio = () => {
-
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/abel-profile.png/" }) {
@@ -38,7 +37,7 @@ const Bio = () => {
         display: `flex`,
         marginBottom: rhythm(2.5),
       }}
-    >      
+    >
       {author}
       {social.twitter}
     </div>

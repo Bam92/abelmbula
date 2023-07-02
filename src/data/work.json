@@ -1,42 +1,42 @@
 [
-    {
-        "company": "Freelance",
-        "position": "Full Stack Engenineer",
-        "description": "Working on various projects mostly in JavaScript ecosystem (Node, Angular, React...) and WordPress. You can find me on most freelance plateforms"
-    },
-    {
-        "company": "Kali Konnekt",
-        "position": "Founder",
-        "description": "Specialized on offline system, we offer to our customers solutions to get online content without the need of active Internet. Solution available for both individuals and organizations."
-    },
-    {
-        "company": "Infoset",
-        "position": "Business Partener Manager",
-        "description": "Working on a project to digitalize education"
-    },
-    {
-        "company": "ISTM / KIS",
-        "position": "ICT Specilist",
-        "description": "As a consultant in this higher education intitution, I managed the computing lab and administrated the LAN. Among other activities, I assisted lectures and students in their computing needs. "
-    },
-    {
-        "company": "KISCREATIONS",
-        "position": "Founder",
-        "description": "Wanting to help others be present on Internet, I founded this web design agency specialized in WordPress sites building to help schools or universities to order websites at a convenient price."
-    },
-    {
-        "company": "CFP M I",
-        "position": "Head of Computer Department",
-        "description": "Managing all about compiting, from network administration to computer maintenance, and teaching CS to pupils and other teachers."
-    },
-    {
-        "company": "Abel Consulting",
-        "position": "Founder",
-        "description": "Having gained a much more experience in computing and customer care, I launched this service for those who wanted to independantly work with me. Among my clients: University of Kisangani (CSB), INPP..."
-    },
-    {
-        "company": "NTEB ASBL",
-        "position": "ICT Specialist & Instructor",
-        "description": "Leading and mentoring the team of computing, I worked on various projects within the organization including but not limited to training, computer maintenance and network administration "
-    }
+  {
+    "company": "Freelance",
+    "position": "Full Stack Engenineer",
+    "description": "Working on various projects mostly in JavaScript ecosystem (Node, Angular, React...) and WordPress. You can find me on most freelance plateforms"
+  },
+  {
+    "company": "Kali Konnekt",
+    "position": "Founder",
+    "description": "Specialized on offline system, we offer to our customers solutions to get online content without the need of active Internet. Solution available for both individuals and organizations."
+  },
+  {
+    "company": "Infoset",
+    "position": "Business Partener Manager",
+    "description": "Working on a project to digitalize education"
+  },
+  {
+    "company": "ISTM / KIS",
+    "position": "ICT Specilist",
+    "description": "As a consultant in this higher education intitution, I managed the computing lab and administrated the LAN. Among other activities, I assisted lectures and students in their computing needs. "
+  },
+  {
+    "company": "KISCREATIONS",
+    "position": "Founder",
+    "description": "Wanting to help others be present on Internet, I founded this web design agency specialized in WordPress sites building to help schools or universities to order websites at a convenient price."
+  },
+  {
+    "company": "CFP M I",
+    "position": "Head of Computer Department",
+    "description": "Managing all about compiting, from network administration to computer maintenance, and teaching CS to pupils and other teachers."
+  },
+  {
+    "company": "Abel Consulting",
+    "position": "Founder",
+    "description": "Having gained a much more experience in computing and customer care, I launched this service for those who wanted to independantly work with me. Among my clients: University of Kisangani (CSB), INPP..."
+  },
+  {
+    "company": "NTEB ASBL",
+    "position": "ICT Specialist & Instructor",
+    "description": "Leading and mentoring the team of computing, I worked on various projects within the organization including but not limited to training, computer maintenance and network administration "
+  }
 ]

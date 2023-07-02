@@ -74,12 +74,12 @@ module.exports = {
               height: 400,
             },
           },
-        ]
-      }
+        ],
+      },
     },
     `gatsby-transformer-json`,
     // { resolve: `gatsby-remark-images`, },
-    { resolve: `gatsby-transformer-sharp`, },
+    { resolve: `gatsby-transformer-sharp` },
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     {
@@ -107,6 +107,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-
-  ]
+  ],
 }

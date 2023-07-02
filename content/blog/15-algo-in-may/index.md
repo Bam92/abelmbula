@@ -232,7 +232,7 @@ Click [here](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-s
 >   let num = 0
 >   return num
 > }
-> findElement([1, 2, 3, 4], num => num % 2 === 0)
+> findElement([1, 2, 3, 4], (num) => num % 2 === 0)
 > ```
 
 Here's how I did solve it:
@@ -390,7 +390,7 @@ function titleCase(str) {
   const words = str.toLowerCase().split(" ")
   const arrCap = []
 
-  words.forEach(word => {
+  words.forEach((word) => {
     arrCap.push(word.charAt(0).toUpperCase() + word.slice(1))
   })
 
@@ -411,7 +411,7 @@ function bouncer(arr) {
   const falsyArr = [false, null, 0, "", undefined, NaN]
   const newArr = []
 
-  arr.forEach(item => {
+  arr.forEach((item) => {
     if (!falsyArr.includes(item)) newArr.push(item)
   })
   return newArr
@@ -429,7 +429,7 @@ function diffArray(arr1, arr2) {
   var sumArr = [...arr1, ...arr2]
   const symArr = []
 
-  sumArr.forEach(elt => {
+  sumArr.forEach((elt) => {
     if (sumArr.indexOf(elt) == sumArr.lastIndexOf(elt)) {
       symArr.push(elt)
     }
@@ -454,7 +454,7 @@ function destroyer(arr) {
     toDestroy.push(arguments[i])
   }
 
-  arr.forEach(item => {
+  arr.forEach((item) => {
     if (!toDestroy.includes(item)) remainArr.push(item)
   })
 
@@ -494,9 +494,9 @@ And now the solution
  * @param {number[]} nums
  * @return {number}
  */
-var singleNumber = function(nums) {
+var singleNumber = function (nums) {
   const uniq = []
-  nums.forEach(item => {
+  nums.forEach((item) => {
     if (nums.indexOf(item) == nums.lastIndexOf(item)) uniq.push(item)
   })
 
@@ -533,19 +533,19 @@ The challenge description is as follow.
  * @param {number} num
  * @return {number[]}
  */
-var countBits = function(num) {}
+var countBits = function (num) {}
 ```
 
 **My Solution**
 
 ```js
-var countBits = function(num) {
+var countBits = function (num) {
   const numArr = []
   const onesCountArr = []
 
   for (let i = 0; i <= num; i += 1) numArr.push(i)
 
-  numArr.forEach(val => {
+  numArr.forEach((val) => {
     const bin = val.toString(2)
     const OnesCount = (bin.match(/1/g) || []).length
     onesCountArr.push(OnesCount)
@@ -606,18 +606,18 @@ Visit the challenge [site](https://leetcode.com/problems/k-closest-points-to-ori
  * @param {number} K
  * @return {number[][]}
  */
-var kClosest = function(points, K) {}
+var kClosest = function (points, K) {}
 ```
 
 **Solution**
 
 ```js
-var kClosest = function(points, K) {
+var kClosest = function (points, K) {
   const result = []
   const distanceObjList = [] // store Euclidian distances here
 
   // find Euclidian distances
-  points.forEach(arr => {
+  points.forEach((arr) => {
     let thisDistance = arr[0] * arr[0] + arr[1] * arr[1]
     distanceObjList.push({
       d: thisDistance,
@@ -629,7 +629,7 @@ var kClosest = function(points, K) {
 
   const subArr = distanceObjList.slice(0, K)
 
-  subArr.forEach(arr => result.push(arr.arr))
+  subArr.forEach((arr) => result.push(arr.arr))
 
   return result
 }

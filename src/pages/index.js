@@ -21,7 +21,7 @@ export default () => {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="monetization" content="$ilp.uphold.com/rmLyURx6aPz6"></meta>
-        <title>{firstName} L. Mbula</title>
+        <title>{ firstName } L. Mbula</title>
       </Helmet>
 
       <img
@@ -32,7 +32,7 @@ export default () => {
       />
       <img
         id="art2"
-        src={art2}
+        src={ art2 }
         style={{
           ...artHeaderStyle,
           right: "0px",
@@ -49,7 +49,7 @@ export default () => {
             width: "50%",
           }}
         >
-          <h1>Hi, I'm {firstName} 👋</h1>
+          <h1>Hi, I'm { firstName } 👋</h1>
           <p
             className="subTitle"
             style={{
@@ -58,8 +58,8 @@ export default () => {
               marginTop: "1.8em",
             }}
           >
-            I know how difficult it is to get started in the tech industry. So, my mission is to help move forward
-            in the right direction.
+            I know how difficult it is to get started in the tech industry. So,
+            my mission is to help move forward in the right direction.
           </p>
 
           <p>
@@ -68,6 +68,7 @@ export default () => {
             <strong>news.abel </strong> at
             <strong> protonmail.com</strong>
           </p>
+
           <ul
             style={{
               listStyle: `none`,

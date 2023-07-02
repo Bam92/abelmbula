@@ -16,11 +16,11 @@ This is the simplest way to configure Nano. You just need to add option(s) when 
 As you can see on the image above, we will be opening the fizzbuzz.py file with the mouse support enabled on the command line. It means that mouse clicks can be used to place the cursor, set the mark (with a double click), and execute shortcuts. By default the mouse is not supported on the console.
 Note that if mouse support is not available on your system, e.g.: you have installed a fully command line system, this option can’t work for you.
 
-Option | Description
---- | --- 
--m (--mouse) | Enable mouse support
--i (--autoindent) | Indent new line's to the previous indetention. Useful when editing source code
--l (--linenumber) | Display line numbers to the left of the text area 
+| Option            | Description                                                                    |
+| ----------------- | ------------------------------------------------------------------------------ |
+| -m (--mouse)      | Enable mouse support                                                           |
+| -i (--autoindent) | Indent new line's to the previous indetention. Useful when editing source code |
+| -l (--linenumber) | Display line numbers to the left of the text area                              |
 
 Note: You can learn about more option by typing `man nano` on your `terminal`.
 
@@ -49,4 +49,3 @@ If you want to configure Nano for all users in your system you have to use the g
 ![Nanorc global ](images/global-nanorc.png "Nanorc global")
 
 I have deleted the # before set autoindent option.
-

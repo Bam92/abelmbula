@@ -125,7 +125,7 @@ export const pageQuery = graphql`
         title
         cover {
           childImageSharp {
-            fluid(maxWidth: 1000, quality: 100) { 
+            fluid(maxWidth: 1000, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -135,4 +135,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`// is there something like fixed(maxWidth)?
+` // is there something like fixed(maxWidth)?

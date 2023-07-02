@@ -8,7 +8,7 @@ export default () => {
 
   return (
     <>
-      {data.map(item => {
+      {data.map((item) => {
         return (
           <>
             <div

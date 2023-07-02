@@ -230,6 +230,7 @@ In case you've done modifications on Github and you want to have them locally:
 ```bash
 git git pull origin
 ```
+
 <br>
 
 **Copy a remote repository**

@@ -4,6 +4,7 @@ date: "2020-04-01T22:23:03.284Z"
 description: "How to display 'Hello World' on the UI using React library"
 published: true
 ---
+
 You know vanilla JavaScript like no one in the world, and you are so confident that you can do whatever you want on the DOM with only pure JS. No need for a framework or a library. Yeah?
 
 Let's do a tour and see if your "commitment" of the JS world will still be the same. In this tutorial, we will display the string **Hello Wolrd** to the UI using both your very loved vanilla JS and React, a new library I want to try when it comes to working with the view (UI).
@@ -14,21 +15,21 @@ Before diving in dept, let's say something about React.
 
 What is React? To answer this, let's borrow the definition from the official site
 
->[React is] a JavaScript library for building user interfaces --*reactjs.org*
+> [React is] a JavaScript library for building user interfaces --_reactjs.org_
 
 That is it. React is what it claims to be, the **view (V)** in an MVC architecture. It helps manage UIs (User Interface) in an efficient way.
 
-It's OK. But is React worth learning? You can ask. This question takes me to the *Why* section.
+It's OK. But is React worth learning? You can ask. This question takes me to the _Why_ section.
 
-There are many reasons out there for why you might give React a try. Let's discuss some of them that I find important. 
+There are many reasons out there for why you might give React a try. Let's discuss some of them that I find important.
 
-When it comes to building an app you need the right tools to do the right job. 
+When it comes to building an app you need the right tools to do the right job.
 
-* If you're working on front end stuffs in this modern Web, React is right for you. It is fast (thanks to its virtual DOM). 
-* If you are looking for a way to gain in performance for your apps, you should give React a try. It is easy to learn and integrate into an existing app. 
-* If you are thinking of the learning curve how to migrate your existing code base, know that React was built in a way that it can be easy to introduce it in the existing Facebook app. 
-* React is so popular. It is backed by Facebook (I am not paid by them :)) and adopted by many tech giants (Instagram, Dropbox). 
-* If you're looking for front-end jobs, ReactJS skill is a must-have. 
+- If you're working on front end stuffs in this modern Web, React is right for you. It is fast (thanks to its virtual DOM).
+- If you are looking for a way to gain in performance for your apps, you should give React a try. It is easy to learn and integrate into an existing app.
+- If you are thinking of the learning curve how to migrate your existing code base, know that React was built in a way that it can be easy to introduce it in the existing Facebook app.
+- React is so popular. It is backed by Facebook (I am not paid by them :)) and adopted by many tech giants (Instagram, Dropbox).
+- If you're looking for front-end jobs, ReactJS skill is a must-have.
 
 Are you a bit convinced? If so, let's now start our tour.
 
@@ -44,21 +45,22 @@ Let's create a simple `div` in `HTML` and use JS to append `Hello World`.
 
 ```html
 <body>
-    <div id="root"></div>
+  <div id="root"></div>
 
-    <!-- JS goes here -->
-    <script>
-        const rootElt = document.getElementById('root');
-        const childElt = document.createElement('div');
-        childElt.textContent = 'Hello World';
-        childElt.className = 'container';
-        rootElt.appendChild(childElt);
-    </script>
+  <!-- JS goes here -->
+  <script>
+    const rootElt = document.getElementById("root")
+    const childElt = document.createElement("div")
+    childElt.textContent = "Hello World"
+    childElt.className = "container"
+    rootElt.appendChild(childElt)
+  </script>
 </body>
 ```
+
 Nothing tricky here. To create a simple UI in JS, you simply need a place where you are going to append your generated DOM. We access our `div` element and create a `sub-div` of `container` `class` and `Hello World` string. In the end, we append the newly created `div` to the existing `div` (`root div`).
 
-You can view the UI live on codepen 
+You can view the UI live on codepen
 https://codepen.io/bam92/pen/xxGedoz
 
 Now is the time to try React.
@@ -69,22 +71,22 @@ React and its related tools are `npm` packages. It means that you need a `CLI` (
 
 To work with React we need two packages:
 
-* `react`: responsible for creating React elements,
-* `react-dom`: responsible for rendering of created elements on the page
+- `react`: responsible for creating React elements,
+- `react-dom`: responsible for rendering of created elements on the page
 
 Let's use the same code as above and modify where it is necessary.
 
 ```html
 <body>
-    <div id="root"></div>
+  <div id="root"></div>
 
-    <!-- JS goes here -->
-    <script src="https://unpkg.com/react@^16/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@^16/umd/react-dom.development.js"></script>
-    <script>
-        const rootElt = document.getElementById('root');
-        const childElt = React.createElement('div', {}, 'Hello World');       
-    </script>
+  <!-- JS goes here -->
+  <script src="https://unpkg.com/react@^16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@^16/umd/react-dom.development.js"></script>
+  <script>
+    const rootElt = document.getElementById("root")
+    const childElt = React.createElement("div", {}, "Hello World")
+  </script>
 </body>
 ```
 
@@ -100,17 +102,17 @@ The second parameter is an object containing properties (aka 'props' in React te
 
 The last argument is the children of the component. This can be a string as in our example or a reference to another component.
 
-Now that we have our element created, we can render it to the page using `ReactDOM.render()`. It takes two parameters. The first one is what we want to render (`childElt` in our case), and the last on is the target DOM node to render things into (`rootElt` here). 
+Now that we have our element created, we can render it to the page using `ReactDOM.render()`. It takes two parameters. The first one is what we want to render (`childElt` in our case), and the last on is the target DOM node to render things into (`rootElt` here).
 
 ```html
 <body>
-    <!-- ... -->
-    <script>
-        const rootElt = document.getElementById('root');
-        const childElt = React.createElement('div', {}, 'Hello World');
+  <!-- ... -->
+  <script>
+    const rootElt = document.getElementById("root")
+    const childElt = React.createElement("div", {}, "Hello World")
 
-        ReactDOM.render(childElt, rootElt);
-    </script>
+    ReactDOM.render(childElt, rootElt)
+  </script>
 </body>
 ```
 
@@ -118,35 +120,37 @@ The final code looks like this:
 
 ```html
 <body>
-    <div id="root"></div>
+  <div id="root"></div>
 
-    <!-- JS goes here -->
-    <script src="https://unpkg.com/react@^16/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@^16/umd/react-dom.development.js"></script>
-    <script>
-        const rootElt = document.getElementById('root');
-        const childElt = React.createElement('div', {}, 'Hello World');
+  <!-- JS goes here -->
+  <script src="https://unpkg.com/react@^16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@^16/umd/react-dom.development.js"></script>
+  <script>
+    const rootElt = document.getElementById("root")
+    const childElt = React.createElement("div", {}, "Hello World")
 
-        ReactDOM.render(childElt, rootElt);
-    </script>
+    ReactDOM.render(childElt, rootElt)
+  </script>
 </body>
 ```
+
 We have `Hello World` displayed on the page just as in vanilla JS. But there is one more thing we need to do to get the exact same thing as in vanilla JS. Our created element must be of `class` `container`. Let's refactor our code.
 
 ```html
 <body>
-   <!-- ... -->
-    <script>
-        // ...
-        const childElt = React.createElement('div', {
-            children: 'Hello World',
-            className: 'container'
-        });
+  <!-- ... -->
+  <script>
+    // ...
+    const childElt = React.createElement("div", {
+      children: "Hello World",
+      className: "container",
+    })
 
-        ReactDOM.render(childElt, rootElt);
-    </script>
+    ReactDOM.render(childElt, rootElt)
+  </script>
 </body>
 ```
+
 What you can notice here is that we no longer use the last argument instead, we have props object as our second argument with the children and the class name. We can omit the `children` prop and add its value as the third argument:
 
 `const childElt = React.createElement('div', { className: 'container' }, 'Hello World')`
@@ -163,11 +167,11 @@ Let's move to the next level in our React journey: `JSX` syntax.
 
 With this new syntax, React has 'broken' the traditional rules of building web sites/app such as separation of technologies: markup (HTML), style (CSS), behavior (JS). This new syntax makes it easy to develop apps.
 
-When using `JSX` notice that under the hood it calls `React.createElement()`. It is not mandatory to use `JSX` when writing React code, you can use only `React.createElement()`. But `JSX` is a recommendation and massively adopted by the community. 
+When using `JSX` notice that under the hood it calls `React.createElement()`. It is not mandatory to use `JSX` when writing React code, you can use only `React.createElement()`. But `JSX` is a recommendation and massively adopted by the community.
 
 Time for practice.
 
-Before starting to write our new code there is a notice for you. `JSX` is not a regular JS, no. As a consequence, a browser cannot execute JS files that contain JSX code. 
+Before starting to write our new code there is a notice for you. `JSX` is not a regular JS, no. As a consequence, a browser cannot execute JS files that contain JSX code.
 
 To be able to execute JSX code we need a to transpile it using `Babel`
 
@@ -175,10 +179,12 @@ To be able to execute JSX code we need a to transpile it using `Babel`
 <div id="root"></div>
 
 <!-- JS goes here -->
-<script src="https://unpkg.com/@babel/standalone@7.9.4/babel.min.js"></script>  <!-- Got this from Babel doc: https://babeljs.io/docs/en/babel-standalone -->
+<script src="https://unpkg.com/@babel/standalone@7.9.4/babel.min.js"></script>
+<!-- Got this from Babel doc: https://babeljs.io/docs/en/babel-standalone -->
 
-<script type="text/babel"> // Add this: type="text/babel"
-// code ...
+<script type="text/babel">
+  // Add this: type="text/babel"
+  // code ...
 </script>
 ```
 
@@ -187,16 +193,17 @@ We add the script the will be in charge of transforming JSX into plain JS. Also,
 We can now write our JSX code
 
 ```html
+<script type="text/babel">
+  // Add this: type="text/babel"
 
-<script type="text/babel"> // Add this: type="text/babel"
+  // create element
+  const childElt = <div className="container">Hello world</div>
 
-    // create element
-    const childElt = <div className="container">Hello world</div>
-
-    // and render it 
-    ReactDOM.render(childElt, rootElt);    
-  </script>
+  // and render it
+  ReactDOM.render(childElt, rootElt)
+</script>
 ```
+
 The only thing that change here is the way we create our `childElt`. See the full code:
 
 ```html
@@ -205,14 +212,15 @@ The only thing that change here is the way we create our `childElt`. See the ful
 <!-- JS goes here -->
 <script src="https://unpkg.com/react@^16/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@^16/umd/react-dom.development.js"></script>
-<script src="https://unpkg.com/@babel/standalone@7.9.4/babel.min.js"></script> 
+<script src="https://unpkg.com/@babel/standalone@7.9.4/babel.min.js"></script>
 
-<script type="text/babel"> 
-    const rootElt = document.getElementById('root');
-    const childElt = <div className="container">Hello world</div>
-    ReactDOM.render(childElt, rootElt);    
+<script type="text/babel">
+  const rootElt = document.getElementById("root")
+  const childElt = <div className="container">Hello world</div>
+  ReactDOM.render(childElt, rootElt)
 </script>
 ```
+
 Concise and cool, no?
 
 See the output on codepen

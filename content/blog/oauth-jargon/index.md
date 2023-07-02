@@ -13,27 +13,35 @@ Getting familiar with OAuth is not at all easy for someone starting in the secur
 In this tutorial I'm trying to explain to you the most used terminologies in plain English.
 
 # (Digital) identity
+
 It's all information that define a user in a particular application. Let's see some examples.
 
 On Facebook, the digital identity for a user might be their name, email or phone number, image profile, relationship status... On a book seller platform digital identity is credit card info, shipping address...
 
-# Resource Owner (You, the user): 
+# Resource Owner (You, the user):
+
 the owner of the identity
 
-# Client: 
+# Client:
+
 The application (e.g. “theFastFood.com”) that wants to access data or perform actions on behalf of the Resource Owner.
 
 # Authorization Server
+
 The application that knows the Resource Owner, where they already have an account.
 
 # Resource Server
+
 The API or service the Client wants to use on behalf of the Resource Owner.
 
 # Scopes
+
 limit what an application can do on the behalf of a user.
+
 # Consent
 
 the authorization server takes the scopes the client is requesting and verifies with the resource owner whether or not they want to give the client permission.
 
 # Access token
+
 The key the client will use to communicate with the resource server. You may compare it to a badge or key card that gives the client permission to request data or perform actions with the resource server on your behalf.

@@ -82,8 +82,8 @@ Here is how the bubble sort will sort this sample array step by step. Items in *
 
 As you can see in the 4th iteration the array is already sorted, but the algorithm does not know if it is complete. The algorithm needs one **whole** pass without any **swap** to know it is sorted, reason why you see the 5th iteration.
 
-
 ### Pseudocode
+
 I always see it as a good way to write my thinking of an algorithm in plain English before writing it in a real programming language. This is what I call the pseudocode notation (I think. Tell me if I am wrong)
 
 ```
@@ -122,21 +122,24 @@ function bubbleSort(arr) {
     return arr
   }
 ```
+
 Nothing tricky here. I use a `while` loop and prefer `forEach` to iterate over the passed array.
 
 ## Complexity Analysis
+
 To end our journey, let me say just one word about the performance of this algorithm.
 
 Bubble sort is a very simple sorting algorithm but it is too slow. You'll almost never find or use it in the real world. It is mostly used for educational purposes.
 
-* Worst Case Time Complexity, aka `Big-O`: `O(n^2)`
-* Best Case Time Complexity, aka `Big-omega`: `O(n)`
-* Average Time Complexity, aka `Big-theta`: `O(n^2)`
-* Space Complexity: `O(1)`
+- Worst Case Time Complexity, aka `Big-O`: `O(n^2)`
+- Best Case Time Complexity, aka `Big-omega`: `O(n)`
+- Average Time Complexity, aka `Big-theta`: `O(n^2)`
+- Space Complexity: `O(1)`
 
 Note that I did not reinvent the wheel, references are there (see down)
 
 ## References
+
 1. [Bubble Sort Algorithm](https://www.studytonight.com/data-structures/bubble-sort), studytonight.com
 2. [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort), Wikipedia
 3. [Javascript Algorithms — Bubble Sort](https://medium.com/javascript-algorithms/javascript-algorithms-bubble-sort-3d27f285c3b2), medium.com

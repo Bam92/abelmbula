@@ -8,7 +8,7 @@ const LatestPosts = ({
     allMarkdownRemark: { edges },
   },
 }) => {
-  const Posts = edges.map(edge => (
+  const Posts = edges.map((edge) => (
     <PostLink key={edge.node.id} post={edge.node} />
   ))
 
@@ -42,7 +42,7 @@ export default function MyLatestPosts(props) {
           }
         }
       `}
-      render={data => <LatestPosts data={data} />}
+      render={(data) => <LatestPosts data={data} />}
     />
   )
 }

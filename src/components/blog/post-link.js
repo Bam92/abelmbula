@@ -19,15 +19,16 @@ const PostLink = ({ post }) => (
       minHeight: "6em",
     }}
   >
-    <div className="cell">{post.frontmatter.title}</div>
-    <small
+    <div className="cell" style={{ width: "110px", minWidth: 0, flex: 2 }}>{post.frontmatter.title}</div>
+    <div
       className="cell"
       style={{
-        color: "#868e96",
+        color: "#a9adc1",
+        flex: 1
       }}
     >
       <time>{post.frontmatter.date}</time>
-    </small>
+    </div>
   </Link>
 )
 

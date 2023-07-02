@@ -233,38 +233,42 @@ In the `views` forlder, create a file called `index.html` and add this content:
 Let's learn how to:
 
 ## Deal with files and directories
+
 To work with files and directories in a Node.js app, we need these elements:
 
-- **sendFile()**: an Express.js method available on the response object (**res**) that is used to render a file 
+- **sendFile()**: an Express.js method available on the response object (**res**) that is used to render a file
 - **path**: a buit-in module that gives us all of the tools we need to handle cross-platform paths.
-- **__dirname**: a global object that return the absolute path of the directory containing the currently executing file
+- **\_\_dirname**: a global object that return the absolute path of the directory containing the currently executing file
 
 Let's put all into practice.
 
 ```js
-res.sendFile(path);
+res.sendFile(path)
 ```
+
 The path we want send is this `views/index.html`. We could just do this to define our path:
 
 ```js
-res.sendFile(__dirname + "views/index.html");
+res.sendFile(__dirname + "views/index.html")
 ```
 
 The code above will just work fine if you are on a UNIX-like system. If you're developing in a Windows machine you'll encounter some problems as paths do not work the same on Windows OS and MacOSX or GNU/Linux. To avoid having troubles, we can let Node.js handle this for us. Welcome `path` module!
 
 ```js
 // app.js
-const path = require("path");
+const path = require("path")
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "index.html"));
-});
+  res.sendFile(path.join(__dirname, "views", "index.html"))
+})
 ```
 
-I include the `path` module in the project and use its `.join()` method to join (concatenate) all paths into a string. The final path after I run the server will look like this: 
+I include the `path` module in the project and use its `.join()` method to join (concatenate) all paths into a string. The final path after I run the server will look like this:
 
 ```
 /home/abelmbula/Documents/dev/educative-courses/node-starter/src/views/index.html
 ```
+
 # Wrap up
-In this lesson, we learned how to create a simple Node.js server with Express framework and how to render an html file. You can find the full code [here](https://github.com/Bam92/node-starter). 
+
+In this lesson, we learned how to create a simple Node.js server with Express framework and how to render an html file. You can find the full code [here](https://github.com/Bam92/node-starter).

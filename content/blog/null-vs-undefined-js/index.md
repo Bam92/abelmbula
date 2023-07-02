@@ -9,17 +9,17 @@ When you come across `null` and `undefined` you might be tempted to think that t
 
 ## Null
 
-It represents an empty or non-existant value and it must be assigned.  
+It represents an empty or non-existant value and it must be assigned.
 
 ```js
-const myVar = null; // assign null to myVar
+const myVar = null // assign null to myVar
 
 console.log(myVar) // shows null
 ```
 
-In the example above, our variable (`myVar`) has been set to `null` and shows `null` in the console.  
+In the example above, our variable (`myVar`) has been set to `null` and shows `null` in the console.
 
-The `typeof` `null` is  `object` (though this is an implementation error since the very beginning of JavaScript)
+The `typeof` `null` is `object` (though this is an implementation error since the very beginning of JavaScript)
 
 ```js
 console.log(typeof myVar) // shows object
@@ -27,29 +27,29 @@ console.log(typeof myVar) // shows object
 
 ## Undefined
 
-It means that a variable exists (is declared) but  has not yet assigned a value.
+It means that a variable exists (is declared) but has not yet assigned a value.
 
 ```js
 const myVar; // declaration of the var
 
 console.log(myVar) // shows undefined
-``` 
+```
 
 You can also explicitly assign `undefined` to a variable like this:
 
 ```js
-const myVar = undefined;
+const myVar = undefined
 
 console.log(myVar) // shows undefined
 ```
 
-If you try to look up a non-existing properties in an object, JavaScript will send you `undefined` too: 
+If you try to look up a non-existing properties in an object, JavaScript will send you `undefined` too:
 
 ```js
 const myObj = {
-    name: 'Sarah',
-    age: 0
-};
+  name: "Sarah",
+  age: 0,
+}
 
 console.log(myObj.gender) // shows undefined
 ```
@@ -57,7 +57,7 @@ console.log(myObj.gender) // shows undefined
 Same if you don't have an explicit return in a function
 
 ```js
-const myFun = () => {};
+const myFun = () => {}
 
 console.log(myFunr()) // shows undefined
 ```
@@ -68,10 +68,10 @@ Finally, the type of `undefined` is `undefined`.
 const myVar; // declaration of the var
 
 console.log(typeof myVar) // shows undefined
-``` 
+```
 
 ## Conclusion
 
-`null` is a value that represents no value whereas `undefined` is the default value for a variable that  has not been assigned a specific value, or a function that has no explicit return value, or non-existing properties in an object.
+`null` is a value that represents no value whereas `undefined` is the default value for a variable that has not been assigned a specific value, or a function that has no explicit return value, or non-existing properties in an object.
 
 Thank you for reading!

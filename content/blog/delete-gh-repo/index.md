@@ -12,7 +12,7 @@ Let's go step by step!
 1. Login to [Github](https://github.com/)
 2. Open the repo you want to delete
 3. Click Setting tab (the last on the right)
-4. Scroll down till the `Danger zone` (you have read well, Danger zone) 
+4. Scroll down till the `Danger zone` (you have read well, Danger zone)
 5. Click `Delete this repository` (once done, you cannot revert the operation, so think twice before hitting thr button)
 
 ![Danger zone](del-gh-repo.png "Danger zone")

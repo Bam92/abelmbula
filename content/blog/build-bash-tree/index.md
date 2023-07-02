@@ -5,7 +5,6 @@ description: "Build a basic bash tree command in JavaScript"
 published: true
 ---
 
-
 Do you know the Linux command that generates a tree of directories and files? In Bash, we use `tree` command. If you’re just learning programming, it can be an excellent exercise to code a program like this.
 
 For the sake of simplicity and learning, we’ll be doing something very basic and simple. Here’s the scenario:
@@ -47,10 +46,12 @@ Now that we have our algorithm, let’s move on to implementing the program.
 ## Code implementation
 
 Before we start our implementation, let me remind you of something more important. I think you even guess it already, don’t you? It's about the good programmer workflow.
+
 > **The good programmer workflow**
->* a good programmer doesn't write a program all at once
->* a good programmer writes and test the program in a series of builds. Each build adds to the previous one
->    
+>
+> - a good programmer doesn't write a program all at once
+> - a good programmer writes and test the program in a series of builds. Each build adds to the previous one
+>
 > In short, a good programmer works incrementally, add small pieces one at a time and constantly re-checking the work so far.
 
 To help with the builds, we can use the high-level algorithm.
@@ -61,9 +62,8 @@ Nothing special here. We create our function that has one parameter and uses the
 
 ```jsx
 function treeGenerator(path) {
-	// -- Split the path --
-
-	// -- Print array items line by line
+  // -- Split the path --
+  // -- Print array items line by line
 }
 ```
 
@@ -75,14 +75,14 @@ This build will add the logic to split the path. We won’t be writing much code
 
 ```js
 function treeGenerator(path) {
-	// -- Split the path --
-	const dir = path.split("/")  // <-- new code
+  // -- Split the path --
+  const dir = path.split("/") // <-- new code
 
-	// -- Print array items line by line
+  // -- Print array items line by line
 }
 ```
 
-The `split()` method takes a separator (`/` in our case), divides a string (`path` parameter here) into substrings thanks to the separator, puts the substrings into an array, and returns that array. So, as you can notice, the variable `dir` is an array that contains each word in the `path`. 
+The `split()` method takes a separator (`/` in our case), divides a string (`path` parameter here) into substrings thanks to the separator, puts the substrings into an array, and returns that array. So, as you can notice, the variable `dir` is an array that contains each word in the `path`.
 
 Now is the time to print array items.
 
@@ -104,26 +104,27 @@ Let’s now write the code for everything above.
 
 ```js
 function treeGenerator(path) {
-	// -- Split the path --
-	const dir = path.split("/")  
+  // -- Split the path --
+  const dir = path.split("/")
 
-	// -- Print array items line by line
-	// 1st line
-	console.log(dir[0])   // <-- new code
+  // -- Print array items line by line
+  // 1st line
+  console.log(dir[0]) // <-- new code
 
-	// 2nd line
-	console.log("|--" + dir[1])   // <-- new code
-	
-	// Next lines
-	let indent = 0   // <-- new code
-	for (let i = 2; i < dir.length; i += 1) {   // <-- new code
-		indent += 3
-		console.log(" ".repeat(indent) + "|--" + dir[i])
-	}
+  // 2nd line
+  console.log("|--" + dir[1]) // <-- new code
+
+  // Next lines
+  let indent = 0 // <-- new code
+  for (let i = 2; i < dir.length; i += 1) {
+    // <-- new code
+    indent += 3
+    console.log(" ".repeat(indent) + "|--" + dir[i])
+  }
 }
 ```
 
-To repeat a character `n` times, we use the `repeat()` method. 
+To repeat a character `n` times, we use the `repeat()` method.
 
 Our program is ready to test, given that we have covered everything we wanted it to do. But, remember, we are not common developers, but good ones. As such, we swear only by elegance and clean code.
 
@@ -131,21 +132,21 @@ Let’s refactor our `treeGenerator()`function.
 
 ```js
 function treeGenerator(path) {
-	// -- variables declaration --
-	const CONNECTOR = "|--";
-	const SPACE_PREFIX = " ";
-	const dir = path.split("/");
-	let indent = 0;
+  // -- variables declaration --
+  const CONNECTOR = "|--"
+  const SPACE_PREFIX = " "
+  const dir = path.split("/")
+  let indent = 0
 
-	// -- Print the 1st two items
-	console.log(dir[0]); 
-	console.log(CONNECTOR + dir[1]);
-	
-	// Iterate from the third item
-	for (let i = 2; i < dir.length; i += 1) { 
-		indent += 3;
-		console.log(SPACE_PREFIX.repeat(indent) + CONNECTOR + dir[i]);
-	}
+  // -- Print the 1st two items
+  console.log(dir[0])
+  console.log(CONNECTOR + dir[1])
+
+  // Iterate from the third item
+  for (let i = 2; i < dir.length; i += 1) {
+    indent += 3
+    console.log(SPACE_PREFIX.repeat(indent) + CONNECTOR + dir[i])
+  }
 }
 ```
 
@@ -155,7 +156,7 @@ We put a little order in the code. Notice how I use capital letters for the firs
 
 To test the function, I use Node.js REPL on Mac.
 
-Example 1 : 
+Example 1 :
 
 `path=home/documents/courses/test.pdf`
 
@@ -163,7 +164,7 @@ Example 1 :
 
 Example 2:
 
-`path=Users/abelmbula/codes/kadea.academy/src/utils/faq.ts` 
+`path=Users/abelmbula/codes/kadea.academy/src/utils/faq.ts`
 
 ![Test example 2](test-example2.png)
 
@@ -181,10 +182,9 @@ Up to this point, you’ve built a basic tree generator tool. This s a good star
 
 Should you miss ideas to improve your application, here are a few of them you can implement to continue improving your tree generator tool:
 
-- add a feature to generate  tree per directory level (see image below)
+- add a feature to generate tree per directory level (see image below)
 - make your app a true CLI app with Node.js
 
 These are just a few ideas of how you can continue adding features to your tree generator app. Take the challenge and build something amazing on top of this!
 
 ![A tree per directory level](tree-per-dir-level.png)
-

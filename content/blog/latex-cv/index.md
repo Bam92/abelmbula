@@ -8,6 +8,7 @@ published: true
 Latex // is a typesetting system that is mostly used in scientific world.
 
 # Why Use Latex?
+
 You may be wondering why one should spend much time to use Latex rather than use a wordprocessing software like Google doc, MS Word...
 
 Here are some points I think you should considere in order to get an answer to the question above. As devs, we:
@@ -20,9 +21,9 @@ Let's analyze each point.
 
 **Track the project**
 
-When I say *tracking*, I'm refering to the possibility to use **Git and GitHub** as they can allow us to keep snapshots of our resume. For instance, I can have three or four resumes in a projet: one that fit for front-end role with a focus on React, an other focuses on Angulas, an other for full stand, and the last one for back-end developer.
+When I say _tracking_, I'm refering to the possibility to use **Git and GitHub** as they can allow us to keep snapshots of our resume. For instance, I can have three or four resumes in a projet: one that fit for front-end role with a focus on React, an other focuses on Angulas, an other for full stand, and the last one for back-end developer.
 
-Yes, I know that you can do this with a wordprocessing software. So, Latex is not at all a winner for this point. 
+Yes, I know that you can do this with a wordprocessing software. So, Latex is not at all a winner for this point.
 
 **Project structure**
 

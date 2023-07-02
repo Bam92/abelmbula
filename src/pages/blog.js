@@ -10,7 +10,7 @@ import PostLink from "../components/blog/post-link"
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
-    const posts = data.allMarkdownRemark.edges.map(edge => (
+    const posts = data.allMarkdownRemark.edges.map((edge) => (
       <PostLink key={edge.node.id} post={edge.node} />
     ))
 
@@ -18,13 +18,15 @@ class BlogIndex extends React.Component {
       <>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Blog | Great articles for great developers</title>
+          <title>The Abel L Mbula Blog</title>
         </Helmet>
-        
-        <Layout location={this.props.location}>
+
+        <Layout location={ this.props.location }>
           <SEO title="Blog" />
-          <h3>Find great articles that <i>really</i> suit your need.</h3>
-          <div>{posts}</div>
+          <h3>
+            Find great articles among { posts.length } that <i>really</i> suit your need.
+          </h3>
+          <div>{ posts }</div>
         </Layout>
       </>
     )
@@ -36,7 +38,7 @@ export default BlogIndex
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(
-      sort: { frontmatter: { date: DESC }}
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { published: { eq: true } } }
     ) {
       edges {
@@ -52,7 +54,7 @@ export const pageQuery = graphql`
             cover {
               publicURL
               childImageSharp {
-                fixed(width: 2000) { 
+                fixed(width: 2000) {
                   ...GatsbyImageSharpFixed
                 }
               }
