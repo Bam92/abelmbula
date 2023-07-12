@@ -22,8 +22,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  if (result.errors)
-    throw result.errors
+  if (result.errors) throw result.errors
 
   // Create blog post pages.
   const posts = result.data.allMarkdownRemark.edges
@@ -52,8 +51,4 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     })
   }
-}
-
-module.exports = {
-  posts
 }
