@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
+import Footer from "./Footer"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -81,6 +82,7 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
+        <footer>{ <Footer />}</footer>
       </div>
     )
   }

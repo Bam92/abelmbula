@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet"
 
 import Container from "../components/container"
 import Latest from "../components/blog/Latest"
+import Footer from "../components/Footer"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import art1 from "../images/arts/shape-light-coral-edge.svg"
 import art2 from "../images/arts/shape-mint-edge.svg"
@@ -98,9 +99,10 @@ export default () => {
             marginTop: `2.5em`,
           }}
         >
-          <h1>- Latest</h1>
+          <h2>- Latest</h2>
           <Latest />
         </section>
+        <Footer />
       </Container>
     </div>
   )

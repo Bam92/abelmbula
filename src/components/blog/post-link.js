@@ -7,11 +7,11 @@ const PostLink = ({ post }) => (
     className="row"
     style={{
       display: "flex",
-      justifyContent: "space-between",
+      flexDirection: "column",
       border: "2px solid #fff",
       borderLeft: "7px solid #1ca086",
       marginBottom: ".7em",
-      padding: ".5em 30px .7em",
+      padding: ".5em",
       background: "#fff",
       borderRadius: "4px",
       boxShadow:
@@ -19,15 +19,17 @@ const PostLink = ({ post }) => (
       minHeight: "6em",
     }}
   >
-    <div className="cell" style={{ width: "110px", minWidth: 0, flex: 2 }}>{post.frontmatter.title}</div>
+    <div className="cell" >
+      {post.frontmatter.title}
+    </div>
     <div
       className="cell"
       style={{
-        color: "#a9adc1",
-        flex: 1
+        color: "#a9adc1"
       }}
     >
       <time>{post.frontmatter.date}</time>
+      <p><small> {post.excerpt}</small></p>
     </div>
   </Link>
 )
