@@ -73,17 +73,28 @@ class Layout extends React.Component {
       )
     }
     return (
+      <>
       <div
         style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(25),
+          // marginLeft: `auto`,
+          // marginRight: `auto`,
+          // maxWidth: rhythm(25),
+          minHeight: `100vh`,
+          display: `flex`,
+          justifyContent: `center`,
+          flexDirection: `column`,
+          // alignItems: `center`
         }}
       >
-        <header>{header}</header>
-        <main>{children}</main>
-        <footer>{ <Footer />}</footer>
+        <header style={{ alignSelf: `center`}}>{header}</header>
+        <main style={{ alignSelf: `center` }}>
+          {children}
+          </main>
+      {/* <footer style={{ backgroundColor: `white`, }}> */}
+      <Footer />
+      {/* </footer> */}
       </div>
+      </>
     )
   }
 }
