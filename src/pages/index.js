@@ -4,7 +4,9 @@ import { Helmet } from "react-helmet"
 
 import Container from "../components/container"
 import Latest from "../components/blog/Latest"
+import Layout from "../components/layout"
 import Footer from "../components/Footer"
+import SocialCard from "../components/molecules/SocialCard"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import art1 from "../images/arts/shape-light-coral-edge.svg"
 import art2 from "../images/arts/shape-mint-edge.svg"
@@ -43,13 +45,8 @@ export default () => {
         alt=""
       />
 
-      <Container>
-        <header
-          id="intro"
-          style={{
-            width: "50%",
-          }}
-        >
+      <Layout location={ window.location.href }>
+        <header id="intro" style={{ width: "50%",}}>
           <h1>Hi, I'm { firstName } 👋</h1>
           <p
             className="subTitle"
@@ -70,7 +67,7 @@ export default () => {
             <strong> protonmail.com</strong>
           </p>
 
-          <ul
+          {/* <ul
             style={{
               listStyle: `none`,
               display: `flex`,
@@ -88,7 +85,9 @@ export default () => {
             <li>
               <a href={social.github}>GitHub</a>
             </li>
-          </ul>
+          </ul> */}
+
+          <SocialCard />
         </header>
 
         {/* Latest 5 blog posts */}
@@ -102,8 +101,8 @@ export default () => {
           <h2>- Latest</h2>
           <Latest />
         </section>
-        <Footer />
-      </Container>
+        {/* <Footer /> */}
+      </Layout>
     </div>
   )
 }

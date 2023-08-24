@@ -24,7 +24,8 @@ class BlogIndex extends React.Component {
         <Layout location={ this.props.location }>
           <SEO title="Blog" />
           <h3>
-            Find great articles among { posts.length } that <i>really</i> suit your need.
+            Find great articles among { posts.length } 
+            that <i>really</i> suit your need.
           </h3>
           <div>{ posts }</div>
         </Layout>
