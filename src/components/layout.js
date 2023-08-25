@@ -8,11 +8,12 @@ import { rhythm, scale } from "../utils/typography"
 class Layout extends React.Component {
   render() {
     const { location, children, cover } = this.props
+    const url = location.href ? location.href : ''
     const rootPath = `${__PATH_PREFIX__}/`
     const isBlogPostPath = /blog\/\S+$/
     let header
 
-    if (location.pathname === rootPath) {
+    if (url.pathname === rootPath) {
       header = (
         <h1
           style={{
@@ -32,7 +33,7 @@ class Layout extends React.Component {
           </Link>
         </h1>
       )
-    } else if (isBlogPostPath.test(location.pathname)) {
+    } else if (isBlogPostPath.test(url.pathname)) {
       header = (
         <>
           <p
@@ -88,7 +89,7 @@ class Layout extends React.Component {
         <main style={{ alignSelf: `center`, width:`80%` }}>
           {children}
         </main>
-        
+
         <Footer />
       </div>
     )

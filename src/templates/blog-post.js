@@ -10,9 +10,10 @@ class BlogPostTemplate extends React.Component {
   render() {
     const { data, location } = this.props
     const post = data.markdownRemark
+    const cover=post.frontmatter.cover
     return (
       <Layout
-        location={location}
+        // location={location}
         cover={post.frontmatter.cover}
       >
         <SEO
@@ -38,6 +39,9 @@ class BlogPostTemplate extends React.Component {
             >
               {post.frontmatter.date}
             </p>
+            <div>
+            {cover ? <Img fluid={cover.childImageSharp.fluid} /> : null}
+            </div>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
 
