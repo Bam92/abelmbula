@@ -81,10 +81,14 @@ class Layout extends React.Component {
           flexDirection: `column`,
         }}
       >
-        <header style={{ alignSelf: `center`}}>{header}</header>
-        <main style={{ alignSelf: `center` }}>
+        <header style={{ alignSelf: `center`}}>
+          {header}
+        </header>
+
+        <main style={{ alignSelf: `center`, width:`80%` }}>
           {children}
         </main>
+        
         <Footer />
       </div>
     )

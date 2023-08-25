@@ -13,7 +13,6 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout
         location={location}
-        title={post.frontmatter.title}
         cover={post.frontmatter.cover}
       >
         <SEO
@@ -34,7 +33,7 @@ class BlogPostTemplate extends React.Component {
               style={{
                 ...scale(-1 / 5),
                 display: `block`,
-                marginBottom: rhythm(-3),
+                marginBottom: rhythm(2),
               }}
             >
               {post.frontmatter.date}

@@ -45,7 +45,7 @@ export default () => {
         alt=""
       />
 
-      <Layout location={ window.location.href }>
+      <Layout>
         <header id="intro" style={{ width: "50%",}}>
           <h1>Hi, I'm { firstName } 👋</h1>
           <p
