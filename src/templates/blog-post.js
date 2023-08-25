@@ -10,15 +10,17 @@ class BlogPostTemplate extends React.Component {
   render() {
     const { data, location } = this.props
     const post = data.markdownRemark
-    const cover=post.frontmatter.cover
+    const { cover, title, description, date } = post.frontmatter
+    console.log(location)
     return (
       <Layout
-        // location={location}
-        cover={post.frontmatter.cover}
+        location={this.props.location}
+        title={title}
+        cover={cover}
       >
         <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
+          title={title}
+          description={description || post.excerpt}
         />
         <article>
           <header>
@@ -28,7 +30,7 @@ class BlogPostTemplate extends React.Component {
                 marginBottom: 0,
               }}
             >
-              {post.frontmatter.title}
+              {title}
             </h3>
             <p
               style={{
@@ -37,7 +39,7 @@ class BlogPostTemplate extends React.Component {
                 marginBottom: rhythm(2),
               }}
             >
-              {post.frontmatter.date}
+              {date}
             </p>
             <div>
             {cover ? <Img fluid={cover.childImageSharp.fluid} /> : null}

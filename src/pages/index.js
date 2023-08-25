@@ -13,7 +13,7 @@ import art2 from "../images/arts/shape-mint-edge.svg"
 
 import "./index.css"
 
-export default () => {
+export default (props) => {
   const { social, firstName } = useSiteMetadata()
   const artHeaderStyle = {
     zIndex: "-1",
@@ -45,7 +45,7 @@ export default () => {
         alt=""
       />
 
-      <Layout>
+      <Layout location={props.location}>
         <header id="intro" style={{ width: "50%",}}>
           <h1>Hi, I'm { firstName } 👋</h1>
           <p

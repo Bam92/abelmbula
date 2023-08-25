@@ -9,7 +9,7 @@ import PostLink from "../components/blog/post-link"
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props
+    const { data, location } = this.props
     const posts = data.allMarkdownRemark.edges.map((edge) => (
       <PostLink key={edge.node.id} post={edge.node} />
     ))
@@ -21,7 +21,7 @@ class BlogIndex extends React.Component {
           <title>The Abel L Mbula Blog</title>
         </Helmet>
 
-        <Layout location={ this.props.location }>
+        <Layout location={ location }>
           <SEO title="Blog" />
           <h3>
             Find great articles among { posts.length } 
