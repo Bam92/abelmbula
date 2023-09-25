@@ -4,7 +4,6 @@ date: "2023-09-02"
 description: ""
 published: true
 ---
-# How to store an array in localStorage
 
 The `localStorage` is a web storage object that allows us to persist data in the browser. The data, which must be of type string, is saved as a key/value pair.
 

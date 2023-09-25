@@ -2,11 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 
-import Container from "../components/container"
 import Latest from "../components/blog/Latest"
 import Layout from "../components/layout"
-import Footer from "../components/Footer"
-import SocialCard from "../components/molecules/SocialCard"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import art1 from "../images/arts/shape-light-coral-edge.svg"
 import art2 from "../images/arts/shape-mint-edge.svg"
@@ -66,28 +63,6 @@ export default (props) => {
             <strong>news.abel </strong> at
             <strong> protonmail.com</strong>
           </p>
-
-          {/* <ul
-            style={{
-              listStyle: `none`,
-              display: `flex`,
-              margin: `0`,
-            }}
-          >
-            <li>
-              <a href={social.twitter}>Twitter</a>
-              <span className="separator">/</span>
-            </li>
-            <li>
-              <a href={social.linkedin}> LinkedIn</a>
-              <span className="separator">/</span>
-            </li>
-            <li>
-              <a href={social.github}>GitHub</a>
-            </li>
-          </ul> */}
-
-          <SocialCard />
         </header>
 
         {/* Latest 5 blog posts */}

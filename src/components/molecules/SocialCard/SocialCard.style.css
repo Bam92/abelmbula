@@ -3,3 +3,7 @@
     justify-content: center;
     gap: 1em;
 }
+
+.socialCard a {
+    text-decoration: dashed !important; 
+}
