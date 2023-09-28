@@ -4,6 +4,7 @@
     gap: 1em;
 }
 
-.socialCard a {
-    text-decoration: dashed !important; 
+.socialCard > a {
+    /* text-decoration: none;  */
+    color: rgb(74, 79, 87);
 }

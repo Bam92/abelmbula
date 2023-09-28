@@ -13,14 +13,18 @@ const SocialCard = () => {
 
   return (
     <div className='socialCard'>
-      <a href={social.linkedin} >
+      <a href={social.linkedin} target='_blank' >
         <SocialIcon icon={faLinkedin} />
       </a>
-      <a href={social.twitter} >
+      <a href={social.twitter} target='_blank' >
         <SocialIcon icon={faTwitter} />
       </a>
-      <a href={social.github} title="Retrouve-moi sur Github"> <SocialIcon icon={faGithub} /> </a>
-      <a href='mailto:bam6192@gmail.com'><SocialIcon icon={faEnvelope} /></a>
+      <a href={social.github} title="Retrouve-moi sur Github" target='_blank'>
+        <SocialIcon icon={faGithub} />
+      </a>
+      <a href='mailto:bam6192@gmail.com'>
+        <SocialIcon icon={faEnvelope} />
+      </a>
     </div>
   )
 }
