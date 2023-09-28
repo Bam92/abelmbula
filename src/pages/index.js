@@ -69,7 +69,7 @@ export default (props) => {
         <section
           id="latest"
           style={{
-            width: "80%",
+            // width: "80%",
             marginTop: `2.5em`,
           }}
         >

@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./blog.css"
 import PostLink from "../components/blog/post-link"
+import BlogList from "../components/blog/blogList"
 
 class BlogIndex extends React.Component {
   render() {
@@ -26,7 +27,8 @@ class BlogIndex extends React.Component {
           <h3>
             Find great articles among { posts.length } that <i>really</i> suit your need.
           </h3>
-          <div>{ posts }</div>
+          
+          <BlogList> { posts } </BlogList>
         </Layout>
       </>
     )

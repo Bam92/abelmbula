@@ -85,7 +85,7 @@ class Layout extends React.Component {
           {header}
         </header>
 
-        <main style={{ alignSelf: `center`, width:`80%` }}>
+        <main style={{ alignSelf: `center`, width:`50vw` }}>
           {children}
         </main>
 

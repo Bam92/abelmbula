@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 
 import PostLink from "./post-link"
+import BlogList from "./blogList"
 
 const LatestPosts = ({
   data: {
@@ -12,7 +13,7 @@ const LatestPosts = ({
     <PostLink key={edge.node.id} post={edge.node} />
   ))
 
-  return <div>{Posts}</div>
+  return <BlogList> {Posts} </BlogList>
 }
 
 export default function MyLatestPosts(props) {
