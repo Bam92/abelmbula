@@ -4,9 +4,9 @@ import { Helmet } from "react-helmet"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "./blog.css"
 import PostLink from "../components/blog/post-link"
 import BlogList from "../components/blog/blogList"
+import "./blog.css"
 
 class BlogIndex extends React.Component {
   render() {

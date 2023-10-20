@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 
-import Latest from "../components/blog/Latest"
+import LatestPosts from "../components/blog/Latest"
 import Layout from "../components/layout"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import art1 from "../images/arts/shape-light-coral-edge.svg"
@@ -69,14 +69,12 @@ export default (props) => {
         <section
           id="latest"
           style={{
-            // width: "80%",
             marginTop: `2.5em`,
           }}
         >
           <h2>- Latest</h2>
-          <Latest />
+          <LatestPosts />
         </section>
-        {/* <Footer /> */}
       </Layout>
     </div>
   )
