@@ -1,0 +1,15 @@
+.postCard {
+  width: 24vw;
+  display: "flex";
+  flex-direction: "column";
+  border: 2px solid #e5e7eb;
+  border-width: 0 2px 2px 2px;
+  padding: 1.2em;
+  border-radius: "5px";
+}
+
+@media (max-width: 450px) {
+  .postCard {
+    width: 100vw;
+  }
+  }

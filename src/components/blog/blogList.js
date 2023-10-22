@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./blogList.style.css"
+import "./blogList.module.css"
 
 const BlogList = ({ children }) => {
     return <div style={{

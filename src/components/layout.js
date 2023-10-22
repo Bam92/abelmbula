@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Footer from "./Footer"
+import Container from "./container"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -81,13 +82,16 @@ class Layout extends React.Component {
           flexDirection: `column`,
         }}
       >
+       
+
+        <Container>
         <header style={{ alignSelf: `center`}}>
           {header}
         </header>
-
-        <main style={{ alignSelf: `center`, width:`50vw` }}>
+        <main style={{ alignSelf: `center` }}>
           {children}
         </main>
+        </Container>
 
         <Footer />
       </div>

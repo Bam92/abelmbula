@@ -1,14 +1,15 @@
 .container {
-    margin: 8rem 0px 4rem 12rem;
-    /* max-width: 800px; */
+    margin: 0 auto;
+    width: 50vw;
+    box-sizing: border-box;
 }
 
 /* Mobile Design */
 @media (max-width: 450px) {
     .container {
-      margin: 0px ;
-      /* border: 2px solid red; */
-      padding: 0 .8em !important;
+      margin: 0px;
+      width: 100vw;
+      /* padding: 0 .5em; */
     }
     
   }

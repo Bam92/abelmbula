@@ -43,7 +43,7 @@ export default (props) => {
       />
 
       <Layout location={props.location}>
-        <header id="intro" style={{ width: "50%",}}>
+        <header id="intro">
           <h1>Hi, I'm { firstName } 👋</h1>
           <p
             className="subTitle"

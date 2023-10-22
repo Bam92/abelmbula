@@ -9,11 +9,11 @@ const LatestPosts = ({
     allMarkdownRemark: { edges },
   },
 }) => {
-  const Posts = edges.map((edge) => (
+  const posts = edges.map((edge) => (
     <PostLink key={edge.node.id} post={edge.node} />
   ))
 
-  return <BlogList> {Posts} </BlogList>
+  return <BlogList> { posts } </BlogList>
 }
 
 export default function MyLatestPosts(props) {
@@ -24,7 +24,7 @@ export default function MyLatestPosts(props) {
           allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
             filter: { frontmatter: { published: { eq: true } } }
-            limit: 5
+            limit: 6
           ) {
             edges {
               node {

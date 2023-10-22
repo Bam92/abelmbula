@@ -1,20 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import {postCard} from "./postLink.module.css"
+
 const PostLink = ({ post }) => (
   <Link
     to={`/blog` + post.fields.slug}
-    className="row"
+    className={postCard}
     style={{
-      width: "24vw",
-      display: "flex",
-      flexDirection: "column",
-      borderLeft: "2px solid #e5e7eb",
-      borderRight: "2px solid #e5e7eb",
-      borderBottom: "2px solid #e5e7eb",
-      padding: "1.2em",
-      textDecoration: "none",
-      borderRadius: "5px",
+      
     }}
   >
     <h3 className="cell" 
