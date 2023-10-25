@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import {postCard} from "./postLink.module.css"
+import { postCard } from "./postLink.module.css"
 
 const PostLink = ({ post }) => (
   <Link

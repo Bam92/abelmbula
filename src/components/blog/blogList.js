@@ -1,15 +1,8 @@
 import React from "react";
 
-import "./blogList.module.css"
+import { posts } from "./blogList.module.css"
 
-const BlogList = ({ children }) => {
-    return <div style={{
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "1em",
-    }}>
-        {children}
-    </div>
-}
+const BlogList = ({ children }) => 
+    <div className={posts}> {children}</div>
 
 export default BlogList

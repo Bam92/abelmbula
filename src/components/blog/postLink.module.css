@@ -1,5 +1,5 @@
 .postCard {
-  width: 24vw;
+  width: 25vw;
   display: "flex";
   flex-direction: "column";
   border: 2px solid #e5e7eb;
@@ -8,8 +8,14 @@
   border-radius: "5px";
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 640px) {
   .postCard {
-    width: 100vw;
+    width: 90vw;
   }
   }
+
+@media screen and (min-width: 640px) and (max-width: 950px) {
+  .postCard {
+    width: 40vw;
+  }
+}

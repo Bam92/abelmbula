@@ -11,10 +11,10 @@ class BlogPostTemplate extends React.Component {
     const { data, location } = this.props
     const post = data.markdownRemark
     const { cover, title, description, date } = post.frontmatter
-    console.log(location)
+
     return (
       <Layout
-        location={this.props.location}
+        location={location}
         title={title}
         cover={cover}
       >

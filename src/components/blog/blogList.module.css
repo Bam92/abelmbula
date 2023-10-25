@@ -1,3 +1,12 @@
-@media (max-width: 450px) {
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2em;
+}
 
+@media screen and (max-width: 640px) {
+  .posts {
+    justify-content: center;
+    row-gap: 1.5em;
+  }
   }
