@@ -16,7 +16,6 @@ class BlogPostTemplate extends React.Component {
       <Layout
         location={location}
         title={title}
-        cover={cover}
       >
         <SEO
           title={title}

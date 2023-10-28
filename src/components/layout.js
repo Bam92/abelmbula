@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import Img from "gatsby-image"
 import Footer from "./Footer"
 import Container from "./container"
 
@@ -8,7 +7,7 @@ import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
-    const { location, children, cover } = this.props
+    const { location, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     const isBlogPostPath = /blog\/\S+$/
     let header
@@ -50,9 +49,7 @@ class Layout extends React.Component {
               Back to overview
             </Link>
           </p>
-          <div>
-            {cover ? <Img fluid={cover.childImageSharp.fluid} /> : null}
-          </div>
+     
         </>
       )
     } else {
