@@ -101,7 +101,7 @@ ENDWHILE
 RETURN arr
 ```
 
-I am not an expert in pseudocoding, but I am sure that even grandma may understand this. You can read a post I wrote about it [here][https://www.abelmbula.com/blog/pseudocode/]
+I am not an expert in pseudocoding, but I am sure that even grandma may understand this. You can read a post I wrote about it [here](https://www.abelmbula.com/blog/pseudocode/).
 
 Let's translate our pseudocode into JavaScript.
 
