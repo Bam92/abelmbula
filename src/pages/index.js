@@ -21,7 +21,7 @@ export default (props) => {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="monetization" content="$ilp.uphold.com/rmLyURx6aPz6"></meta>
-        <title>{ firstName } L. Mbula</title>
+        <title>{firstName} L. Mbula</title>
       </Helmet>
 
       <img
@@ -32,7 +32,7 @@ export default (props) => {
       />
       <img
         id="art2"
-        src={ art2 }
+        src={art2}
         style={{
           ...artHeaderStyle,
           right: "0px",
@@ -44,7 +44,7 @@ export default (props) => {
 
       <Layout location={props.location}>
         <header id="intro">
-          <h1>Hi, I'm { firstName } 👋</h1>
+          <h1>Hi, I'm {firstName} 👋</h1>
           <p
             className="subTitle"
             style={{
@@ -53,27 +53,28 @@ export default (props) => {
               marginTop: "1.8em",
             }}
           >
-            I know how difficult it is to get started in the tech industry. So,
-            my mission is to help move forward in the right direction.
+            I'm a developer, an educator, a writer, a free/libre open source
+            enthusiast and a Jesus Christ follower.
+            I've co-founded <a href="http://wikimediardc.org/">Wikimedia DRCongo </a>
+            and founded <a href="https://kaliacademy.org/">Kali Academy</a>
+            <br />
+            Welcome to my digital garden!
           </p>
 
           <p>
-            You can read my <Link to="/blog">blog</Link>, view my{" "}
-            <Link to="/lab">lab</Link>, or drop me a ligne at{" "}
-            <strong>news.abel </strong> at
-            <strong> protonmail.com</strong>
+            When I'm not behind the screen, you'll find me spending time with my
+            family and/or spreading the world about the gospel of Christ.
           </p>
         </header>
 
-        {/* Latest 5 blog posts */}
-        <section
-          id="latest"
-          style={{
-            marginTop: `2.5em`,
-          }}
-        >
-          <h2>- Latest</h2>
+        {/* Latest 6 blog posts */}
+        <section id="latest" style={{ marginTop: `2.5em`,}}>
+          <h2>Latest</h2>
           <LatestPosts />
+
+          <p style={{ textAlign: `center`, marginTop: `.8em` }}>
+            <Link to="/blog">See all articles</Link>
+          </p>
         </section>
       </Layout>
     </div>

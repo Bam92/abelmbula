@@ -78,9 +78,9 @@ module.exports = {
       },
     },
     `gatsby-transformer-json`,
-    // { resolve: `gatsby-remark-images`, },
-    { resolve: `gatsby-transformer-sharp` },
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
