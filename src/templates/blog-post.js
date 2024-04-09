@@ -3,24 +3,16 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
     const { data, location } = this.props
     const post = data.markdownRemark
-    const { cover, title, description, date } = post.frontmatter
+    const { cover, title, date } = post.frontmatter
 
     return (
-      <Layout
-        location={location}
-        title={title}
-      >
-        <SEO
-          title={title}
-          description={description || post.excerpt}
-        />
+      <Layout location={location} title={title}>
         <article>
           <header>
             <h3
@@ -41,7 +33,7 @@ class BlogPostTemplate extends React.Component {
               {date}
             </p>
             <div>
-            {cover ? <Img fluid={cover.childImageSharp.fluid} /> : null}
+              {cover ? <Img fluid={cover.childImageSharp.fluid} /> : null}
             </div>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -117,6 +109,16 @@ class BlogPostTemplate extends React.Component {
 }
 
 export default BlogPostTemplate
+
+export const Head = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title },
+    },
+  },
+}) => {
+  return <title>{title}</title>
+}
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

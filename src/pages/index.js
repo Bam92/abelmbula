@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Helmet } from "react-helmet"
 
 import LatestPosts from "../components/blog/Latest"
 import Layout from "../components/layout"
@@ -10,20 +9,15 @@ import art2 from "../images/arts/shape-mint-edge.svg"
 
 import "./index.css"
 
+
 export default (props) => {
-  const { social, firstName } = useSiteMetadata()
+  const { firstName } = useSiteMetadata()
   const artHeaderStyle = {
     zIndex: "-1",
     position: "absolute",
   }
   return (
     <div>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <meta name="monetization" content="$ilp.uphold.com/rmLyURx6aPz6"></meta>
-        <title>{firstName} L. Mbula</title>
-      </Helmet>
-
       <img
         id="art1"
         src={art1}
@@ -54,9 +48,11 @@ export default (props) => {
             }}
           >
             I'm a developer, an educator, a writer, a free/libre open source
-            enthusiast and a Jesus Christ follower.
-            I've co-founded <a href="http://wikimediardc.org/">Wikimedia DRCongo </a>
-            and founded <a href="https://kaliacademy.org/">Kali Academy</a>
+            enthusiast and a Jesus Christ follower. I've co-founded{" "}
+            <a href="http://wikimediardc.org/">Wikimedia DRCongo </a>
+            and founded <a href="https://kaliacademy.org/">Kali Academy</a>. I'm
+            currently working as a Sr Instructor at{" "}
+            <a href="https://www.kadea.academy/">Kade Academy</a>
             <br />
             Welcome to my digital garden!
           </p>
@@ -68,7 +64,7 @@ export default (props) => {
         </header>
 
         {/* Latest 6 blog posts */}
-        <section id="latest" style={{ marginTop: `2.5em`,}}>
+        <section id="latest" style={{ marginTop: `2.5em` }}>
           <h2>Latest</h2>
           <LatestPosts />
 
@@ -80,3 +76,9 @@ export default (props) => {
     </div>
   )
 }
+
+export const Head = () => 
+{
+const { firstName, lastName } = useSiteMetadata()
+
+return <title>{firstName} {lastName} | Home</title>}

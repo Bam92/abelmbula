@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Helmet } from "react-helmet"
 
 import Mailchimp from "../components/MailchimpForm"
 import Container from "../components/container"
@@ -8,10 +7,7 @@ import Footer from "../components/Footer"
 
 export default () => (
   <>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>Join the Familly | Abel L Mbula</title>
-    </Helmet>
+
     <Container>
       <Link to="/">Home</Link>
       <h1>Newsletter</h1>

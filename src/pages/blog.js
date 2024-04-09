@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Helmet } from "react-helmet"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
+
 import PostLink from "../components/blog/post-link"
 import BlogList from "../components/blog/blogList"
 import "./blog.css"
@@ -17,18 +17,13 @@ class BlogIndex extends React.Component {
 
     return (
       <>
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>The Abel L Mbula Blog</title>
-        </Helmet>
-
-        <Layout location={ location }>
-          <SEO title="Blog" />
+        <Layout location={location}>
           <h3>
-            Find great articles among { posts.length } that <i>really</i> suit your need.
+            Find great articles among {posts.length} that <i>really</i> suit
+            your need.
           </h3>
-          
-          <BlogList> { posts } </BlogList>
+
+          <BlogList> {posts} </BlogList>
         </Layout>
       </>
     )
@@ -36,6 +31,15 @@ class BlogIndex extends React.Component {
 }
 
 export default BlogIndex
+
+export const Head = () => {
+  const { firstName, lastName } = useSiteMetadata()
+  return (
+    <title>
+      {firstName} {lastName} | Blog{" "}
+    </title>
+  )
+}
 
 export const pageQuery = graphql`
   query {
