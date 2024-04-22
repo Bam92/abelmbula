@@ -1,17 +1,3 @@
-article a:hover {
-    color: #1ca086;
-    ;
-
-
-}
-
-article a {
-    text-decoration: none !important;
-}
-
-
-/* searchbar for post style  */
-
 .searchBar {
     display: flex;
     flex-direction: column;
@@ -29,18 +15,17 @@ article a {
 
 .searchBar .inputSearch {
     display: flex;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
 }
 
 .inputSearch input {
-    font-size: 1rem;
-    color: #1c1c1d;
+    font-size: 2rem;
+    color: var(--text-color);
     border: none;
-    background-color: gray;
+    background-color: #1c1c1d;
     display: flex;
-    cursor: alias;
-    padding: 0.2rem 1rem;
+    padding: 1rem;
 }
 
 .inputSearch input:focus {
@@ -50,17 +35,17 @@ article a {
 .searchBar ul {
     width: 100%;
     list-style: none;
-    background-color: #fff;
-    /* border-radius: 10px; */
-    font-size: 1rem;
+    background-color: #1c1c1d;
+    border-radius: 5px;
+    font-size: 2rem;
     color: var(--text-color);
     overflow: hidden;
     position: absolute;
-    top: 3rem;
+    top: 5rem;
 }
 
 .searchBar ul li {
-    padding: 0.5rem;
+    padding: 1rem;
     cursor: pointer;
 }
 
@@ -70,5 +55,5 @@ article a {
 
 .inputSearch span {
     color: var(--text-color);
-    padding: 0.5rem 0.8rem;
+    padding: 1rem 2rem;
 }

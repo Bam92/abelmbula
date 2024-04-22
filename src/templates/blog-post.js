@@ -1,6 +1,6 @@
+
 import React from "react"
 import { graphql } from "gatsby"
-
 import PostBio from "../components/post-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
