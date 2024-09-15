@@ -9,7 +9,7 @@ import { useSiteMetadata } from '../../../hooks/use-site-metadata'
 import "./SocialCard.style.css"
 
 const SocialCard = () => {
-  const { social } = useSiteMetadata()
+  const { social, email } = useSiteMetadata()
 
   return (
     <div className='socialCard'>
@@ -22,7 +22,7 @@ const SocialCard = () => {
       <a href={social.github} title="Retrouve-moi sur Github" target='_blank'>
         <SocialIcon icon={faGithub} />
       </a>
-      <a href='mailto:bam6192@gmail.com'>
+      <a href= {`mailto:${email}`} >
         <SocialIcon icon={faEnvelope} />
       </a>
     </div>

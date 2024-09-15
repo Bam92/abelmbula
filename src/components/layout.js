@@ -79,8 +79,6 @@ class Layout extends React.Component {
           flexDirection: `column`,
         }}
       >
-       
-
         <Container>
         <header style={{ alignSelf: `center`}}>
           {header}

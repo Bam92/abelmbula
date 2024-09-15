@@ -14,6 +14,7 @@ module.exports = {
     siteUrl: "http://abelmbula.com",
     bio: `Software Engeneer and CS Instructor. He spends much of his time contributiong to FLOSS and helping beginners.
     If you think this is great and shoud continue, consider supporting him.`,
+    email: "bam6192@gmail.com",
     social: {
       twitter: `https://twitter.com/abelmbula`,
       linkedin: `https://www.linkedin.com/in/abel-lifaefi-mbula-8371087b/?locale=en_US`,

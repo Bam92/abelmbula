@@ -6,6 +6,7 @@ export const useSiteMetadata = () => {
       query SiteMetaData {
         site {
           siteMetadata {
+            email
             title
             firstName
             lastName
